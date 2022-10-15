@@ -1,0 +1,2 @@
+<1> Orienté_objet,programmation_visuel,programmation_contrainte_bobliothèque => Métaprogrammation,programation_Concurrente_Bibliothèque,Programmation_distribué_bibliothèque
+<1> Métaprogrammation,Orienté_objet,programmation_visuel => programmation_contrainte_bobliothèque,programation_Concurrente_Bibliothèque,Programmation_distribué_bibliothèque

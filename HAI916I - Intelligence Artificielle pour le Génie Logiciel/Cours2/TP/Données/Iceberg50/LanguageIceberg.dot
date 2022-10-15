@@ -1,0 +1,16 @@
+digraph G { 
+	rankdir=BT;
+0 [shape=record,style=filled,fillcolor=lightblue,label="{0 (I: 0, E: 10)||}"];
+1 [shape=record,style=filled,label="{1 (I: 1, E: 6)|programmation_Concurrente\n|Go\n}"];
+2 [shape=record,style=filled,fillcolor=lightblue,label="{2 (I: 9, E: 0)|programmation_visuel\nprogrammation_déclarative\nProgrammation_distribué\nprogrammation_contrainte_bobliothèque\nprogramation_Concurrente_Bibliothèque\nProgrammation_distribué_bibliothèque\n|}"];
+3 [shape=record,style=filled,fillcolor=orange,label="{3 (I: 2, E: 5)|Métaprogrammation\n|C++\nCommon_Lisp\nKotlin\nPython\nRust\n}"];
+4 [shape=record,style=filled,fillcolor=orange,label="{4 (I: 2, E: 5)||C#\nC++\nJava\nKotlin\nRust\n}"];
+5 [shape=record,style=filled,fillcolor=orange,label="{5 (I: 1, E: 9)|Orienté_objet\n|PHP\nSwift\n}"];
+	1 -> 0
+	2 -> 3
+	2 -> 4
+	3 -> 5
+	4 -> 1
+	4 -> 5
+	5 -> 0
+}

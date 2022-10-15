@@ -1,0 +1,35 @@
+digraph G { 
+	rankdir=BT;
+0 [shape=record,style=filled,fillcolor=lightblue,label="{0 (I: 9, E: 0)|programmation_déclarative\nProgrammation_distribué\n|}"];
+1 [shape=record,style=filled,label="{1 (I: 6, E: 1)||Python\n}"];
+2 [shape=record,style=filled,label="{2 (I: 5, E: 1)||C++\n}"];
+3 [shape=record,style=filled,label="{3 (I: 5, E: 2)|programation_Concurrente_Bibliothèque\n|Common_Lisp\n}"];
+4 [shape=record,style=filled,fillcolor=lightblue,label="{4 (I: 4, E: 3)|Programmation_distribué_bibliothèque\n|}"];
+5 [shape=record,style=filled,label="{5 (I: 3, E: 2)||Java\n}"];
+6 [shape=record,style=filled,fillcolor=orange,label="{6 (I: 3, E: 3)||Kotlin\nRust\n}"];
+7 [shape=record,style=filled,label="{7 (I: 2, E: 5)||C#\n}"];
+8 [shape=record,style=filled,label="{8 (I: 2, E: 2)|programmation_visuel\n|Swift\n}"];
+9 [shape=record,style=filled,fillcolor=lightblue,label="{9 (I: 2, E: 5)|Métaprogrammation\n|}"];
+10 [shape=record,style=filled,fillcolor=lightblue,label="{10 (I: 2, E: 4)|programmation_contrainte_bobliothèque\n|}"];
+11 [shape=record,style=filled,label="{11 (I: 1, E: 6)|programmation_Concurrente\n|Go\n}"];
+12 [shape=record,style=filled,label="{12 (I: 1, E: 9)|Orienté_objet\n|PHP\n}"];
+	0 -> 1
+	0 -> 2
+	1 -> 3
+	1 -> 8
+	2 -> 4
+	2 -> 5
+	2 -> 6
+	3 -> 4
+	4 -> 9
+	4 -> 10
+	5 -> 7
+	5 -> 10
+	6 -> 7
+	6 -> 9
+	7 -> 11
+	7 -> 12
+	8 -> 12
+	9 -> 12
+	10 -> 12
+}
