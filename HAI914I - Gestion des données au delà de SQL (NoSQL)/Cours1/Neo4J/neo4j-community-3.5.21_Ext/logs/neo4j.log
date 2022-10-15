@@ -1,0 +1,1358 @@
+nohup: les entrées sont ignorées
+2020-09-08 11:48:16.388+0000 WARN  You are using an unsupported version of the Java runtime. Please use Oracle(R) Java(TM) Runtime Environment 8, OpenJDK(TM) 8 or IBM J9.
+2020-09-08 11:48:16.396+0000 INFO  ======== Neo4j 3.5.21 ========
+2020-09-08 11:48:16.402+0000 INFO  Starting...
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.collections.impl.utility.ArrayListIterate (file:/home/isa/Bureau/BD/Docs_BDNoR/Neo4J_17/neo4j-community-3.5.21/lib/eclipse-collections-9.2.0.jar) to field java.util.ArrayList.elementData
+WARNING: Please consider reporting this to the maintainers of org.eclipse.collections.impl.utility.ArrayListIterate
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2020-09-08 11:48:27.597+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2020-09-08 11:48:28.749+0000 INFO  Started.
+2020-09-08 11:48:28.833+0000 INFO  Mounted unmanaged extension [semantics.extension] at [/rdf]
+2020-09-08 11:48:30.189+0000 INFO  Remote interface available at http://localhost:7474/
+2020-09-08 11:48:33.952+0000 WARN  The client is unauthorized due to authentication failure.
+2020-09-08 11:48:34.104+0000 WARN  The client is unauthorized due to authentication failure.
+2020-09-08 11:48:34.343+0000 WARN  The client is unauthorized due to authentication failure.
+2020-09-08 11:48:34.673+0000 WARN  The client has provided incorrect authentication details too many times in a row.
+2020-09-08 11:48:41.440+0000 WARN  The client is unauthorized due to authentication failure.
+2020-09-08 11:48:41.771+0000 WARN  The client has provided incorrect authentication details too many times in a row.
+2020-09-08 11:48:42.025+0000 WARN  The client has provided incorrect authentication details too many times in a row.
+2020-09-08 11:48:42.383+0000 WARN  The client has provided incorrect authentication details too many times in a row.
+2020-09-08 11:49:01.444+0000 WARN  The client is unauthorized due to authentication failure.
+2020-09-08 11:49:01.838+0000 WARN  The client has provided incorrect authentication details too many times in a row.
+2020-09-08 11:49:02.109+0000 WARN  The client has provided incorrect authentication details too many times in a row.
+2020-09-08 11:49:02.404+0000 WARN  The client has provided incorrect authentication details too many times in a row.
+2020-09-08 11:49:21.455+0000 WARN  The client is unauthorized due to authentication failure.
+2020-09-08 11:49:21.716+0000 WARN  The client has provided incorrect authentication details too many times in a row.
+2020-09-08 11:49:22.017+0000 WARN  The client has provided incorrect authentication details too many times in a row.
+2020-09-08 11:49:22.369+0000 WARN  The client has provided incorrect authentication details too many times in a row.
+2020-09-08 11:49:38.627+0000 WARN  The client is unauthorized due to authentication failure.
+2020-09-08 11:53:41.523+0000 INFO  serialization from media type in request: */*
+2020-09-08 11:53:41.523+0000 INFO  Unrecognized or undefined serialization. Defaulting to Turtle serialization
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2020-09-08 12:03:23.997+0000 INFO  serialization from param in request: N3
+2020-09-08 12:03:23.997+0000 INFO  Unrecognized or undefined serialization. Defaulting to Turtle serialization
+2020-09-08 12:03:58.833+0000 INFO  serialization from media type in request: */*
+2020-09-08 12:03:58.833+0000 INFO  Unrecognized or undefined serialization. Defaulting to Turtle serialization
+2020-09-08 12:12:49.860+0000 INFO  Neo4j Server shutdown initiated by request
+2020-09-08 12:12:49.883+0000 INFO  Stopping...
+2020-09-08 12:12:50.264+0000 INFO  Stopped.
+nohup: les entrées sont ignorées
+2020-09-08 12:13:17.100+0000 WARN  You are using an unsupported version of the Java runtime. Please use Oracle(R) Java(TM) Runtime Environment 8, OpenJDK(TM) 8 or IBM J9.
+2020-09-08 12:13:17.108+0000 INFO  ======== Neo4j 3.5.21 ========
+2020-09-08 12:13:17.113+0000 INFO  Starting...
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.collections.impl.utility.ArrayListIterate (file:/home/isa/Bureau/BD/Docs_BDNoR/Neo4J_17/neo4j-community-3.5.21/lib/eclipse-collections-9.2.0.jar) to field java.util.ArrayList.elementData
+WARNING: Please consider reporting this to the maintainers of org.eclipse.collections.impl.utility.ArrayListIterate
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2020-09-08 12:13:27.375+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2020-09-08 12:13:28.594+0000 INFO  Started.
+2020-09-08 12:13:28.684+0000 INFO  Mounted unmanaged extension [semantics.extension] at [/rdf]
+2020-09-08 12:13:30.061+0000 INFO  Remote interface available at http://localhost:7474/
+2020-09-08 12:20:10.760+0000 WARN  Failed authentication attempt for 'neo4j' from 127.0.0.1
+2020-09-08 12:20:45.093+0000 WARN  Failed authentication attempt for 'neo4j' from 127.0.0.1
+2020-09-08 12:21:02.712+0000 WARN  Failed authentication attempt for 'neo4j' from 127.0.0.1
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+java.io.FileNotFoundException: http://www.w3.org/2004/08/TalkFiles/2005/Talks.rdf
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1920)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1520)
+	at semantics.RDFImport.getInputStream(RDFImport.java:249)
+	at semantics.RDFImport.doImport(RDFImport.java:117)
+	at semantics.RDFImport.importRDF(RDFImport.java:87)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.neo4j.kernel.impl.proc.ReflectiveProcedureCompiler$ReflectiveProcedure.apply(ReflectiveProcedureCompiler.java:666)
+	at org.neo4j.kernel.impl.proc.ProcedureRegistry.callProcedure(ProcedureRegistry.java:219)
+	at org.neo4j.kernel.impl.proc.Procedures.callProcedure(Procedures.java:290)
+	at org.neo4j.kernel.impl.newapi.AllStoreHolder.callProcedure(AllStoreHolder.java:1098)
+	at org.neo4j.kernel.impl.newapi.AllStoreHolder.procedureCallWrite(AllStoreHolder.java:884)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$$anonfun$4.apply(CallSupport.scala:73)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$$anonfun$4.apply(CallSupport.scala:73)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$.callProcedure(CallSupport.scala:167)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$.callReadWriteProcedure(CallSupport.scala:74)
+	at org.neo4j.cypher.internal.runtime.interpreted.TransactionBoundQueryContext.callReadWriteProcedure(TransactionBoundQueryContext.scala:977)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext$$anonfun$callReadWriteProcedure$1.apply(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext$$anonfun$callReadWriteProcedure$1.apply(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslationSupport$class.translateException(ExceptionTranslationSupport.scala:33)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.translateException(ExceptionTranslatingQueryContext.scala:42)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslationSupport$class.translateIterator(ExceptionTranslationSupport.scala:47)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.translateIterator(ExceptionTranslatingQueryContext.scala:42)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.callReadWriteProcedure(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.runtime.EagerReadWriteCallMode.callProcedure(ProcedureCallMode.scala:66)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.procs.ProcedureCallRuntimeResult.executeCall(ProcedureCallRuntimeResult.scala:72)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.procs.ProcedureCallRuntimeResult.<init>(ProcedureCallRuntimeResult.scala:66)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.procs.ProcedureCallExecutionPlan.run(ProcedureCallExecutionPlan.scala:88)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery$$anonfun$execute$3.apply(CypherCurrentCompiler.scala:204)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery$$anonfun$execute$3.apply(CypherCurrentCompiler.scala:190)
+	at org.neo4j.cypher.exceptionHandler$runSafely$.apply(exceptionHandler.scala:89)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery.execute(CypherCurrentCompiler.scala:223)
+	at org.neo4j.cypher.internal.ExecutionEngine.execute(ExecutionEngine.scala:116)
+	at org.neo4j.cypher.internal.javacompat.ExecutionEngine.executeQuery(ExecutionEngine.java:85)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachineV1SPI$BoltResultHandleV1.start(TransactionStateMachineV1SPI.java:189)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine$State.startExecution(TransactionStateMachine.java:506)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine$State$2.run(TransactionStateMachine.java:385)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine.run(TransactionStateMachine.java:110)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine.run(TransactionStateMachine.java:98)
+	at org.neo4j.bolt.v3.runtime.TransactionReadyState.processRunMessage(TransactionReadyState.java:82)
+	at org.neo4j.bolt.v3.runtime.TransactionReadyState.processUnsafe(TransactionReadyState.java:49)
+	at org.neo4j.bolt.v3.runtime.FailSafeBoltStateMachineState.process(FailSafeBoltStateMachineState.java:48)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachineV1.nextState(BoltStateMachineV1.java:144)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachineV1.process(BoltStateMachineV1.java:92)
+	at org.neo4j.bolt.messaging.BoltRequestMessageReader.lambda$doRead$1(BoltRequestMessageReader.java:89)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:191)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:139)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:171)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$scheduleBatchOrHandleError$2(ExecutorBoltScheduler.java:154)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+java.io.FileNotFoundException: /Shakespeare.ttl (Aucun fichier ou dossier de ce type)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at semantics.RDFImport.getInputStream(RDFImport.java:249)
+	at semantics.RDFImport.doImport(RDFImport.java:117)
+	at semantics.RDFImport.importRDF(RDFImport.java:87)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.neo4j.kernel.impl.proc.ReflectiveProcedureCompiler$ReflectiveProcedure.apply(ReflectiveProcedureCompiler.java:666)
+	at org.neo4j.kernel.impl.proc.ProcedureRegistry.callProcedure(ProcedureRegistry.java:219)
+	at org.neo4j.kernel.impl.proc.Procedures.callProcedure(Procedures.java:290)
+	at org.neo4j.kernel.impl.newapi.AllStoreHolder.callProcedure(AllStoreHolder.java:1098)
+	at org.neo4j.kernel.impl.newapi.AllStoreHolder.procedureCallWrite(AllStoreHolder.java:884)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$$anonfun$4.apply(CallSupport.scala:73)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$$anonfun$4.apply(CallSupport.scala:73)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$.callProcedure(CallSupport.scala:167)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$.callReadWriteProcedure(CallSupport.scala:74)
+	at org.neo4j.cypher.internal.runtime.interpreted.TransactionBoundQueryContext.callReadWriteProcedure(TransactionBoundQueryContext.scala:977)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext$$anonfun$callReadWriteProcedure$1.apply(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext$$anonfun$callReadWriteProcedure$1.apply(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslationSupport$class.translateException(ExceptionTranslationSupport.scala:33)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.translateException(ExceptionTranslatingQueryContext.scala:42)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslationSupport$class.translateIterator(ExceptionTranslationSupport.scala:47)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.translateIterator(ExceptionTranslatingQueryContext.scala:42)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.callReadWriteProcedure(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.runtime.EagerReadWriteCallMode.callProcedure(ProcedureCallMode.scala:66)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.procs.ProcedureCallRuntimeResult.executeCall(ProcedureCallRuntimeResult.scala:72)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.procs.ProcedureCallRuntimeResult.<init>(ProcedureCallRuntimeResult.scala:66)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.procs.ProcedureCallExecutionPlan.run(ProcedureCallExecutionPlan.scala:88)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery$$anonfun$execute$3.apply(CypherCurrentCompiler.scala:204)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery$$anonfun$execute$3.apply(CypherCurrentCompiler.scala:190)
+	at org.neo4j.cypher.exceptionHandler$runSafely$.apply(exceptionHandler.scala:89)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery.execute(CypherCurrentCompiler.scala:223)
+	at org.neo4j.cypher.internal.ExecutionEngine.execute(ExecutionEngine.scala:116)
+	at org.neo4j.cypher.internal.javacompat.ExecutionEngine.executeQuery(ExecutionEngine.java:85)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachineV1SPI$BoltResultHandleV1.start(TransactionStateMachineV1SPI.java:189)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine$State.startExecution(TransactionStateMachine.java:506)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine$State$2.run(TransactionStateMachine.java:385)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine.run(TransactionStateMachine.java:110)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine.run(TransactionStateMachine.java:98)
+	at org.neo4j.bolt.v3.runtime.TransactionReadyState.processRunMessage(TransactionReadyState.java:82)
+	at org.neo4j.bolt.v3.runtime.TransactionReadyState.processUnsafe(TransactionReadyState.java:49)
+	at org.neo4j.bolt.v3.runtime.FailSafeBoltStateMachineState.process(FailSafeBoltStateMachineState.java:48)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachineV1.nextState(BoltStateMachineV1.java:144)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachineV1.process(BoltStateMachineV1.java:92)
+	at org.neo4j.bolt.messaging.BoltRequestMessageReader.lambda$doRead$1(BoltRequestMessageReader.java:89)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:191)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:139)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:171)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$scheduleBatchOrHandleError$2(ExecutorBoltScheduler.java:154)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+java.io.FileNotFoundException: /Shakespeare.ttl (Aucun fichier ou dossier de ce type)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at semantics.RDFImport.getInputStream(RDFImport.java:249)
+	at semantics.RDFImport.doImport(RDFImport.java:117)
+	at semantics.RDFImport.importRDF(RDFImport.java:87)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.neo4j.kernel.impl.proc.ReflectiveProcedureCompiler$ReflectiveProcedure.apply(ReflectiveProcedureCompiler.java:666)
+	at org.neo4j.kernel.impl.proc.ProcedureRegistry.callProcedure(ProcedureRegistry.java:219)
+	at org.neo4j.kernel.impl.proc.Procedures.callProcedure(Procedures.java:290)
+	at org.neo4j.kernel.impl.newapi.AllStoreHolder.callProcedure(AllStoreHolder.java:1098)
+	at org.neo4j.kernel.impl.newapi.AllStoreHolder.procedureCallWrite(AllStoreHolder.java:884)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$$anonfun$4.apply(CallSupport.scala:73)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$$anonfun$4.apply(CallSupport.scala:73)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$.callProcedure(CallSupport.scala:167)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$.callReadWriteProcedure(CallSupport.scala:74)
+	at org.neo4j.cypher.internal.runtime.interpreted.TransactionBoundQueryContext.callReadWriteProcedure(TransactionBoundQueryContext.scala:977)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext$$anonfun$callReadWriteProcedure$1.apply(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext$$anonfun$callReadWriteProcedure$1.apply(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslationSupport$class.translateException(ExceptionTranslationSupport.scala:33)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.translateException(ExceptionTranslatingQueryContext.scala:42)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslationSupport$class.translateIterator(ExceptionTranslationSupport.scala:47)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.translateIterator(ExceptionTranslatingQueryContext.scala:42)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.callReadWriteProcedure(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.runtime.EagerReadWriteCallMode.callProcedure(ProcedureCallMode.scala:66)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.procs.ProcedureCallRuntimeResult.executeCall(ProcedureCallRuntimeResult.scala:72)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.procs.ProcedureCallRuntimeResult.<init>(ProcedureCallRuntimeResult.scala:66)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.procs.ProcedureCallExecutionPlan.run(ProcedureCallExecutionPlan.scala:88)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery$$anonfun$execute$3.apply(CypherCurrentCompiler.scala:204)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery$$anonfun$execute$3.apply(CypherCurrentCompiler.scala:190)
+	at org.neo4j.cypher.exceptionHandler$runSafely$.apply(exceptionHandler.scala:89)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery.execute(CypherCurrentCompiler.scala:223)
+	at org.neo4j.cypher.internal.ExecutionEngine.execute(ExecutionEngine.scala:116)
+	at org.neo4j.cypher.internal.javacompat.ExecutionEngine.executeQuery(ExecutionEngine.java:85)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachineV1SPI$BoltResultHandleV1.start(TransactionStateMachineV1SPI.java:189)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine$State.startExecution(TransactionStateMachine.java:506)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine$State$2.run(TransactionStateMachine.java:385)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine.run(TransactionStateMachine.java:110)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine.run(TransactionStateMachine.java:98)
+	at org.neo4j.bolt.v3.runtime.TransactionReadyState.processRunMessage(TransactionReadyState.java:82)
+	at org.neo4j.bolt.v3.runtime.TransactionReadyState.processUnsafe(TransactionReadyState.java:49)
+	at org.neo4j.bolt.v3.runtime.FailSafeBoltStateMachineState.process(FailSafeBoltStateMachineState.java:48)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachineV1.nextState(BoltStateMachineV1.java:144)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachineV1.process(BoltStateMachineV1.java:92)
+	at org.neo4j.bolt.messaging.BoltRequestMessageReader.lambda$doRead$1(BoltRequestMessageReader.java:89)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:191)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:139)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:171)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$scheduleBatchOrHandleError$2(ExecutorBoltScheduler.java:154)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+java.io.FileNotFoundException: /Shakespeare.ttl (Aucun fichier ou dossier de ce type)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at semantics.RDFImport.getInputStream(RDFImport.java:249)
+	at semantics.RDFImport.doImport(RDFImport.java:117)
+	at semantics.RDFImport.importRDF(RDFImport.java:87)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.neo4j.kernel.impl.proc.ReflectiveProcedureCompiler$ReflectiveProcedure.apply(ReflectiveProcedureCompiler.java:666)
+	at org.neo4j.kernel.impl.proc.ProcedureRegistry.callProcedure(ProcedureRegistry.java:219)
+	at org.neo4j.kernel.impl.proc.Procedures.callProcedure(Procedures.java:290)
+	at org.neo4j.kernel.impl.newapi.AllStoreHolder.callProcedure(AllStoreHolder.java:1098)
+	at org.neo4j.kernel.impl.newapi.AllStoreHolder.procedureCallWrite(AllStoreHolder.java:884)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$$anonfun$4.apply(CallSupport.scala:73)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$$anonfun$4.apply(CallSupport.scala:73)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$.callProcedure(CallSupport.scala:167)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$.callReadWriteProcedure(CallSupport.scala:74)
+	at org.neo4j.cypher.internal.runtime.interpreted.TransactionBoundQueryContext.callReadWriteProcedure(TransactionBoundQueryContext.scala:977)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext$$anonfun$callReadWriteProcedure$1.apply(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext$$anonfun$callReadWriteProcedure$1.apply(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslationSupport$class.translateException(ExceptionTranslationSupport.scala:33)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.translateException(ExceptionTranslatingQueryContext.scala:42)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslationSupport$class.translateIterator(ExceptionTranslationSupport.scala:47)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.translateIterator(ExceptionTranslatingQueryContext.scala:42)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.callReadWriteProcedure(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.runtime.EagerReadWriteCallMode.callProcedure(ProcedureCallMode.scala:66)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.procs.ProcedureCallRuntimeResult.executeCall(ProcedureCallRuntimeResult.scala:72)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.procs.ProcedureCallRuntimeResult.<init>(ProcedureCallRuntimeResult.scala:66)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.procs.ProcedureCallExecutionPlan.run(ProcedureCallExecutionPlan.scala:88)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery$$anonfun$execute$3.apply(CypherCurrentCompiler.scala:204)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery$$anonfun$execute$3.apply(CypherCurrentCompiler.scala:190)
+	at org.neo4j.cypher.exceptionHandler$runSafely$.apply(exceptionHandler.scala:89)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery.execute(CypherCurrentCompiler.scala:223)
+	at org.neo4j.cypher.internal.ExecutionEngine.execute(ExecutionEngine.scala:116)
+	at org.neo4j.cypher.internal.javacompat.ExecutionEngine.executeQuery(ExecutionEngine.java:85)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachineV1SPI$BoltResultHandleV1.start(TransactionStateMachineV1SPI.java:189)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine$State.startExecution(TransactionStateMachine.java:506)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine$State$2.run(TransactionStateMachine.java:385)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine.run(TransactionStateMachine.java:110)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine.run(TransactionStateMachine.java:98)
+	at org.neo4j.bolt.v3.runtime.TransactionReadyState.processRunMessage(TransactionReadyState.java:82)
+	at org.neo4j.bolt.v3.runtime.TransactionReadyState.processUnsafe(TransactionReadyState.java:49)
+	at org.neo4j.bolt.v3.runtime.FailSafeBoltStateMachineState.process(FailSafeBoltStateMachineState.java:48)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachineV1.nextState(BoltStateMachineV1.java:144)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachineV1.process(BoltStateMachineV1.java:92)
+	at org.neo4j.bolt.messaging.BoltRequestMessageReader.lambda$doRead$1(BoltRequestMessageReader.java:89)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:191)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:139)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:171)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$scheduleBatchOrHandleError$2(ExecutorBoltScheduler.java:154)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+java.io.FileNotFoundException: /Shakespeare.ttl (Aucun fichier ou dossier de ce type)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at semantics.RDFImport.getInputStream(RDFImport.java:249)
+	at semantics.RDFImport.doImport(RDFImport.java:117)
+	at semantics.RDFImport.importRDF(RDFImport.java:87)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.neo4j.kernel.impl.proc.ReflectiveProcedureCompiler$ReflectiveProcedure.apply(ReflectiveProcedureCompiler.java:666)
+	at org.neo4j.kernel.impl.proc.ProcedureRegistry.callProcedure(ProcedureRegistry.java:219)
+	at org.neo4j.kernel.impl.proc.Procedures.callProcedure(Procedures.java:290)
+	at org.neo4j.kernel.impl.newapi.AllStoreHolder.callProcedure(AllStoreHolder.java:1098)
+	at org.neo4j.kernel.impl.newapi.AllStoreHolder.procedureCallWrite(AllStoreHolder.java:884)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$$anonfun$4.apply(CallSupport.scala:73)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$$anonfun$4.apply(CallSupport.scala:73)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$.callProcedure(CallSupport.scala:167)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$.callReadWriteProcedure(CallSupport.scala:74)
+	at org.neo4j.cypher.internal.runtime.interpreted.TransactionBoundQueryContext.callReadWriteProcedure(TransactionBoundQueryContext.scala:977)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext$$anonfun$callReadWriteProcedure$1.apply(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext$$anonfun$callReadWriteProcedure$1.apply(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslationSupport$class.translateException(ExceptionTranslationSupport.scala:33)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.translateException(ExceptionTranslatingQueryContext.scala:42)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslationSupport$class.translateIterator(ExceptionTranslationSupport.scala:47)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.translateIterator(ExceptionTranslatingQueryContext.scala:42)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.callReadWriteProcedure(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.runtime.EagerReadWriteCallMode.callProcedure(ProcedureCallMode.scala:66)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.procs.ProcedureCallRuntimeResult.executeCall(ProcedureCallRuntimeResult.scala:72)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.procs.ProcedureCallRuntimeResult.<init>(ProcedureCallRuntimeResult.scala:66)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.procs.ProcedureCallExecutionPlan.run(ProcedureCallExecutionPlan.scala:88)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery$$anonfun$execute$3.apply(CypherCurrentCompiler.scala:204)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery$$anonfun$execute$3.apply(CypherCurrentCompiler.scala:190)
+	at org.neo4j.cypher.exceptionHandler$runSafely$.apply(exceptionHandler.scala:89)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery.execute(CypherCurrentCompiler.scala:223)
+	at org.neo4j.cypher.internal.ExecutionEngine.execute(ExecutionEngine.scala:116)
+	at org.neo4j.cypher.internal.javacompat.ExecutionEngine.executeQuery(ExecutionEngine.java:85)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachineV1SPI$BoltResultHandleV1.start(TransactionStateMachineV1SPI.java:189)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine$State.startExecution(TransactionStateMachine.java:506)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine$State$2.run(TransactionStateMachine.java:385)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine.run(TransactionStateMachine.java:110)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine.run(TransactionStateMachine.java:98)
+	at org.neo4j.bolt.v3.runtime.TransactionReadyState.processRunMessage(TransactionReadyState.java:82)
+	at org.neo4j.bolt.v3.runtime.TransactionReadyState.processUnsafe(TransactionReadyState.java:49)
+	at org.neo4j.bolt.v3.runtime.FailSafeBoltStateMachineState.process(FailSafeBoltStateMachineState.java:48)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachineV1.nextState(BoltStateMachineV1.java:144)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachineV1.process(BoltStateMachineV1.java:92)
+	at org.neo4j.bolt.messaging.BoltRequestMessageReader.lambda$doRead$1(BoltRequestMessageReader.java:89)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:191)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:139)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:171)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$scheduleBatchOrHandleError$2(ExecutorBoltScheduler.java:154)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+java.net.UnknownHostException: Shakespeare.ttl
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at java.base/sun.net.ftp.impl.FtpClient.doConnect(FtpClient.java:961)
+	at java.base/sun.net.ftp.impl.FtpClient.tryConnect(FtpClient.java:923)
+	at java.base/sun.net.ftp.impl.FtpClient.connect(FtpClient.java:1018)
+	at java.base/sun.net.ftp.impl.FtpClient.connect(FtpClient.java:1004)
+	at java.base/sun.net.www.protocol.ftp.FtpURLConnection.connect(FtpURLConnection.java:312)
+	at java.base/sun.net.www.protocol.ftp.FtpURLConnection.getInputStream(FtpURLConnection.java:418)
+	at semantics.RDFImport.getInputStream(RDFImport.java:249)
+	at semantics.RDFImport.doImport(RDFImport.java:117)
+	at semantics.RDFImport.importRDF(RDFImport.java:87)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.neo4j.kernel.impl.proc.ReflectiveProcedureCompiler$ReflectiveProcedure.apply(ReflectiveProcedureCompiler.java:666)
+	at org.neo4j.kernel.impl.proc.ProcedureRegistry.callProcedure(ProcedureRegistry.java:219)
+	at org.neo4j.kernel.impl.proc.Procedures.callProcedure(Procedures.java:290)
+	at org.neo4j.kernel.impl.newapi.AllStoreHolder.callProcedure(AllStoreHolder.java:1098)
+	at org.neo4j.kernel.impl.newapi.AllStoreHolder.procedureCallWrite(AllStoreHolder.java:884)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$$anonfun$4.apply(CallSupport.scala:73)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$$anonfun$4.apply(CallSupport.scala:73)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$.callProcedure(CallSupport.scala:167)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$.callReadWriteProcedure(CallSupport.scala:74)
+	at org.neo4j.cypher.internal.runtime.interpreted.TransactionBoundQueryContext.callReadWriteProcedure(TransactionBoundQueryContext.scala:977)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext$$anonfun$callReadWriteProcedure$1.apply(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext$$anonfun$callReadWriteProcedure$1.apply(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslationSupport$class.translateException(ExceptionTranslationSupport.scala:33)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.translateException(ExceptionTranslatingQueryContext.scala:42)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslationSupport$class.translateIterator(ExceptionTranslationSupport.scala:47)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.translateIterator(ExceptionTranslatingQueryContext.scala:42)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.callReadWriteProcedure(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.runtime.EagerReadWriteCallMode.callProcedure(ProcedureCallMode.scala:66)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.procs.ProcedureCallRuntimeResult.executeCall(ProcedureCallRuntimeResult.scala:72)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.procs.ProcedureCallRuntimeResult.<init>(ProcedureCallRuntimeResult.scala:66)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.procs.ProcedureCallExecutionPlan.run(ProcedureCallExecutionPlan.scala:88)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery$$anonfun$execute$3.apply(CypherCurrentCompiler.scala:204)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery$$anonfun$execute$3.apply(CypherCurrentCompiler.scala:190)
+	at org.neo4j.cypher.exceptionHandler$runSafely$.apply(exceptionHandler.scala:89)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery.execute(CypherCurrentCompiler.scala:223)
+	at org.neo4j.cypher.internal.ExecutionEngine.execute(ExecutionEngine.scala:116)
+	at org.neo4j.cypher.internal.javacompat.ExecutionEngine.executeQuery(ExecutionEngine.java:85)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachineV1SPI$BoltResultHandleV1.start(TransactionStateMachineV1SPI.java:189)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine$State.startExecution(TransactionStateMachine.java:506)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine$State$2.run(TransactionStateMachine.java:385)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine.run(TransactionStateMachine.java:110)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine.run(TransactionStateMachine.java:98)
+	at org.neo4j.bolt.v3.runtime.TransactionReadyState.processRunMessage(TransactionReadyState.java:82)
+	at org.neo4j.bolt.v3.runtime.TransactionReadyState.processUnsafe(TransactionReadyState.java:49)
+	at org.neo4j.bolt.v3.runtime.FailSafeBoltStateMachineState.process(FailSafeBoltStateMachineState.java:48)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachineV1.nextState(BoltStateMachineV1.java:144)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachineV1.process(BoltStateMachineV1.java:92)
+	at org.neo4j.bolt.messaging.BoltRequestMessageReader.lambda$doRead$1(BoltRequestMessageReader.java:89)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:191)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:139)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:171)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$scheduleBatchOrHandleError$2(ExecutorBoltScheduler.java:154)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+java.net.UnknownHostException: Shakespeare.ttl
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at java.base/sun.net.ftp.impl.FtpClient.doConnect(FtpClient.java:961)
+	at java.base/sun.net.ftp.impl.FtpClient.tryConnect(FtpClient.java:923)
+	at java.base/sun.net.ftp.impl.FtpClient.connect(FtpClient.java:1018)
+	at java.base/sun.net.ftp.impl.FtpClient.connect(FtpClient.java:1004)
+	at java.base/sun.net.www.protocol.ftp.FtpURLConnection.connect(FtpURLConnection.java:312)
+	at java.base/sun.net.www.protocol.ftp.FtpURLConnection.getInputStream(FtpURLConnection.java:418)
+	at semantics.RDFImport.getInputStream(RDFImport.java:249)
+	at semantics.RDFImport.doImport(RDFImport.java:117)
+	at semantics.RDFImport.importRDF(RDFImport.java:87)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.neo4j.kernel.impl.proc.ReflectiveProcedureCompiler$ReflectiveProcedure.apply(ReflectiveProcedureCompiler.java:666)
+	at org.neo4j.kernel.impl.proc.ProcedureRegistry.callProcedure(ProcedureRegistry.java:219)
+	at org.neo4j.kernel.impl.proc.Procedures.callProcedure(Procedures.java:290)
+	at org.neo4j.kernel.impl.newapi.AllStoreHolder.callProcedure(AllStoreHolder.java:1098)
+	at org.neo4j.kernel.impl.newapi.AllStoreHolder.procedureCallWrite(AllStoreHolder.java:884)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$$anonfun$4.apply(CallSupport.scala:73)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$$anonfun$4.apply(CallSupport.scala:73)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$.callProcedure(CallSupport.scala:167)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$.callReadWriteProcedure(CallSupport.scala:74)
+	at org.neo4j.cypher.internal.runtime.interpreted.TransactionBoundQueryContext.callReadWriteProcedure(TransactionBoundQueryContext.scala:977)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext$$anonfun$callReadWriteProcedure$1.apply(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext$$anonfun$callReadWriteProcedure$1.apply(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslationSupport$class.translateException(ExceptionTranslationSupport.scala:33)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.translateException(ExceptionTranslatingQueryContext.scala:42)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslationSupport$class.translateIterator(ExceptionTranslationSupport.scala:47)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.translateIterator(ExceptionTranslatingQueryContext.scala:42)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.callReadWriteProcedure(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.runtime.EagerReadWriteCallMode.callProcedure(ProcedureCallMode.scala:66)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.procs.ProcedureCallRuntimeResult.executeCall(ProcedureCallRuntimeResult.scala:72)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.procs.ProcedureCallRuntimeResult.<init>(ProcedureCallRuntimeResult.scala:66)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.procs.ProcedureCallExecutionPlan.run(ProcedureCallExecutionPlan.scala:88)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery$$anonfun$execute$3.apply(CypherCurrentCompiler.scala:204)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery$$anonfun$execute$3.apply(CypherCurrentCompiler.scala:190)
+	at org.neo4j.cypher.exceptionHandler$runSafely$.apply(exceptionHandler.scala:89)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery.execute(CypherCurrentCompiler.scala:223)
+	at org.neo4j.cypher.internal.ExecutionEngine.execute(ExecutionEngine.scala:116)
+	at org.neo4j.cypher.internal.javacompat.ExecutionEngine.executeQuery(ExecutionEngine.java:85)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachineV1SPI$BoltResultHandleV1.start(TransactionStateMachineV1SPI.java:189)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine$State.startExecution(TransactionStateMachine.java:506)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine$State$2.run(TransactionStateMachine.java:385)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine.run(TransactionStateMachine.java:110)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine.run(TransactionStateMachine.java:98)
+	at org.neo4j.bolt.v3.runtime.TransactionReadyState.processRunMessage(TransactionReadyState.java:82)
+	at org.neo4j.bolt.v3.runtime.TransactionReadyState.processUnsafe(TransactionReadyState.java:49)
+	at org.neo4j.bolt.v3.runtime.FailSafeBoltStateMachineState.process(FailSafeBoltStateMachineState.java:48)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachineV1.nextState(BoltStateMachineV1.java:144)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachineV1.process(BoltStateMachineV1.java:92)
+	at org.neo4j.bolt.messaging.BoltRequestMessageReader.lambda$doRead$1(BoltRequestMessageReader.java:89)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:191)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:139)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:171)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$scheduleBatchOrHandleError$2(ExecutorBoltScheduler.java:154)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+java.io.FileNotFoundException: /Shakespeare.ttl (Aucun fichier ou dossier de ce type)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at semantics.RDFImport.getInputStream(RDFImport.java:249)
+	at semantics.RDFImport.doImport(RDFImport.java:117)
+	at semantics.RDFImport.importRDF(RDFImport.java:87)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.neo4j.kernel.impl.proc.ReflectiveProcedureCompiler$ReflectiveProcedure.apply(ReflectiveProcedureCompiler.java:666)
+	at org.neo4j.kernel.impl.proc.ProcedureRegistry.callProcedure(ProcedureRegistry.java:219)
+	at org.neo4j.kernel.impl.proc.Procedures.callProcedure(Procedures.java:290)
+	at org.neo4j.kernel.impl.newapi.AllStoreHolder.callProcedure(AllStoreHolder.java:1098)
+	at org.neo4j.kernel.impl.newapi.AllStoreHolder.procedureCallWrite(AllStoreHolder.java:884)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$$anonfun$4.apply(CallSupport.scala:73)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$$anonfun$4.apply(CallSupport.scala:73)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$.callProcedure(CallSupport.scala:167)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$.callReadWriteProcedure(CallSupport.scala:74)
+	at org.neo4j.cypher.internal.runtime.interpreted.TransactionBoundQueryContext.callReadWriteProcedure(TransactionBoundQueryContext.scala:977)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext$$anonfun$callReadWriteProcedure$1.apply(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext$$anonfun$callReadWriteProcedure$1.apply(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslationSupport$class.translateException(ExceptionTranslationSupport.scala:33)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.translateException(ExceptionTranslatingQueryContext.scala:42)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslationSupport$class.translateIterator(ExceptionTranslationSupport.scala:47)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.translateIterator(ExceptionTranslatingQueryContext.scala:42)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.callReadWriteProcedure(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.runtime.EagerReadWriteCallMode.callProcedure(ProcedureCallMode.scala:66)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.procs.ProcedureCallRuntimeResult.executeCall(ProcedureCallRuntimeResult.scala:72)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.procs.ProcedureCallRuntimeResult.<init>(ProcedureCallRuntimeResult.scala:66)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.procs.ProcedureCallExecutionPlan.run(ProcedureCallExecutionPlan.scala:88)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery$$anonfun$execute$3.apply(CypherCurrentCompiler.scala:204)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery$$anonfun$execute$3.apply(CypherCurrentCompiler.scala:190)
+	at org.neo4j.cypher.exceptionHandler$runSafely$.apply(exceptionHandler.scala:89)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery.execute(CypherCurrentCompiler.scala:223)
+	at org.neo4j.cypher.internal.ExecutionEngine.execute(ExecutionEngine.scala:116)
+	at org.neo4j.cypher.internal.javacompat.ExecutionEngine.executeQuery(ExecutionEngine.java:85)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachineV1SPI$BoltResultHandleV1.start(TransactionStateMachineV1SPI.java:189)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine$State.startExecution(TransactionStateMachine.java:506)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine$State$2.run(TransactionStateMachine.java:385)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine.run(TransactionStateMachine.java:110)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine.run(TransactionStateMachine.java:98)
+	at org.neo4j.bolt.v3.runtime.TransactionReadyState.processRunMessage(TransactionReadyState.java:82)
+	at org.neo4j.bolt.v3.runtime.TransactionReadyState.processUnsafe(TransactionReadyState.java:49)
+	at org.neo4j.bolt.v3.runtime.FailSafeBoltStateMachineState.process(FailSafeBoltStateMachineState.java:48)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachineV1.nextState(BoltStateMachineV1.java:144)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachineV1.process(BoltStateMachineV1.java:92)
+	at org.neo4j.bolt.messaging.BoltRequestMessageReader.lambda$doRead$1(BoltRequestMessageReader.java:89)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:191)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:139)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:171)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$scheduleBatchOrHandleError$2(ExecutorBoltScheduler.java:154)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-09-08 13:16:40.643+0000 INFO  Neo4j Server shutdown initiated by request
+2020-09-08 13:16:40.658+0000 INFO  Stopping...
+2020-09-08 13:16:41.070+0000 INFO  Stopped.
+nohup: les entrées sont ignorées
+2020-09-08 13:16:54.065+0000 WARN  You are using an unsupported version of the Java runtime. Please use Oracle(R) Java(TM) Runtime Environment 8, OpenJDK(TM) 8 or IBM J9.
+2020-09-08 13:16:54.073+0000 INFO  ======== Neo4j 3.5.21 ========
+2020-09-08 13:16:54.082+0000 INFO  Starting...
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.collections.impl.utility.ArrayListIterate (file:/home/isa/Bureau/BD/Docs_BDNoR/Neo4J_17/neo4j-community-3.5.21/lib/eclipse-collections-9.2.0.jar) to field java.util.ArrayList.elementData
+WARNING: Please consider reporting this to the maintainers of org.eclipse.collections.impl.utility.ArrayListIterate
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2020-09-08 13:17:03.064+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2020-09-08 13:17:04.342+0000 INFO  Started.
+2020-09-08 13:17:04.436+0000 INFO  Mounted unmanaged extension [semantics.extension] at [/rdf]
+2020-09-08 13:17:05.832+0000 INFO  Remote interface available at http://localhost:7474/
+java.io.FileNotFoundException: /Shakespeare.ttl (Aucun fichier ou dossier de ce type)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at semantics.RDFImport.getInputStream(RDFImport.java:249)
+	at semantics.RDFImport.doImport(RDFImport.java:117)
+	at semantics.RDFImport.importRDF(RDFImport.java:87)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.neo4j.kernel.impl.proc.ReflectiveProcedureCompiler$ReflectiveProcedure.apply(ReflectiveProcedureCompiler.java:666)
+	at org.neo4j.kernel.impl.proc.ProcedureRegistry.callProcedure(ProcedureRegistry.java:219)
+	at org.neo4j.kernel.impl.proc.Procedures.callProcedure(Procedures.java:290)
+	at org.neo4j.kernel.impl.newapi.AllStoreHolder.callProcedure(AllStoreHolder.java:1098)
+	at org.neo4j.kernel.impl.newapi.AllStoreHolder.procedureCallWrite(AllStoreHolder.java:884)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$$anonfun$4.apply(CallSupport.scala:73)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$$anonfun$4.apply(CallSupport.scala:73)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$.callProcedure(CallSupport.scala:167)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$.callReadWriteProcedure(CallSupport.scala:74)
+	at org.neo4j.cypher.internal.runtime.interpreted.TransactionBoundQueryContext.callReadWriteProcedure(TransactionBoundQueryContext.scala:977)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext$$anonfun$callReadWriteProcedure$1.apply(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext$$anonfun$callReadWriteProcedure$1.apply(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslationSupport$class.translateException(ExceptionTranslationSupport.scala:33)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.translateException(ExceptionTranslatingQueryContext.scala:42)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslationSupport$class.translateIterator(ExceptionTranslationSupport.scala:47)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.translateIterator(ExceptionTranslatingQueryContext.scala:42)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.callReadWriteProcedure(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.runtime.EagerReadWriteCallMode.callProcedure(ProcedureCallMode.scala:66)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.procs.ProcedureCallRuntimeResult.executeCall(ProcedureCallRuntimeResult.scala:72)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.procs.ProcedureCallRuntimeResult.<init>(ProcedureCallRuntimeResult.scala:66)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.procs.ProcedureCallExecutionPlan.run(ProcedureCallExecutionPlan.scala:88)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery$$anonfun$execute$3.apply(CypherCurrentCompiler.scala:204)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery$$anonfun$execute$3.apply(CypherCurrentCompiler.scala:190)
+	at org.neo4j.cypher.exceptionHandler$runSafely$.apply(exceptionHandler.scala:89)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery.execute(CypherCurrentCompiler.scala:223)
+	at org.neo4j.cypher.internal.ExecutionEngine.execute(ExecutionEngine.scala:116)
+	at org.neo4j.cypher.internal.javacompat.ExecutionEngine.executeQuery(ExecutionEngine.java:85)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachineV1SPI$BoltResultHandleV1.start(TransactionStateMachineV1SPI.java:189)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine$State.startExecution(TransactionStateMachine.java:506)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine$State$2.run(TransactionStateMachine.java:385)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine.run(TransactionStateMachine.java:110)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine.run(TransactionStateMachine.java:98)
+	at org.neo4j.bolt.v3.runtime.TransactionReadyState.processRunMessage(TransactionReadyState.java:82)
+	at org.neo4j.bolt.v3.runtime.TransactionReadyState.processUnsafe(TransactionReadyState.java:49)
+	at org.neo4j.bolt.v3.runtime.FailSafeBoltStateMachineState.process(FailSafeBoltStateMachineState.java:48)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachineV1.nextState(BoltStateMachineV1.java:144)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachineV1.process(BoltStateMachineV1.java:92)
+	at org.neo4j.bolt.messaging.BoltRequestMessageReader.lambda$doRead$1(BoltRequestMessageReader.java:89)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:191)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:139)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:171)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$scheduleBatchOrHandleError$2(ExecutorBoltScheduler.java:154)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+java.net.UnknownHostException: Shakespeare.ttl
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at java.base/sun.net.ftp.impl.FtpClient.doConnect(FtpClient.java:961)
+	at java.base/sun.net.ftp.impl.FtpClient.tryConnect(FtpClient.java:923)
+	at java.base/sun.net.ftp.impl.FtpClient.connect(FtpClient.java:1018)
+	at java.base/sun.net.ftp.impl.FtpClient.connect(FtpClient.java:1004)
+	at java.base/sun.net.www.protocol.ftp.FtpURLConnection.connect(FtpURLConnection.java:312)
+	at java.base/sun.net.www.protocol.ftp.FtpURLConnection.getInputStream(FtpURLConnection.java:418)
+	at semantics.RDFImport.getInputStream(RDFImport.java:249)
+	at semantics.RDFImport.doImport(RDFImport.java:117)
+	at semantics.RDFImport.importRDF(RDFImport.java:87)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.neo4j.kernel.impl.proc.ReflectiveProcedureCompiler$ReflectiveProcedure.apply(ReflectiveProcedureCompiler.java:666)
+	at org.neo4j.kernel.impl.proc.ProcedureRegistry.callProcedure(ProcedureRegistry.java:219)
+	at org.neo4j.kernel.impl.proc.Procedures.callProcedure(Procedures.java:290)
+	at org.neo4j.kernel.impl.newapi.AllStoreHolder.callProcedure(AllStoreHolder.java:1098)
+	at org.neo4j.kernel.impl.newapi.AllStoreHolder.procedureCallWrite(AllStoreHolder.java:884)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$$anonfun$4.apply(CallSupport.scala:73)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$$anonfun$4.apply(CallSupport.scala:73)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$.callProcedure(CallSupport.scala:167)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$.callReadWriteProcedure(CallSupport.scala:74)
+	at org.neo4j.cypher.internal.runtime.interpreted.TransactionBoundQueryContext.callReadWriteProcedure(TransactionBoundQueryContext.scala:977)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext$$anonfun$callReadWriteProcedure$1.apply(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext$$anonfun$callReadWriteProcedure$1.apply(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslationSupport$class.translateException(ExceptionTranslationSupport.scala:33)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.translateException(ExceptionTranslatingQueryContext.scala:42)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslationSupport$class.translateIterator(ExceptionTranslationSupport.scala:47)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.translateIterator(ExceptionTranslatingQueryContext.scala:42)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.callReadWriteProcedure(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.runtime.EagerReadWriteCallMode.callProcedure(ProcedureCallMode.scala:66)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.procs.ProcedureCallRuntimeResult.executeCall(ProcedureCallRuntimeResult.scala:72)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.procs.ProcedureCallRuntimeResult.<init>(ProcedureCallRuntimeResult.scala:66)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.procs.ProcedureCallExecutionPlan.run(ProcedureCallExecutionPlan.scala:88)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery$$anonfun$execute$3.apply(CypherCurrentCompiler.scala:204)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery$$anonfun$execute$3.apply(CypherCurrentCompiler.scala:190)
+	at org.neo4j.cypher.exceptionHandler$runSafely$.apply(exceptionHandler.scala:89)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery.execute(CypherCurrentCompiler.scala:223)
+	at org.neo4j.cypher.internal.ExecutionEngine.execute(ExecutionEngine.scala:116)
+	at org.neo4j.cypher.internal.javacompat.ExecutionEngine.executeQuery(ExecutionEngine.java:85)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachineV1SPI$BoltResultHandleV1.start(TransactionStateMachineV1SPI.java:189)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine$State.startExecution(TransactionStateMachine.java:506)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine$State$2.run(TransactionStateMachine.java:385)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine.run(TransactionStateMachine.java:110)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine.run(TransactionStateMachine.java:98)
+	at org.neo4j.bolt.v3.runtime.TransactionReadyState.processRunMessage(TransactionReadyState.java:82)
+	at org.neo4j.bolt.v3.runtime.TransactionReadyState.processUnsafe(TransactionReadyState.java:49)
+	at org.neo4j.bolt.v3.runtime.FailSafeBoltStateMachineState.process(FailSafeBoltStateMachineState.java:48)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachineV1.nextState(BoltStateMachineV1.java:144)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachineV1.process(BoltStateMachineV1.java:92)
+	at org.neo4j.bolt.messaging.BoltRequestMessageReader.lambda$doRead$1(BoltRequestMessageReader.java:89)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:191)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:139)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:171)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$scheduleBatchOrHandleError$2(ExecutorBoltScheduler.java:154)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+java.io.FileNotFoundException: /Shakespeare.ttl (Aucun fichier ou dossier de ce type)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at semantics.RDFImport.getInputStream(RDFImport.java:249)
+	at semantics.RDFImport.doImport(RDFImport.java:117)
+	at semantics.RDFImport.importRDF(RDFImport.java:87)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.neo4j.kernel.impl.proc.ReflectiveProcedureCompiler$ReflectiveProcedure.apply(ReflectiveProcedureCompiler.java:666)
+	at org.neo4j.kernel.impl.proc.ProcedureRegistry.callProcedure(ProcedureRegistry.java:219)
+	at org.neo4j.kernel.impl.proc.Procedures.callProcedure(Procedures.java:290)
+	at org.neo4j.kernel.impl.newapi.AllStoreHolder.callProcedure(AllStoreHolder.java:1098)
+	at org.neo4j.kernel.impl.newapi.AllStoreHolder.procedureCallWrite(AllStoreHolder.java:884)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$$anonfun$4.apply(CallSupport.scala:73)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$$anonfun$4.apply(CallSupport.scala:73)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$.callProcedure(CallSupport.scala:167)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$.callReadWriteProcedure(CallSupport.scala:74)
+	at org.neo4j.cypher.internal.runtime.interpreted.TransactionBoundQueryContext.callReadWriteProcedure(TransactionBoundQueryContext.scala:977)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext$$anonfun$callReadWriteProcedure$1.apply(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext$$anonfun$callReadWriteProcedure$1.apply(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslationSupport$class.translateException(ExceptionTranslationSupport.scala:33)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.translateException(ExceptionTranslatingQueryContext.scala:42)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslationSupport$class.translateIterator(ExceptionTranslationSupport.scala:47)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.translateIterator(ExceptionTranslatingQueryContext.scala:42)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.callReadWriteProcedure(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.runtime.EagerReadWriteCallMode.callProcedure(ProcedureCallMode.scala:66)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.procs.ProcedureCallRuntimeResult.executeCall(ProcedureCallRuntimeResult.scala:72)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.procs.ProcedureCallRuntimeResult.<init>(ProcedureCallRuntimeResult.scala:66)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.procs.ProcedureCallExecutionPlan.run(ProcedureCallExecutionPlan.scala:88)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery$$anonfun$execute$3.apply(CypherCurrentCompiler.scala:204)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery$$anonfun$execute$3.apply(CypherCurrentCompiler.scala:190)
+	at org.neo4j.cypher.exceptionHandler$runSafely$.apply(exceptionHandler.scala:89)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery.execute(CypherCurrentCompiler.scala:223)
+	at org.neo4j.cypher.internal.ExecutionEngine.execute(ExecutionEngine.scala:116)
+	at org.neo4j.cypher.internal.javacompat.ExecutionEngine.executeQuery(ExecutionEngine.java:85)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachineV1SPI$BoltResultHandleV1.start(TransactionStateMachineV1SPI.java:189)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine$State.startExecution(TransactionStateMachine.java:506)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine$State$2.run(TransactionStateMachine.java:385)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine.run(TransactionStateMachine.java:110)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine.run(TransactionStateMachine.java:98)
+	at org.neo4j.bolt.v3.runtime.TransactionReadyState.processRunMessage(TransactionReadyState.java:82)
+	at org.neo4j.bolt.v3.runtime.TransactionReadyState.processUnsafe(TransactionReadyState.java:49)
+	at org.neo4j.bolt.v3.runtime.FailSafeBoltStateMachineState.process(FailSafeBoltStateMachineState.java:48)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachineV1.nextState(BoltStateMachineV1.java:144)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachineV1.process(BoltStateMachineV1.java:92)
+	at org.neo4j.bolt.messaging.BoltRequestMessageReader.lambda$doRead$1(BoltRequestMessageReader.java:89)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:191)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:139)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:171)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$scheduleBatchOrHandleError$2(ExecutorBoltScheduler.java:154)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+java.io.FileNotFoundException: /Shakespeare.ttl (Aucun fichier ou dossier de ce type)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at semantics.RDFImport.getInputStream(RDFImport.java:249)
+	at semantics.RDFImport.doImport(RDFImport.java:117)
+	at semantics.RDFImport.importRDF(RDFImport.java:87)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.neo4j.kernel.impl.proc.ReflectiveProcedureCompiler$ReflectiveProcedure.apply(ReflectiveProcedureCompiler.java:666)
+	at org.neo4j.kernel.impl.proc.ProcedureRegistry.callProcedure(ProcedureRegistry.java:219)
+	at org.neo4j.kernel.impl.proc.Procedures.callProcedure(Procedures.java:290)
+	at org.neo4j.kernel.impl.newapi.AllStoreHolder.callProcedure(AllStoreHolder.java:1098)
+	at org.neo4j.kernel.impl.newapi.AllStoreHolder.procedureCallWrite(AllStoreHolder.java:884)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$$anonfun$4.apply(CallSupport.scala:73)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$$anonfun$4.apply(CallSupport.scala:73)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$.callProcedure(CallSupport.scala:167)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$.callReadWriteProcedure(CallSupport.scala:74)
+	at org.neo4j.cypher.internal.runtime.interpreted.TransactionBoundQueryContext.callReadWriteProcedure(TransactionBoundQueryContext.scala:977)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext$$anonfun$callReadWriteProcedure$1.apply(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext$$anonfun$callReadWriteProcedure$1.apply(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslationSupport$class.translateException(ExceptionTranslationSupport.scala:33)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.translateException(ExceptionTranslatingQueryContext.scala:42)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslationSupport$class.translateIterator(ExceptionTranslationSupport.scala:47)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.translateIterator(ExceptionTranslatingQueryContext.scala:42)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.callReadWriteProcedure(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.runtime.EagerReadWriteCallMode.callProcedure(ProcedureCallMode.scala:66)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.procs.ProcedureCallRuntimeResult.executeCall(ProcedureCallRuntimeResult.scala:72)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.procs.ProcedureCallRuntimeResult.<init>(ProcedureCallRuntimeResult.scala:66)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.procs.ProcedureCallExecutionPlan.run(ProcedureCallExecutionPlan.scala:88)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery$$anonfun$execute$3.apply(CypherCurrentCompiler.scala:204)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery$$anonfun$execute$3.apply(CypherCurrentCompiler.scala:190)
+	at org.neo4j.cypher.exceptionHandler$runSafely$.apply(exceptionHandler.scala:89)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery.execute(CypherCurrentCompiler.scala:223)
+	at org.neo4j.cypher.internal.ExecutionEngine.execute(ExecutionEngine.scala:116)
+	at org.neo4j.cypher.internal.javacompat.ExecutionEngine.executeQuery(ExecutionEngine.java:85)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachineV1SPI$BoltResultHandleV1.start(TransactionStateMachineV1SPI.java:189)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine$State.startExecution(TransactionStateMachine.java:506)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine$State$2.run(TransactionStateMachine.java:385)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine.run(TransactionStateMachine.java:110)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine.run(TransactionStateMachine.java:98)
+	at org.neo4j.bolt.v3.runtime.TransactionReadyState.processRunMessage(TransactionReadyState.java:82)
+	at org.neo4j.bolt.v3.runtime.TransactionReadyState.processUnsafe(TransactionReadyState.java:49)
+	at org.neo4j.bolt.v3.runtime.FailSafeBoltStateMachineState.process(FailSafeBoltStateMachineState.java:48)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachineV1.nextState(BoltStateMachineV1.java:144)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachineV1.process(BoltStateMachineV1.java:92)
+	at org.neo4j.bolt.messaging.BoltRequestMessageReader.lambda$doRead$1(BoltRequestMessageReader.java:89)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:191)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:139)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:171)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$scheduleBatchOrHandleError$2(ExecutorBoltScheduler.java:154)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+java.net.UnknownHostException: Shakespeare.ttl
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at java.base/sun.net.ftp.impl.FtpClient.doConnect(FtpClient.java:961)
+	at java.base/sun.net.ftp.impl.FtpClient.tryConnect(FtpClient.java:923)
+	at java.base/sun.net.ftp.impl.FtpClient.connect(FtpClient.java:1018)
+	at java.base/sun.net.ftp.impl.FtpClient.connect(FtpClient.java:1004)
+	at java.base/sun.net.www.protocol.ftp.FtpURLConnection.connect(FtpURLConnection.java:312)
+	at java.base/sun.net.www.protocol.ftp.FtpURLConnection.getInputStream(FtpURLConnection.java:418)
+	at semantics.RDFImport.getInputStream(RDFImport.java:249)
+	at semantics.RDFImport.doImport(RDFImport.java:117)
+	at semantics.RDFImport.importRDF(RDFImport.java:87)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.neo4j.kernel.impl.proc.ReflectiveProcedureCompiler$ReflectiveProcedure.apply(ReflectiveProcedureCompiler.java:666)
+	at org.neo4j.kernel.impl.proc.ProcedureRegistry.callProcedure(ProcedureRegistry.java:219)
+	at org.neo4j.kernel.impl.proc.Procedures.callProcedure(Procedures.java:290)
+	at org.neo4j.kernel.impl.newapi.AllStoreHolder.callProcedure(AllStoreHolder.java:1098)
+	at org.neo4j.kernel.impl.newapi.AllStoreHolder.procedureCallWrite(AllStoreHolder.java:884)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$$anonfun$4.apply(CallSupport.scala:73)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$$anonfun$4.apply(CallSupport.scala:73)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$.callProcedure(CallSupport.scala:167)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$.callReadWriteProcedure(CallSupport.scala:74)
+	at org.neo4j.cypher.internal.runtime.interpreted.TransactionBoundQueryContext.callReadWriteProcedure(TransactionBoundQueryContext.scala:977)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext$$anonfun$callReadWriteProcedure$1.apply(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext$$anonfun$callReadWriteProcedure$1.apply(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslationSupport$class.translateException(ExceptionTranslationSupport.scala:33)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.translateException(ExceptionTranslatingQueryContext.scala:42)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslationSupport$class.translateIterator(ExceptionTranslationSupport.scala:47)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.translateIterator(ExceptionTranslatingQueryContext.scala:42)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.callReadWriteProcedure(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.runtime.EagerReadWriteCallMode.callProcedure(ProcedureCallMode.scala:66)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.procs.ProcedureCallRuntimeResult.executeCall(ProcedureCallRuntimeResult.scala:72)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.procs.ProcedureCallRuntimeResult.<init>(ProcedureCallRuntimeResult.scala:66)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.procs.ProcedureCallExecutionPlan.run(ProcedureCallExecutionPlan.scala:88)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery$$anonfun$execute$3.apply(CypherCurrentCompiler.scala:204)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery$$anonfun$execute$3.apply(CypherCurrentCompiler.scala:190)
+	at org.neo4j.cypher.exceptionHandler$runSafely$.apply(exceptionHandler.scala:89)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery.execute(CypherCurrentCompiler.scala:223)
+	at org.neo4j.cypher.internal.ExecutionEngine.execute(ExecutionEngine.scala:116)
+	at org.neo4j.cypher.internal.javacompat.ExecutionEngine.executeQuery(ExecutionEngine.java:85)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachineV1SPI$BoltResultHandleV1.start(TransactionStateMachineV1SPI.java:189)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine$State.startExecution(TransactionStateMachine.java:506)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine$State$2.run(TransactionStateMachine.java:385)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine.run(TransactionStateMachine.java:110)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine.run(TransactionStateMachine.java:98)
+	at org.neo4j.bolt.v3.runtime.TransactionReadyState.processRunMessage(TransactionReadyState.java:82)
+	at org.neo4j.bolt.v3.runtime.TransactionReadyState.processUnsafe(TransactionReadyState.java:49)
+	at org.neo4j.bolt.v3.runtime.FailSafeBoltStateMachineState.process(FailSafeBoltStateMachineState.java:48)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachineV1.nextState(BoltStateMachineV1.java:144)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachineV1.process(BoltStateMachineV1.java:92)
+	at org.neo4j.bolt.messaging.BoltRequestMessageReader.lambda$doRead$1(BoltRequestMessageReader.java:89)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:191)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:139)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:171)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$scheduleBatchOrHandleError$2(ExecutorBoltScheduler.java:154)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+org.eclipse.rdf4j.rio.RDFParseException: IRI included an unencoded space: '32' [line 205]
+	at org.eclipse.rdf4j.rio.helpers.RDFParserHelper.reportError(RDFParserHelper.java:265)
+	at org.eclipse.rdf4j.rio.helpers.AbstractRDFParser.reportError(AbstractRDFParser.java:629)
+	at org.eclipse.rdf4j.rio.turtle.TurtleParser.reportError(TurtleParser.java:1297)
+	at org.eclipse.rdf4j.rio.turtle.TurtleParser.parseURI(TurtleParser.java:902)
+	at org.eclipse.rdf4j.rio.turtle.TurtleParser.parseValue(TurtleParser.java:575)
+	at org.eclipse.rdf4j.rio.turtle.TurtleParser.parseObject(TurtleParser.java:461)
+	at org.eclipse.rdf4j.rio.turtle.TurtleParser.parseObjectList(TurtleParser.java:389)
+	at org.eclipse.rdf4j.rio.turtle.TurtleParser.parsePredicateObjectList(TurtleParser.java:362)
+	at org.eclipse.rdf4j.rio.turtle.TurtleParser.parseTriples(TurtleParser.java:349)
+	at org.eclipse.rdf4j.rio.turtle.TurtleParser.parseStatement(TurtleParser.java:216)
+	at org.eclipse.rdf4j.rio.turtle.TurtleParser.parse(TurtleParser.java:178)
+	at org.eclipse.rdf4j.rio.turtle.TurtleParser.parse(TurtleParser.java:130)
+	at semantics.RDFImport.parseRDF(RDFImport.java:226)
+	at semantics.RDFImport.doImport(RDFImport.java:117)
+	at semantics.RDFImport.importRDF(RDFImport.java:87)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.neo4j.kernel.impl.proc.ReflectiveProcedureCompiler$ReflectiveProcedure.apply(ReflectiveProcedureCompiler.java:666)
+	at org.neo4j.kernel.impl.proc.ProcedureRegistry.callProcedure(ProcedureRegistry.java:219)
+	at org.neo4j.kernel.impl.proc.Procedures.callProcedure(Procedures.java:290)
+	at org.neo4j.kernel.impl.newapi.AllStoreHolder.callProcedure(AllStoreHolder.java:1098)
+	at org.neo4j.kernel.impl.newapi.AllStoreHolder.procedureCallWrite(AllStoreHolder.java:884)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$$anonfun$4.apply(CallSupport.scala:73)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$$anonfun$4.apply(CallSupport.scala:73)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$.callProcedure(CallSupport.scala:167)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$.callReadWriteProcedure(CallSupport.scala:74)
+	at org.neo4j.cypher.internal.runtime.interpreted.TransactionBoundQueryContext.callReadWriteProcedure(TransactionBoundQueryContext.scala:977)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext$$anonfun$callReadWriteProcedure$1.apply(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext$$anonfun$callReadWriteProcedure$1.apply(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslationSupport$class.translateException(ExceptionTranslationSupport.scala:33)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.translateException(ExceptionTranslatingQueryContext.scala:42)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslationSupport$class.translateIterator(ExceptionTranslationSupport.scala:47)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.translateIterator(ExceptionTranslatingQueryContext.scala:42)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.callReadWriteProcedure(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.runtime.EagerReadWriteCallMode.callProcedure(ProcedureCallMode.scala:66)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.procs.ProcedureCallRuntimeResult.executeCall(ProcedureCallRuntimeResult.scala:72)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.procs.ProcedureCallRuntimeResult.<init>(ProcedureCallRuntimeResult.scala:66)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.procs.ProcedureCallExecutionPlan.run(ProcedureCallExecutionPlan.scala:88)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery$$anonfun$execute$3.apply(CypherCurrentCompiler.scala:204)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery$$anonfun$execute$3.apply(CypherCurrentCompiler.scala:190)
+	at org.neo4j.cypher.exceptionHandler$runSafely$.apply(exceptionHandler.scala:89)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery.execute(CypherCurrentCompiler.scala:223)
+	at org.neo4j.cypher.internal.ExecutionEngine.execute(ExecutionEngine.scala:116)
+	at org.neo4j.cypher.internal.javacompat.ExecutionEngine.executeQuery(ExecutionEngine.java:85)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachineV1SPI$BoltResultHandleV1.start(TransactionStateMachineV1SPI.java:189)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine$State.startExecution(TransactionStateMachine.java:506)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine$State$2.run(TransactionStateMachine.java:385)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine.run(TransactionStateMachine.java:110)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine.run(TransactionStateMachine.java:98)
+	at org.neo4j.bolt.v3.runtime.TransactionReadyState.processRunMessage(TransactionReadyState.java:82)
+	at org.neo4j.bolt.v3.runtime.TransactionReadyState.processUnsafe(TransactionReadyState.java:49)
+	at org.neo4j.bolt.v3.runtime.FailSafeBoltStateMachineState.process(FailSafeBoltStateMachineState.java:48)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachineV1.nextState(BoltStateMachineV1.java:144)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachineV1.process(BoltStateMachineV1.java:92)
+	at org.neo4j.bolt.messaging.BoltRequestMessageReader.lambda$doRead$1(BoltRequestMessageReader.java:89)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:191)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:139)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:171)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$scheduleBatchOrHandleError$2(ExecutorBoltScheduler.java:154)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-09-08 19:09:17.620+0000 INFO  Neo4j Server shutdown initiated by request
+2020-09-08 19:09:17.639+0000 INFO  Stopping...
+2020-09-08 19:09:18.059+0000 INFO  Stopped.
+nohup: les entrées sont ignorées
+2020-09-09 19:20:28.023+0000 WARN  You are using an unsupported version of the Java runtime. Please use Oracle(R) Java(TM) Runtime Environment 8, OpenJDK(TM) 8 or IBM J9.
+2020-09-09 19:20:28.063+0000 INFO  ======== Neo4j 3.5.21 ========
+2020-09-09 19:20:28.080+0000 INFO  Starting...
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.collections.impl.utility.ArrayListIterate (file:/home/isa/Bureau/BD/Docs_BDNoR/Neo4J_17/neo4j-community-3.5.21/lib/eclipse-collections-9.2.0.jar) to field java.util.ArrayList.elementData
+WARNING: Please consider reporting this to the maintainers of org.eclipse.collections.impl.utility.ArrayListIterate
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2020-09-09 19:20:44.248+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2020-09-09 19:20:47.262+0000 INFO  Started.
+2020-09-09 19:20:47.587+0000 INFO  Mounted unmanaged extension [semantics.extension] at [/rdf]
+2020-09-09 19:20:49.398+0000 INFO  Remote interface available at http://localhost:7474/
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+org.eclipse.rdf4j.rio.RDFParseException: IRI included an unencoded space:   [line 1]
+	at org.eclipse.rdf4j.rio.helpers.RDFParserHelper.reportError(RDFParserHelper.java:265)
+	at org.eclipse.rdf4j.rio.helpers.AbstractRDFParser.reportError(AbstractRDFParser.java:629)
+	at org.eclipse.rdf4j.rio.ntriples.NTriplesParser.reportError(NTriplesParser.java:600)
+	at org.eclipse.rdf4j.rio.ntriples.NTriplesParser.parseUriRef(NTriplesParser.java:376)
+	at org.eclipse.rdf4j.rio.ntriples.NTriplesParser.parseSubject(NTriplesParser.java:304)
+	at org.eclipse.rdf4j.rio.ntriples.NTriplesParser.parseTriple(NTriplesParser.java:252)
+	at org.eclipse.rdf4j.rio.ntriples.NTriplesParser.parse(NTriplesParser.java:160)
+	at org.eclipse.rdf4j.rio.ntriples.NTriplesParser.parse(NTriplesParser.java:109)
+	at semantics.RDFImport.parseRDF(RDFImport.java:226)
+	at semantics.RDFImport.doImport(RDFImport.java:117)
+	at semantics.RDFImport.importRDF(RDFImport.java:87)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.neo4j.kernel.impl.proc.ReflectiveProcedureCompiler$ReflectiveProcedure.apply(ReflectiveProcedureCompiler.java:666)
+	at org.neo4j.kernel.impl.proc.ProcedureRegistry.callProcedure(ProcedureRegistry.java:219)
+	at org.neo4j.kernel.impl.proc.Procedures.callProcedure(Procedures.java:290)
+	at org.neo4j.kernel.impl.newapi.AllStoreHolder.callProcedure(AllStoreHolder.java:1098)
+	at org.neo4j.kernel.impl.newapi.AllStoreHolder.procedureCallWrite(AllStoreHolder.java:884)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$$anonfun$4.apply(CallSupport.scala:73)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$$anonfun$4.apply(CallSupport.scala:73)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$.callProcedure(CallSupport.scala:167)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$.callReadWriteProcedure(CallSupport.scala:74)
+	at org.neo4j.cypher.internal.runtime.interpreted.TransactionBoundQueryContext.callReadWriteProcedure(TransactionBoundQueryContext.scala:977)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext$$anonfun$callReadWriteProcedure$1.apply(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext$$anonfun$callReadWriteProcedure$1.apply(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslationSupport$class.translateException(ExceptionTranslationSupport.scala:33)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.translateException(ExceptionTranslatingQueryContext.scala:42)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslationSupport$class.translateIterator(ExceptionTranslationSupport.scala:47)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.translateIterator(ExceptionTranslatingQueryContext.scala:42)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.callReadWriteProcedure(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.runtime.interpreted.DelegatingQueryContext.callReadWriteProcedure(DelegatingQueryContext.scala:253)
+	at org.neo4j.cypher.internal.runtime.EagerReadWriteCallMode.callProcedure(ProcedureCallMode.scala:66)
+	at org.neo4j.cypher.internal.runtime.interpreted.pipes.ProcedureCallPipe.org$neo4j$cypher$internal$runtime$interpreted$pipes$ProcedureCallPipe$$call(ProcedureCallPipe.scala:90)
+	at org.neo4j.cypher.internal.runtime.interpreted.pipes.ProcedureCallPipe$$anon$$$$e6882d5096c8b8441ac36d3c0cc459e$$$$ateResultsByAppending$1.apply(ProcedureCallPipe.scala:73)
+	at org.neo4j.cypher.internal.runtime.interpreted.pipes.ProcedureCallPipe$$anon$$$$e6882d5096c8b8441ac36d3c0cc459e$$$$ateResultsByAppending$1.apply(ProcedureCallPipe.scala:71)
+	at scala.collection.Iterator$$anon$12.nextCur(Iterator.scala:435)
+	at scala.collection.Iterator$$anon$12.hasNext(Iterator.scala:441)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:409)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:409)
+	at org.neo4j.cypher.internal.runtime.RuntimeJavaValueConverter$feedIteratorToVisitable.accept(RuntimeJavaValueConverter.scala:53)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.PipeExecutionResult.accept(PipeExecutionResult.scala:76)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.StandardInternalExecutionResult.materializeResult(StandardInternalExecutionResult.scala:77)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.StandardInternalExecutionResult.initiate(StandardInternalExecutionResult.scala:59)
+	at org.neo4j.cypher.internal.compatibility.ClosingExecutionResult$$anonfun$initiate$1.apply$mcV$sp(ClosingExecutionResult.scala:65)
+	at org.neo4j.cypher.internal.compatibility.ClosingExecutionResult$$anonfun$initiate$1.apply(ClosingExecutionResult.scala:65)
+	at org.neo4j.cypher.internal.compatibility.ClosingExecutionResult$$anonfun$initiate$1.apply(ClosingExecutionResult.scala:65)
+	at org.neo4j.cypher.exceptionHandler$runSafely$.apply(exceptionHandler.scala:89)
+	at org.neo4j.cypher.internal.compatibility.ClosingExecutionResult.org$neo4j$cypher$internal$compatibility$ClosingExecutionResult$$safely(ClosingExecutionResult.scala:167)
+	at org.neo4j.cypher.internal.compatibility.ClosingExecutionResult.initiate(ClosingExecutionResult.scala:65)
+	at org.neo4j.cypher.internal.compatibility.ClosingExecutionResult$.wrapAndInitiate(ClosingExecutionResult.scala:214)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery$$anonfun$execute$3.apply(CypherCurrentCompiler.scala:216)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery$$anonfun$execute$3.apply(CypherCurrentCompiler.scala:190)
+	at org.neo4j.cypher.exceptionHandler$runSafely$.apply(exceptionHandler.scala:89)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery.execute(CypherCurrentCompiler.scala:223)
+	at org.neo4j.cypher.internal.ExecutionEngine.execute(ExecutionEngine.scala:116)
+	at org.neo4j.cypher.internal.javacompat.ExecutionEngine.executeQuery(ExecutionEngine.java:85)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachineV1SPI$BoltResultHandleV1.start(TransactionStateMachineV1SPI.java:189)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine$State.startExecution(TransactionStateMachine.java:506)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine$State$2.run(TransactionStateMachine.java:385)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine.run(TransactionStateMachine.java:110)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine.run(TransactionStateMachine.java:98)
+	at org.neo4j.bolt.v3.runtime.TransactionReadyState.processRunMessage(TransactionReadyState.java:82)
+	at org.neo4j.bolt.v3.runtime.TransactionReadyState.processUnsafe(TransactionReadyState.java:49)
+	at org.neo4j.bolt.v3.runtime.FailSafeBoltStateMachineState.process(FailSafeBoltStateMachineState.java:48)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachineV1.nextState(BoltStateMachineV1.java:144)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachineV1.process(BoltStateMachineV1.java:92)
+	at org.neo4j.bolt.messaging.BoltRequestMessageReader.lambda$doRead$1(BoltRequestMessageReader.java:89)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:191)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:139)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:171)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$scheduleBatchOrHandleError$2(ExecutorBoltScheduler.java:154)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+org.eclipse.rdf4j.rio.RDFParseException: IRI included an unencoded space:   [line 1]
+	at org.eclipse.rdf4j.rio.helpers.RDFParserHelper.reportError(RDFParserHelper.java:265)
+	at org.eclipse.rdf4j.rio.helpers.AbstractRDFParser.reportError(AbstractRDFParser.java:629)
+	at org.eclipse.rdf4j.rio.ntriples.NTriplesParser.reportError(NTriplesParser.java:600)
+	at org.eclipse.rdf4j.rio.ntriples.NTriplesParser.parseUriRef(NTriplesParser.java:376)
+	at org.eclipse.rdf4j.rio.ntriples.NTriplesParser.parseSubject(NTriplesParser.java:304)
+	at org.eclipse.rdf4j.rio.ntriples.NTriplesParser.parseTriple(NTriplesParser.java:252)
+	at org.eclipse.rdf4j.rio.ntriples.NTriplesParser.parse(NTriplesParser.java:160)
+	at org.eclipse.rdf4j.rio.ntriples.NTriplesParser.parse(NTriplesParser.java:109)
+	at semantics.RDFImport.parseRDF(RDFImport.java:226)
+	at semantics.RDFImport.doImport(RDFImport.java:117)
+	at semantics.RDFImport.importRDF(RDFImport.java:87)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.neo4j.kernel.impl.proc.ReflectiveProcedureCompiler$ReflectiveProcedure.apply(ReflectiveProcedureCompiler.java:666)
+	at org.neo4j.kernel.impl.proc.ProcedureRegistry.callProcedure(ProcedureRegistry.java:219)
+	at org.neo4j.kernel.impl.proc.Procedures.callProcedure(Procedures.java:290)
+	at org.neo4j.kernel.impl.newapi.AllStoreHolder.callProcedure(AllStoreHolder.java:1098)
+	at org.neo4j.kernel.impl.newapi.AllStoreHolder.procedureCallWrite(AllStoreHolder.java:884)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$$anonfun$4.apply(CallSupport.scala:73)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$$anonfun$4.apply(CallSupport.scala:73)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$.callProcedure(CallSupport.scala:167)
+	at org.neo4j.cypher.internal.runtime.interpreted.CallSupport$.callReadWriteProcedure(CallSupport.scala:74)
+	at org.neo4j.cypher.internal.runtime.interpreted.TransactionBoundQueryContext.callReadWriteProcedure(TransactionBoundQueryContext.scala:977)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext$$anonfun$callReadWriteProcedure$1.apply(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext$$anonfun$callReadWriteProcedure$1.apply(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslationSupport$class.translateException(ExceptionTranslationSupport.scala:33)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.translateException(ExceptionTranslatingQueryContext.scala:42)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslationSupport$class.translateIterator(ExceptionTranslationSupport.scala:47)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.translateIterator(ExceptionTranslatingQueryContext.scala:42)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.callReadWriteProcedure(ExceptionTranslatingQueryContext.scala:169)
+	at org.neo4j.cypher.internal.runtime.interpreted.DelegatingQueryContext.callReadWriteProcedure(DelegatingQueryContext.scala:253)
+	at org.neo4j.cypher.internal.runtime.EagerReadWriteCallMode.callProcedure(ProcedureCallMode.scala:66)
+	at org.neo4j.cypher.internal.runtime.interpreted.pipes.ProcedureCallPipe.org$neo4j$cypher$internal$runtime$interpreted$pipes$ProcedureCallPipe$$call(ProcedureCallPipe.scala:90)
+	at org.neo4j.cypher.internal.runtime.interpreted.pipes.ProcedureCallPipe$$anon$$$$e6882d5096c8b8441ac36d3c0cc459e$$$$ateResultsByAppending$1.apply(ProcedureCallPipe.scala:73)
+	at org.neo4j.cypher.internal.runtime.interpreted.pipes.ProcedureCallPipe$$anon$$$$e6882d5096c8b8441ac36d3c0cc459e$$$$ateResultsByAppending$1.apply(ProcedureCallPipe.scala:71)
+	at scala.collection.Iterator$$anon$12.nextCur(Iterator.scala:435)
+	at scala.collection.Iterator$$anon$12.hasNext(Iterator.scala:441)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:409)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:409)
+	at org.neo4j.cypher.internal.runtime.RuntimeJavaValueConverter$feedIteratorToVisitable.accept(RuntimeJavaValueConverter.scala:53)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.PipeExecutionResult.accept(PipeExecutionResult.scala:76)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.StandardInternalExecutionResult.materializeResult(StandardInternalExecutionResult.scala:77)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.StandardInternalExecutionResult.initiate(StandardInternalExecutionResult.scala:59)
+	at org.neo4j.cypher.internal.compatibility.ClosingExecutionResult$$anonfun$initiate$1.apply$mcV$sp(ClosingExecutionResult.scala:65)
+	at org.neo4j.cypher.internal.compatibility.ClosingExecutionResult$$anonfun$initiate$1.apply(ClosingExecutionResult.scala:65)
+	at org.neo4j.cypher.internal.compatibility.ClosingExecutionResult$$anonfun$initiate$1.apply(ClosingExecutionResult.scala:65)
+	at org.neo4j.cypher.exceptionHandler$runSafely$.apply(exceptionHandler.scala:89)
+	at org.neo4j.cypher.internal.compatibility.ClosingExecutionResult.org$neo4j$cypher$internal$compatibility$ClosingExecutionResult$$safely(ClosingExecutionResult.scala:167)
+	at org.neo4j.cypher.internal.compatibility.ClosingExecutionResult.initiate(ClosingExecutionResult.scala:65)
+	at org.neo4j.cypher.internal.compatibility.ClosingExecutionResult$.wrapAndInitiate(ClosingExecutionResult.scala:214)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery$$anonfun$execute$3.apply(CypherCurrentCompiler.scala:216)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery$$anonfun$execute$3.apply(CypherCurrentCompiler.scala:190)
+	at org.neo4j.cypher.exceptionHandler$runSafely$.apply(exceptionHandler.scala:89)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery.execute(CypherCurrentCompiler.scala:223)
+	at org.neo4j.cypher.internal.ExecutionEngine.execute(ExecutionEngine.scala:116)
+	at org.neo4j.cypher.internal.javacompat.ExecutionEngine.executeQuery(ExecutionEngine.java:85)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachineV1SPI$BoltResultHandleV1.start(TransactionStateMachineV1SPI.java:189)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine$State.startExecution(TransactionStateMachine.java:506)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine$State$2.run(TransactionStateMachine.java:385)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine.run(TransactionStateMachine.java:110)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine.run(TransactionStateMachine.java:98)
+	at org.neo4j.bolt.v3.runtime.TransactionReadyState.processRunMessage(TransactionReadyState.java:82)
+	at org.neo4j.bolt.v3.runtime.TransactionReadyState.processUnsafe(TransactionReadyState.java:49)
+	at org.neo4j.bolt.v3.runtime.FailSafeBoltStateMachineState.process(FailSafeBoltStateMachineState.java:48)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachineV1.nextState(BoltStateMachineV1.java:144)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachineV1.process(BoltStateMachineV1.java:92)
+	at org.neo4j.bolt.messaging.BoltRequestMessageReader.lambda$doRead$1(BoltRequestMessageReader.java:89)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:191)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:139)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:171)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$scheduleBatchOrHandleError$2(ExecutorBoltScheduler.java:154)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-09-09 19:55:38.342+0000 INFO  serialization from media type in request: */*
+2020-09-09 19:55:38.343+0000 INFO  Unrecognized or undefined serialization. Defaulting to Turtle serialization
+2020-09-09 19:59:45.993+0000 INFO  serialization from media type in request: */*
+2020-09-09 19:59:45.993+0000 INFO  Unrecognized or undefined serialization. Defaulting to Turtle serialization
+2020-09-09 20:02:42.460+0000 INFO  Neo4j Server shutdown initiated by request
+2020-09-09 20:02:42.495+0000 INFO  Stopping...
+2020-09-09 20:02:42.907+0000 INFO  Stopped.
+nohup: les entrées sont ignorées
+2020-09-10 08:26:47.804+0000 WARN  You are using an unsupported version of the Java runtime. Please use Oracle(R) Java(TM) Runtime Environment 8, OpenJDK(TM) 8 or IBM J9.
+2020-09-10 08:26:47.833+0000 INFO  ======== Neo4j 3.5.21 ========
+2020-09-10 08:26:47.841+0000 INFO  Starting...
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.collections.impl.utility.ArrayListIterate (file:/home/isa/Bureau/BD/Docs_BDNoR/Neo4J_17/neo4j-community-3.5.21/lib/eclipse-collections-9.2.0.jar) to field java.util.ArrayList.elementData
+WARNING: Please consider reporting this to the maintainers of org.eclipse.collections.impl.utility.ArrayListIterate
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2020-09-10 08:27:04.877+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2020-09-10 08:27:07.942+0000 INFO  Started.
+2020-09-10 08:27:08.332+0000 INFO  Mounted unmanaged extension [semantics.extension] at [/rdf]
+2020-09-10 08:27:09.968+0000 INFO  Remote interface available at http://localhost:7474/
+2020-09-10 08:57:35.880+0000 ERROR Client triggered an unexpected error [Neo.DatabaseError.Statement.ExecutionFailed]: The shortest path algorithm does not work when the start and end nodes are the same. This can happen if you
+perform a shortestPath search after a cartesian product that might have the same start and end nodes for some
+of the rows passed to shortestPath. If you would rather not experience this exception, and can accept the
+possibility of missing results for those rows, disable this in the Neo4j configuration by setting
+`cypher.forbid_shortestpath_common_nodes` to false. If you cannot accept missing results, and really want the
+shortestPath between two common nodes, then re-write the query using a standard Cypher variable length pattern
+expression followed by ordering by path length and limiting to one result., reference a33902a5-5429-4c0f-be04-c79a1f748562.
+nohup: les entrées sont ignorées
+2020-09-10 18:52:32.490+0000 WARN  You are using an unsupported version of the Java runtime. Please use Oracle(R) Java(TM) Runtime Environment 8, OpenJDK(TM) 8 or IBM J9.
+2020-09-10 18:52:33.406+0000 INFO  ======== Neo4j 3.5.21 ========
+2020-09-10 18:52:33.612+0000 INFO  Starting...
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.collections.impl.utility.ArrayListIterate (file:/home/isa/Bureau/BD/Docs_BDNoR/Neo4J_17/neo4j-community-3.5.21/lib/eclipse-collections-9.2.0.jar) to field java.util.ArrayList.elementData
+WARNING: Please consider reporting this to the maintainers of org.eclipse.collections.impl.utility.ArrayListIterate
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2020-09-10 18:53:11.933+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2020-09-10 18:53:15.319+0000 INFO  Started.
+2020-09-10 18:53:15.686+0000 INFO  Mounted unmanaged extension [semantics.extension] at [/rdf]
+2020-09-10 18:53:17.339+0000 INFO  Remote interface available at http://localhost:7474/
+2020-09-10 20:58:28.181+0000 INFO  Neo4j Server shutdown initiated by request
+2020-09-10 20:58:28.224+0000 INFO  Stopping...
+2020-09-10 20:58:28.543+0000 INFO  Stopped.
+nohup: les entrées sont ignorées
+2020-09-13 14:39:22.255+0000 WARN  You are using an unsupported version of the Java runtime. Please use Oracle(R) Java(TM) Runtime Environment 8, OpenJDK(TM) 8 or IBM J9.
+2020-09-13 14:39:22.300+0000 INFO  ======== Neo4j 3.5.21 ========
+2020-09-13 14:39:22.323+0000 INFO  Starting...
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.collections.impl.utility.ArrayListIterate (file:/home/isa/Bureau/BD/Docs_BDNoR/Neo4J_17/neo4j-community-3.5.21/lib/eclipse-collections-9.2.0.jar) to field java.util.ArrayList.elementData
+WARNING: Please consider reporting this to the maintainers of org.eclipse.collections.impl.utility.ArrayListIterate
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2020-09-13 14:39:38.940+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2020-09-13 14:39:41.879+0000 INFO  Started.
+2020-09-13 14:39:42.302+0000 INFO  Mounted unmanaged extension [semantics.extension] at [/rdf]
+2020-09-13 14:39:43.820+0000 INFO  Remote interface available at http://localhost:7474/
+2020-09-13 16:27:12.611+0000 INFO  serialization from media type in request: */*
+2020-09-13 16:27:12.611+0000 INFO  Unrecognized or undefined serialization. Defaulting to Turtle serialization
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2020-09-13 16:30:34.407+0000 INFO  serialization from media type in request: */*
+2020-09-13 16:30:34.407+0000 INFO  Unrecognized or undefined serialization. Defaulting to Turtle serialization
+2020-09-13 18:47:17.477+0000 INFO  serialization from media type in request: */*
+2020-09-13 18:47:17.477+0000 INFO  Unrecognized or undefined serialization. Defaulting to Turtle serialization
+2020-09-13 18:47:28.263+0000 INFO  serialization from media type in request: */*
+2020-09-13 18:47:28.263+0000 INFO  Unrecognized or undefined serialization. Defaulting to Turtle serialization
+2020-09-13 18:48:37.119+0000 INFO  serialization from param in request: N3
+2020-09-13 18:48:37.119+0000 INFO  Unrecognized or undefined serialization. Defaulting to Turtle serialization
+2020-09-13 19:36:38.468+0000 INFO  Neo4j Server shutdown initiated by request
+2020-09-13 19:36:38.505+0000 INFO  Stopping...
+2020-09-13 19:36:38.957+0000 INFO  Stopped.
+nohup: les entrées sont ignorées
+2020-09-15 07:15:08.484+0000 WARN  You are using an unsupported version of the Java runtime. Please use Oracle(R) Java(TM) Runtime Environment 8, OpenJDK(TM) 8 or IBM J9.
+2020-09-15 07:15:08.510+0000 INFO  ======== Neo4j 3.5.21 ========
+2020-09-15 07:15:08.519+0000 INFO  Starting...
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.collections.impl.utility.ArrayListIterate (file:/home/isa/Bureau/BD/Docs_BDNoR/Neo4J_17/neo4j-community-3.5.21/lib/eclipse-collections-9.2.0.jar) to field java.util.ArrayList.elementData
+WARNING: Please consider reporting this to the maintainers of org.eclipse.collections.impl.utility.ArrayListIterate
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2020-09-15 07:15:25.105+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2020-09-15 07:15:31.474+0000 INFO  Started.
+2020-09-15 07:15:32.584+0000 INFO  Mounted unmanaged extension [semantics.extension] at [/rdf]
+2020-09-15 07:15:34.422+0000 INFO  Remote interface available at http://localhost:7474/
+2020-09-15 08:38:33.568+0000 INFO  serialization from param in request: N3
+2020-09-15 08:38:33.568+0000 INFO  Unrecognized or undefined serialization. Defaulting to Turtle serialization
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2020-09-15 08:49:48.317+0000 INFO  serialization from param in request: N3
+2020-09-15 08:49:48.317+0000 INFO  Unrecognized or undefined serialization. Defaulting to Turtle serialization
+2020-09-15 08:52:18.782+0000 INFO  serialization from param in request: N3
+2020-09-15 08:52:18.782+0000 INFO  Unrecognized or undefined serialization. Defaulting to Turtle serialization
+2020-09-15 08:52:42.563+0000 INFO  serialization from param in request: N3
+2020-09-15 08:52:42.563+0000 INFO  Unrecognized or undefined serialization. Defaulting to Turtle serialization
+2020-09-15 08:56:01.748+0000 INFO  serialization from param in request: N3
+2020-09-15 08:56:01.748+0000 INFO  Unrecognized or undefined serialization. Defaulting to Turtle serialization
+2020-09-15 08:56:01.754+0000 INFO  serialization from param in request: N3
+2020-09-15 08:56:01.754+0000 INFO  Unrecognized or undefined serialization. Defaulting to Turtle serialization
+2020-09-15 08:59:59.472+0000 INFO  serialization from param in request: N3
+2020-09-15 08:59:59.472+0000 INFO  Unrecognized or undefined serialization. Defaulting to Turtle serialization
+2020-09-15 09:02:22.970+0000 INFO  serialization from param in request: N3
+2020-09-15 09:02:22.970+0000 INFO  Unrecognized or undefined serialization. Defaulting to Turtle serialization
+2020-09-15 09:02:23.159+0000 INFO  serialization from param in request: N3
+2020-09-15 09:02:23.159+0000 INFO  Unrecognized or undefined serialization. Defaulting to Turtle serialization
+2020-09-15 09:05:46.200+0000 INFO  serialization from param in request: N3
+2020-09-15 09:05:46.200+0000 INFO  Unrecognized or undefined serialization. Defaulting to Turtle serialization
+2020-09-15 09:05:46.206+0000 INFO  serialization from param in request: N3
+2020-09-15 09:05:46.206+0000 INFO  Unrecognized or undefined serialization. Defaulting to Turtle serialization
+2020-09-15 09:07:13.740+0000 INFO  serialization from param in request: N3
+2020-09-15 09:07:13.740+0000 INFO  Unrecognized or undefined serialization. Defaulting to Turtle serialization
+2020-09-15 09:07:13.746+0000 INFO  serialization from param in request: N3
+2020-09-15 09:07:13.746+0000 INFO  Unrecognized or undefined serialization. Defaulting to Turtle serialization
+2020-09-15 09:07:24.808+0000 INFO  serialization from param in request: N3
+2020-09-15 09:07:24.808+0000 INFO  Unrecognized or undefined serialization. Defaulting to Turtle serialization
+2020-09-15 09:13:10.576+0000 INFO  serialization from param in request: N3
+2020-09-15 09:13:10.576+0000 INFO  Unrecognized or undefined serialization. Defaulting to Turtle serialization
+2020-09-15 09:14:08.392+0000 INFO  serialization from param in request: N3
+2020-09-15 09:14:08.392+0000 INFO  Unrecognized or undefined serialization. Defaulting to Turtle serialization
+2020-09-15 09:15:37.162+0000 INFO  serialization from param in request: N3
+2020-09-15 09:15:37.163+0000 INFO  Unrecognized or undefined serialization. Defaulting to Turtle serialization
+2020-09-15 09:16:49.849+0000 INFO  serialization from param in request: N3
+2020-09-15 09:16:49.849+0000 INFO  Unrecognized or undefined serialization. Defaulting to Turtle serialization
+2020-09-15 15:23:46.233+0000 INFO  serialization from media type in request: */*
+2020-09-15 15:23:46.233+0000 INFO  Unrecognized or undefined serialization. Defaulting to Turtle serialization
+2020-09-15 20:36:37.910+0000 INFO  Neo4j Server shutdown initiated by request
+2020-09-15 20:36:37.946+0000 INFO  Stopping...
+2020-09-15 20:36:38.473+0000 INFO  Stopped.
+nohup: les entrées sont ignorées
+2020-11-29 19:33:52.085+0000 WARN  You are using an unsupported version of the Java runtime. Please use Oracle(R) Java(TM) Runtime Environment 8, OpenJDK(TM) 8 or IBM J9.
+2020-11-29 19:33:52.111+0000 INFO  ======== Neo4j 3.5.21 ========
+2020-11-29 19:33:52.127+0000 INFO  Starting...
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.collections.impl.utility.ArrayListIterate (file:/home/isa/Bureau/BD/Docs_BDNoR/Neo4J_17/neo4j-community-3.5.21/lib/eclipse-collections-9.2.0.jar) to field java.util.ArrayList.elementData
+WARNING: Please consider reporting this to the maintainers of org.eclipse.collections.impl.utility.ArrayListIterate
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2020-11-29 19:34:07.895+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2020-11-29 19:34:11.523+0000 INFO  Started.
+2020-11-29 19:34:11.847+0000 INFO  Mounted unmanaged extension [semantics.extension] at [/rdf]
+2020-11-29 19:34:13.554+0000 INFO  Remote interface available at http://localhost:7474/
+2020-11-29 20:31:05.170+0000 INFO  Neo4j Server shutdown initiated by request
+2020-11-29 20:31:05.197+0000 INFO  Stopping...
+2020-11-29 20:31:05.769+0000 INFO  Stopped.
+nohup: les entrées sont ignorées
+2020-12-01 14:17:37.076+0000 WARN  You are using an unsupported version of the Java runtime. Please use Oracle(R) Java(TM) Runtime Environment 8, OpenJDK(TM) 8 or IBM J9.
+2020-12-01 14:17:37.102+0000 INFO  ======== Neo4j 3.5.21 ========
+2020-12-01 14:17:37.118+0000 INFO  Starting...
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.collections.impl.utility.ArrayListIterate (file:/home/isa/Bureau/BD/Docs_BDNoR/Neo4J_17/neo4j-community-3.5.21/lib/eclipse-collections-9.2.0.jar) to field java.util.ArrayList.elementData
+WARNING: Please consider reporting this to the maintainers of org.eclipse.collections.impl.utility.ArrayListIterate
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2020-12-01 14:17:53.357+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2020-12-01 14:17:56.510+0000 INFO  Started.
+2020-12-01 14:17:56.848+0000 INFO  Mounted unmanaged extension [semantics.extension] at [/rdf]
+2020-12-01 14:17:58.373+0000 INFO  Remote interface available at http://localhost:7474/
+2020-12-01 20:06:51.960+0000 INFO  Neo4j Server shutdown initiated by request
+2020-12-01 20:06:52.081+0000 INFO  Stopping...
+2020-12-01 20:06:52.572+0000 INFO  Stopped.
+nohup: les entrées sont ignorées
+2021-09-15 12:43:56.059+0000 WARN  You are using an unsupported version of the Java runtime. Please use Oracle(R) Java(TM) Runtime Environment 8, OpenJDK(TM) 8 or IBM J9.
+2021-09-15 12:43:56.087+0000 INFO  ======== Neo4j 3.5.21 ========
+2021-09-15 12:43:56.106+0000 INFO  Starting...
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.collections.impl.utility.ArrayListIterate (file:/home/p00000009432/Desktop/BasesDeDonnees/Neo4J/Neo4J.3.5.21/neo4j-community-3.5.21_conf/lib/eclipse-collections-9.2.0.jar) to field java.util.ArrayList.elementData
+WARNING: Please consider reporting this to the maintainers of org.eclipse.collections.impl.utility.ArrayListIterate
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2021-09-15 12:44:09.263+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2021-09-15 12:44:11.235+0000 INFO  Started.
+2021-09-15 12:44:11.483+0000 INFO  Mounted unmanaged extension [semantics.extension] at [/rdf]
+2021-09-15 12:44:13.043+0000 INFO  Remote interface available at http://localhost:7474/
+2021-09-15 12:44:39.751+0000 WARN  The client is unauthorized due to authentication failure.
+2021-09-15 12:58:57.049+0000 INFO  Neo4j Server shutdown initiated by request
+2021-09-15 12:58:57.107+0000 INFO  Stopping...
+2021-09-15 12:58:57.255+0000 INFO  Stopped.
+nohup: les entrées sont ignorées
+2021-09-15 13:04:39.987+0000 WARN  You are using an unsupported version of the Java runtime. Please use Oracle(R) Java(TM) Runtime Environment 8, OpenJDK(TM) 8 or IBM J9.
+2021-09-15 13:04:39.999+0000 INFO  ======== Neo4j 3.5.21 ========
+2021-09-15 13:04:40.014+0000 INFO  Starting...
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.collections.impl.utility.ArrayListIterate (file:/home/p00000009432/Desktop/BasesDeDonnees/Neo4J/Neo4J.3.5.21/neo4j-community-3.5.21_conf/lib/eclipse-collections-9.2.0.jar) to field java.util.ArrayList.elementData
+WARNING: Please consider reporting this to the maintainers of org.eclipse.collections.impl.utility.ArrayListIterate
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2021-09-15 13:04:50.993+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2021-09-15 13:04:52.212+0000 INFO  Started.
+2021-09-15 13:04:52.315+0000 INFO  Mounted unmanaged extension [semantics.extension] at [/rdf]
+2021-09-15 13:04:53.549+0000 INFO  Remote interface available at http://localhost:7474/
+2021-09-15 13:05:49.048+0000 INFO  Neo4j Server shutdown initiated by request
+2021-09-15 13:05:49.070+0000 INFO  Stopping...
+2021-09-15 13:05:49.182+0000 INFO  Stopped.
+nohup: les entrées sont ignorées
+2021-09-15 13:07:57.588+0000 WARN  You are using an unsupported version of the Java runtime. Please use Oracle(R) Java(TM) Runtime Environment 8, OpenJDK(TM) 8 or IBM J9.
+2021-09-15 13:07:57.596+0000 INFO  ======== Neo4j 3.5.21 ========
+2021-09-15 13:07:57.605+0000 INFO  Starting...
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.collections.impl.utility.ArrayListIterate (file:/home/p00000009432/Desktop/BasesDeDonnees/Neo4J/Neo4J.3.5.21/neo4j-community-3.5.21_conf/lib/eclipse-collections-9.2.0.jar) to field java.util.ArrayList.elementData
+WARNING: Please consider reporting this to the maintainers of org.eclipse.collections.impl.utility.ArrayListIterate
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2021-09-15 13:08:06.697+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2021-09-15 13:08:07.948+0000 INFO  Started.
+2021-09-15 13:08:08.040+0000 INFO  Mounted unmanaged extension [semantics.extension] at [/rdf]
+2021-09-15 13:08:09.200+0000 INFO  Remote interface available at http://localhost:7474/
+nohup: les entrées sont ignorées
+2022-09-16 13:14:09.364+0000 WARN  You are using an unsupported version of the Java runtime. Please use Oracle(R) Java(TM) Runtime Environment 8, OpenJDK(TM) 8 or IBM J9.
+2022-09-16 13:14:09.375+0000 INFO  ======== Neo4j 3.5.21 ========
+2022-09-16 13:14:09.383+0000 INFO  Starting...
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.collections.impl.utility.ArrayListIterate (file:/home/e20200003953/Bureau/Github/Master2/HAI914I%20Gestion%20des%20donn%c3%a9es%20au%20del%c3%a0%20de%20SQL%20(NoSQL)/TD1/Systeme/neo4j-community-3.5.21_Ext/lib/eclipse-collections-9.2.0.jar) to field java.util.ArrayList.elementData
+WARNING: Please consider reporting this to the maintainers of org.eclipse.collections.impl.utility.ArrayListIterate
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2022-09-16 13:14:17.809+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2022-09-16 13:14:19.148+0000 INFO  Started.
+2022-09-16 13:14:19.275+0000 INFO  Mounted unmanaged extension [semantics.extension] at [/rdf]
+2022-09-16 13:14:20.083+0000 INFO  Remote interface available at http://localhost:7474/
+2022-09-16 13:16:10.738+0000 WARN  The client is unauthorized due to authentication failure.
+2022-09-16 13:16:29.041+0000 WARN  The client is unauthorized due to authentication failure.
+2022-09-16 16:08:51.076+0000 INFO  Neo4j Server shutdown initiated by request
+2022-09-16 16:08:51.155+0000 INFO  Stopping...
+2022-09-16 16:08:51.343+0000 INFO  Stopped.
+nohup: les entrées sont ignorées
+2022-09-19 19:19:11.664+0000 WARN  You are using an unsupported version of the Java runtime. Please use Oracle(R) Java(TM) Runtime Environment 8, OpenJDK(TM) 8 or IBM J9.
+2022-09-19 19:19:11.673+0000 INFO  ======== Neo4j 3.5.21 ========
+2022-09-19 19:19:11.681+0000 INFO  Starting...
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.collections.impl.utility.ArrayListIterate (file:/home/matthieu/Bureau/Github/Master2/HAI914I%20Gestion%20des%20donn%c3%a9es%20au%20del%c3%a0%20de%20SQL%20(NoSQL)/TD1/Systeme/neo4j-community-3.5.21_Ext/lib/eclipse-collections-9.2.0.jar) to field java.util.ArrayList.elementData
+WARNING: Please consider reporting this to the maintainers of org.eclipse.collections.impl.utility.ArrayListIterate
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2022-09-19 19:19:18.021+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2022-09-19 19:19:19.081+0000 INFO  Started.
+2022-09-19 19:19:19.167+0000 INFO  Mounted unmanaged extension [semantics.extension] at [/rdf]
+2022-09-19 19:19:19.979+0000 INFO  Remote interface available at http://localhost:7474/
+2022-09-19 19:20:28.443+0000 WARN  The client is unauthorized due to authentication failure.
+2022-09-19 19:20:37.433+0000 WARN  The client is unauthorized due to authentication failure.
+nohup: les entrées sont ignorées
+2022-09-23 13:26:35.371+0000 WARN  You are using an unsupported version of the Java runtime. Please use Oracle(R) Java(TM) Runtime Environment 8, OpenJDK(TM) 8 or IBM J9.
+2022-09-23 13:26:35.389+0000 INFO  ======== Neo4j 3.5.21 ========
+2022-09-23 13:26:35.403+0000 INFO  Starting...
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.collections.impl.utility.ArrayListIterate (file:/home/matthieu/Bureau/Github/Master2/HAI914I%20Gestion%20des%20donn%c3%a9es%20au%20del%c3%a0%20de%20SQL%20(NoSQL)/TD1/Systeme/neo4j-community-3.5.21_Ext/lib/eclipse-collections-9.2.0.jar) to field java.util.ArrayList.elementData
+WARNING: Please consider reporting this to the maintainers of org.eclipse.collections.impl.utility.ArrayListIterate
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2022-09-23 13:26:44.934+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2022-09-23 13:26:45.962+0000 INFO  Started.
+2022-09-23 13:26:46.053+0000 INFO  Mounted unmanaged extension [semantics.extension] at [/rdf]
+2022-09-23 13:26:46.916+0000 INFO  Remote interface available at http://localhost:7474/
