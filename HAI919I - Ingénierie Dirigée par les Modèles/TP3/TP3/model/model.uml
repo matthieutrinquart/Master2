@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_W-6OcEr_Ee2Tpp5kTaV6Iw" name="model">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_XCz3AEr_Ee2Tpp5kTaV6Iw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_qTlkIEr_Ee2Tpp5kTaV6Iw" name="EtatA" classifierBehavior="_3P7ewEr_Ee2Tpp5kTaV6Iw">
+    <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_3P7ewEr_Ee2Tpp5kTaV6Iw" name="StateMachine1">
+      <region xmi:type="uml:Region" xmi:id="_76qIgEr_Ee2Tpp5kTaV6Iw" name="Region1">
+        <transition xmi:type="uml:Transition" xmi:id="_vbCJoEsAEe2Tpp5kTaV6Iw" source="_mWg1IEsAEe2Tpp5kTaV6Iw" target="_k5pOgEsAEe2Tpp5kTaV6Iw"/>
+        <transition xmi:type="uml:Transition" xmi:id="_4PPxQEsAEe2Tpp5kTaV6Iw" source="_k5pOgEsAEe2Tpp5kTaV6Iw" target="_xAkkEEsAEe2Tpp5kTaV6Iw"/>
+        <transition xmi:type="uml:Transition" xmi:id="_4-xJsEsAEe2Tpp5kTaV6Iw" source="_xAkkEEsAEe2Tpp5kTaV6Iw" target="_k5pOgEsAEe2Tpp5kTaV6Iw"/>
+        <transition xmi:type="uml:Transition" xmi:id="_7Bz_gEsAEe2Tpp5kTaV6Iw" source="_k5pOgEsAEe2Tpp5kTaV6Iw" target="_zEotkEsAEe2Tpp5kTaV6Iw"/>
+        <transition xmi:type="uml:Transition" xmi:id="_9ZhdwEsAEe2Tpp5kTaV6Iw" source="_xAkkEEsAEe2Tpp5kTaV6Iw" target="_2txXcEsAEe2Tpp5kTaV6Iw"/>
+        <transition xmi:type="uml:Transition" xmi:id="_96mxkEsAEe2Tpp5kTaV6Iw" source="_2txXcEsAEe2Tpp5kTaV6Iw" target="_zEotkEsAEe2Tpp5kTaV6Iw"/>
+        <transition xmi:type="uml:Transition" xmi:id="_FGbfEEsBEe2Tpp5kTaV6Iw" source="_zEotkEsAEe2Tpp5kTaV6Iw" target="_CLYqQEsBEe2Tpp5kTaV6Iw"/>
+        <subvertex xmi:type="uml:State" xmi:id="_k5pOgEsAEe2Tpp5kTaV6Iw" name="EtatA"/>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_mWg1IEsAEe2Tpp5kTaV6Iw" name="EtatInitial"/>
+        <subvertex xmi:type="uml:State" xmi:id="_xAkkEEsAEe2Tpp5kTaV6Iw" name="EtatB"/>
+        <subvertex xmi:type="uml:State" xmi:id="_zEotkEsAEe2Tpp5kTaV6Iw" name="EtatC"/>
+        <subvertex xmi:type="uml:State" xmi:id="_2txXcEsAEe2Tpp5kTaV6Iw" name="EtatD"/>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_CLYqQEsBEe2Tpp5kTaV6Iw" name="EtatFinal" kind="terminate"/>
+      </region>
+    </ownedBehavior>
+  </packagedElement>
+</uml:Model>
