@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ASCII"?>
+<uml:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" name="model">
+  <packageImport>
+    <importedPackage href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xsi:type="uml:Class" name="EtatA" classifierBehavior="//EtatA/StateMachine1">
+    <ownedBehavior xsi:type="uml:StateMachine" name="StateMachine1">
+      <region name="Region1">
+        <transition source="//EtatA/StateMachine1/Region1/EtatInitial" target="//EtatA/StateMachine1/Region1/EtatA">
+          <trigger name="toto" event="//toto"/>
+        </transition>
+        <subvertex xsi:type="uml:State" name="EtatA"/>
+        <subvertex xsi:type="uml:Pseudostate" name="EtatInitial"/>
+        <subvertex xsi:type="uml:State" name="EtatB"/>
+        <subvertex xsi:type="uml:State" name="EtatC"/>
+        <subvertex xsi:type="uml:State" name="EtatD"/>
+        <subvertex xsi:type="uml:Pseudostate" name="EtatFinal" kind="terminate"/>
+      </region>
+    </ownedBehavior>
+    <ownedBehavior xsi:type="uml:StateMachine" name="StateMachine2">
+      <region name="Region1"/>
+    </ownedBehavior>
+    <ownedOperation name="Totooperation"/>
+  </packagedElement>
+  <packagedElement xsi:type="uml:CallEvent" name="toto" operation="//EtatA/Totooperation"/>
+  <packagedElement xsi:type="uml:Class" name="Etat_EtatA" isAbstract="true"/>
+  <packagedElement xsi:type="uml:Class" name="Etat_EtatA" isAbstract="true"/>
+  <packagedElement xsi:type="uml:Class" name="EtatA">
+    <generalization general="//EtatA.1"/>
+    <ownedOperation name="Totooperation" isAbstract="true"/>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Class" name="EtatB">
+    <generalization general="//EtatB"/>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Class" name="EtatC">
+    <generalization general="//EtatC"/>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Class" name="EtatD">
+    <generalization general="//EtatD"/>
+  </packagedElement>
+</uml:Model>
