@@ -1,0 +1,128 @@
+/**
+ */
+package objet.impl;
+
+import objet.*;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.EPackage;
+
+import org.eclipse.emf.ecore.impl.EFactoryImpl;
+
+import org.eclipse.emf.ecore.plugin.EcorePlugin;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model <b>Factory</b>.
+ * <!-- end-user-doc -->
+ * @generated
+ */
+public class ObjetFactoryImpl extends EFactoryImpl implements ObjetFactory {
+	/**
+	 * Creates the default factory implementation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static ObjetFactory init() {
+		try {
+			ObjetFactory theObjetFactory = (ObjetFactory)EPackage.Registry.INSTANCE.getEFactory(ObjetPackage.eNS_URI);
+			if (theObjetFactory != null) {
+				return theObjetFactory;
+			}
+		}
+		catch (Exception exception) {
+			EcorePlugin.INSTANCE.log(exception);
+		}
+		return new ObjetFactoryImpl();
+	}
+
+	/**
+	 * Creates an instance of the factory.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ObjetFactoryImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EObject create(EClass eClass) {
+		switch (eClass.getClassifierID()) {
+			case ObjetPackage.GAMME_PERSONNALISABLE: return createGammePersonnalisable();
+			case ObjetPackage.OBJET: return createObjet();
+			case ObjetPackage.ELEMENT_DE_PERSONNALISATION: return createElementDePersonnalisation();
+			case ObjetPackage.CARACTERISTIQUE_VARIABLE: return createCaracteristiqueVariable();
+			default:
+				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public GammePersonnalisable createGammePersonnalisable() {
+		GammePersonnalisableImpl gammePersonnalisable = new GammePersonnalisableImpl();
+		return gammePersonnalisable;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Objet createObjet() {
+		ObjetImpl objet = new ObjetImpl();
+		return objet;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ElementDePersonnalisation createElementDePersonnalisation() {
+		ElementDePersonnalisationImpl elementDePersonnalisation = new ElementDePersonnalisationImpl();
+		return elementDePersonnalisation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CaracteristiqueVariable createCaracteristiqueVariable() {
+		CaracteristiqueVariableImpl caracteristiqueVariable = new CaracteristiqueVariableImpl();
+		return caracteristiqueVariable;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ObjetPackage getObjetPackage() {
+		return (ObjetPackage)getEPackage();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @deprecated
+	 * @generated
+	 */
+	@Deprecated
+	public static ObjetPackage getPackage() {
+		return ObjetPackage.eINSTANCE;
+	}
+
+} //ObjetFactoryImpl
