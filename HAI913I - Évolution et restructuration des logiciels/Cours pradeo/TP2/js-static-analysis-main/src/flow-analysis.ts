@@ -17,7 +17,7 @@ export function reachabilityAnalysis(metamodel: Metamodel): {
     }
 
 
-    return ret;
+    return ret
   }
 
   for (const [id, current] of Object.entries(metamodel.functions)) {
