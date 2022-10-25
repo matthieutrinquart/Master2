@@ -1,7 +1,6 @@
 package UtilisationObjet;
-import objet.ObjetPackage;
-import objet.Objet;
-
+import java.awt.Taskbar.State;
+import java.util.List;
 import org.eclipse.emf.*;
 import org.eclipse.emf.common.util.*;
 import org.eclipse.emf.ecore.*;
@@ -10,19 +9,48 @@ import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.xmi.XMLResource;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMLMapImpl;
+import org.eclipse.uml2.uml.StateMachine;
+import org.eclipse.uml2.uml.Transition;
+import org.eclipse.uml2.uml.Trigger;
+import org.eclipse.uml2.*;
+import org.eclipse.uml2.uml.Association;
+import org.eclipse.uml2.uml.Behavior;
+import org.eclipse.uml2.uml.CallEvent;
+import org.eclipse.uml2.uml.Class;
+import org.eclipse.uml2.uml.Model;
+import org.eclipse.uml2.uml.Operation;
+import org.eclipse.uml2.uml.Package;
+import org.eclipse.uml2.uml.PackageableElement;
+import org.eclipse.uml2.uml.Property;
+import org.eclipse.uml2.uml.Region;
+import org.eclipse.uml2.uml.UMLFactory;
+import org.eclipse.uml2.uml.UMLFactory;
+import org.eclipse.uml2.uml.UMLPackage;
+import org.eclipse.uml2.uml.Vertex;
+import org.eclipse.uml2.uml.VisibilityKind;
+
+import objet.CaracteristiqueVariable;
+import objet.ElementDePersonnalisation;
+import objet.GammePersonnalisable;
+import objet.Objet;
+import objet.ObjetPackage;
 
 
 public class Manipulationsobjets {
-	private static Objet monObjet;
 
 	public static void main(String[] args) {
 		
 		//Je charge l'instance map.xmi du méta-modèle maps.ecore
-		Resource resource = chargerModele("model/Objet.xmi", ObjetPackage.eINSTANCE); // ligne à adapter au nom de votre modèle
+		Resource resource = chargerModele("model/GammePersonnalisable.xmi", ObjetPackage.eINSTANCE); // ligne à adapter au nom de votre modèle
 		if (resource == null) System.err.println(" Erreur de chargement du modèle");
-		//Instruction récupérant le modèle sous forme d'arbre à partir de la classe racine "Map"
-		monObjet = (Objet) resource.getContents().get(0);
-		System.out.println(monObjet.getNom());	// affichage du nom de la carte.
+		
+		GammePersonnalisable myobjet = (GammePersonnalisable) resource.getContents().get(0);
+		
+		
+		Model uml = DecorateurState(myobjet);
+		
+		sauverModele("model/decorateur.uml", uml);
+		
 	}
 	
 	public static Resource chargerModele(String uri, EPackage pack) {
@@ -44,11 +72,136 @@ public class Manipulationsobjets {
 		   return resource;
 		}
 	
+	public static Model DecorateurState(GammePersonnalisable gamme) {
+		
+		
+		
+		UMLFactory uml= UMLFactory.eINSTANCE;
+		Class objetabstrait = uml.createClass();
+		objetabstrait.setName("ObjetAbstrait");
+		objetabstrait.setIsAbstract(true);
+    	for(CaracteristiqueVariable c : gamme.getElementsvariables()) {
+    		Operation methode = uml.createOperation();
+    		methode.setName(c.getNom());
+    		methode.setIsAbstract(true);
+    		methode.setVisibility(VisibilityKind.get(VisibilityKind.PUBLIC));
+    		objetabstrait.getOwnedOperations().add(methode);
+    		
+    	}
+		
+		Class objetdecore = uml.createClass();
+		objetdecore.setName("ObjetDecore");
+    	for(CaracteristiqueVariable c : gamme.getElementsvariables()) {
+    		Operation methode = uml.createOperation();
+    		methode.setName(c.getNom());
+    		methode.setIsAbstract(true);
+    		methode.setVisibility(VisibilityKind.get(VisibilityKind.PUBLIC));
+    		objetdecore.getOwnedOperations().add(methode);
+    		
+    	}
+		
+		
+		
+		
+		
+		
+		
+		
+		Class decoration = uml.createClass();
+		decoration.setName("Decoration");
+    	for(CaracteristiqueVariable c : gamme.getElementsvariables()) {
+    		Operation methode = uml.createOperation();
+    		methode.setName(c.getNom());
+    		methode.setVisibility(VisibilityKind.get(VisibilityKind.PUBLIC));
+    		decoration.getOwnedOperations().add(methode);
+    		
+    	}
+		
+		
+		
+		
+	
+		
+		
+		
+		
+		
+		
+		Property p1 = uml.createProperty();
+        p1.setType(decoration);
+        p1.setUpper(1);
+        p1.setLower(1);
+        objetabstrait.getOwnedAttributes().add(p1);
+
+        Property p2 = uml.createProperty();
+        p2.setType(objetabstrait);
+        p2.setIsComposite(true);
+        decoration.getOwnedAttributes().add(p2);
+
+        Association objAbs_Decoration = uml.createAssociation();
+        objAbs_Decoration.setName("decore");
+        objAbs_Decoration.getMemberEnds().add(p1);
+        objAbs_Decoration.getMemberEnds().add(p2);
+
+		
+        Model model =  uml.createModel();
+        model.getPackagedElements().add(objetabstrait);
+        model.getPackagedElements().add(objetdecore);
+        model.getPackagedElements().add(decoration);
+        model.getPackagedElements().add(objAbs_Decoration);
+		
+        
+       
+        for(ElementDePersonnalisation e : gamme.getElementsdepersonnalisation()) {
+        	
+        	Class element = uml.createClass();
+        	element.setName(e.getNom());
+        	for(CaracteristiqueVariable c : gamme.getElementsvariables()) {
+        		
+        		Operation methode = uml.createOperation();
+        		methode.setName(c.getNom());
+        		methode.setVisibility(VisibilityKind.get(VisibilityKind.PUBLIC));
+        		element.getOwnedOperations().add(methode);
+        		
+        	}
+        	element.getSuperClasses().add(objetdecore);
+        	
+        	model.getPackagedElements().add(element);
+        	
+        }
+        
+        for(Objet o : gamme.getObjets()) {
+        	
+        	Class element = uml.createClass();
+        	element.setName(o.getNom());
+        	for(CaracteristiqueVariable c : gamme.getElementsvariables()) {
+        		Operation methode = uml.createOperation();
+        		methode.setName(c.getNom());
+        		methode.setVisibility(VisibilityKind.get(VisibilityKind.PUBLIC));
+        		element.getOwnedOperations().add(methode);
+        		
+        	}
+        	element.getSuperClasses().add(decoration);
+        	
+        	model.getPackagedElements().add(element);
+        	
+        }
+        
+
+        
+        
+        return model;
+		
+		
+		
+		
+	}
+	
 	public static void sauverModele(String uri, EObject root) {
 		   Resource resource = null;
 		   try {
 		      URI uriUri = URI.createURI(uri);
-		      Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put("xmi", new XMIResourceFactoryImpl());
+		      Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put("uml", new XMIResourceFactoryImpl());
 		      resource = (new ResourceSetImpl()).createResource(uriUri);
 		      resource.getContents().add(root);
 		      resource.save(null);

@@ -1,0 +1,3 @@
+pour instancier le model :
+aller sur objet.ecore
+click droit racine Create Dynamique instance

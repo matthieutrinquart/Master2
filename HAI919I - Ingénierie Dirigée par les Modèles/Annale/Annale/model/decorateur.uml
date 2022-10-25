@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ASCII"?>
+<uml:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <packagedElement xsi:type="uml:Class" name="ObjetAbstrait" isAbstract="true">
+    <ownedAttribute type="//Decoration" association="//decore">
+      <lowerValue xsi:type="uml:LiteralInteger" value="1"/>
+      <upperValue xsi:type="uml:LiteralUnlimitedNatural" value="1"/>
+    </ownedAttribute>
+    <ownedOperation name="Prix" visibility="public" isAbstract="true"/>
+    <ownedOperation name="imageimprimee" visibility="public" isAbstract="true"/>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Class" name="ObjetDecore">
+    <ownedOperation name="Prix" visibility="public" isAbstract="true"/>
+    <ownedOperation name="imageimprimee" visibility="public" isAbstract="true"/>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Class" name="Decoration">
+    <ownedAttribute type="//ObjetAbstrait" aggregation="composite" association="//decore"/>
+    <ownedOperation name="Prix" visibility="public"/>
+    <ownedOperation name="imageimprimee" visibility="public"/>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Association" name="decore" memberEnd="//ObjetAbstrait/@ownedAttribute.0 //Decoration/@ownedAttribute.0"/>
+  <packagedElement xsi:type="uml:Class" name="Texte">
+    <generalization general="//ObjetDecore"/>
+    <ownedOperation name="Prix" visibility="public"/>
+    <ownedOperation name="imageimprimee" visibility="public"/>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Class" name="Image">
+    <generalization general="//ObjetDecore"/>
+    <ownedOperation name="Prix" visibility="public"/>
+    <ownedOperation name="imageimprimee" visibility="public"/>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Class" name="bols">
+    <generalization general="//Decoration"/>
+    <ownedOperation name="Prix" visibility="public"/>
+    <ownedOperation name="imageimprimee" visibility="public"/>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Class" name="tasses">
+    <generalization general="//Decoration"/>
+    <ownedOperation name="Prix" visibility="public"/>
+    <ownedOperation name="imageimprimee" visibility="public"/>
+  </packagedElement>
+</uml:Model>

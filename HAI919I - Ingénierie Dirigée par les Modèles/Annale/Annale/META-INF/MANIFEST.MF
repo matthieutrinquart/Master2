@@ -14,5 +14,6 @@ Export-Package: objet,
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport,
  Annale,
- org.eclipse.emf.ecore.xmi
+ org.eclipse.emf.ecore.xmi,
+ org.eclipse.uml2.uml
 Bundle-ActivationPolicy: lazy
