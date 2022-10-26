@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Rc1vwFVBEe2JdrtfwlNNeQ" name="model">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_Rf648FVBEe2JdrtfwlNNeQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_X-iiMFVBEe2JdrtfwlNNeQ" name="Package2">
+    <packagedElement xmi:type="uml:Class" xmi:id="_ZF5y4FVBEe2JdrtfwlNNeQ" name="Class1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_TcscwFVDEe2JdrtfwlNNeQ" name="p1"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_UiLeIFVDEe2JdrtfwlNNeQ" name="p2">
+    <packagedElement xmi:type="uml:Class" xmi:id="_mu2C4FVDEe2JdrtfwlNNeQ" name="A" visibility="public">
+      <generalization xmi:type="uml:Generalization" xmi:id="_Z3dqUFVPEe2JdrtfwlNNeQ" general="_j_LWoFVOEe2JdrtfwlNNeQ"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_T4g8cFVLEe2JdrtfwlNNeQ" name="Property1"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_DogfYFVQEe2JdrtfwlNNeQ" name="Operation3"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_j_LWoFVOEe2JdrtfwlNNeQ" name="B"/>
+  </packagedElement>
+</uml:Model>

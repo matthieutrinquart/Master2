@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Rd1OQFVBEe2JdrtfwlNNeQ" type="PapyrusUMLClassDiagram" name="Class Diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_Tcu5AFVDEe2JdrtfwlNNeQ" type="Package_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_TcvgEFVDEe2JdrtfwlNNeQ" type="Package_NameLabel"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_TcvgEVVDEe2JdrtfwlNNeQ" type="Package_PackagedElementCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_TcvgElVDEe2JdrtfwlNNeQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TcvgE1VDEe2JdrtfwlNNeQ"/>
+    </children>
+    <element xmi:type="uml:Package" href="model.uml#_TcscwFVDEe2JdrtfwlNNeQ"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Tcu5AVVDEe2JdrtfwlNNeQ" x="60" y="140"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_UiN6YFVDEe2JdrtfwlNNeQ" type="Package_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_UiOhcFVDEe2JdrtfwlNNeQ" type="Package_NameLabel"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_UiOhcVVDEe2JdrtfwlNNeQ" type="Package_PackagedElementCompartment">
+      <children xmi:type="notation:Shape" xmi:id="_mu8wkFVDEe2JdrtfwlNNeQ" type="Class_Shape_CN">
+        <children xmi:type="notation:DecorationNode" xmi:id="_mu9XoFVDEe2JdrtfwlNNeQ" type="Class_NameLabel_CN"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_mu9XoVVDEe2JdrtfwlNNeQ" type="Class_FloatingNameLabel_CN">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_mu9XolVDEe2JdrtfwlNNeQ" y="15"/>
+        </children>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_mu9Xo1VDEe2JdrtfwlNNeQ" type="Class_AttributeCompartment_CN">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_O9AEsFVLEe2JdrtfwlNNeQ" source="PapyrusCSSForceValue">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_O9AEsVVLEe2JdrtfwlNNeQ" key="collapsed" value="true"/>
+          </eAnnotations>
+          <children xmi:type="notation:Shape" xmi:id="_T4o4QFVLEe2JdrtfwlNNeQ" type="Property_ClassAttributeLabel">
+            <element xmi:type="uml:Property" href="model.uml#_T4g8cFVLEe2JdrtfwlNNeQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_T4o4QVVLEe2JdrtfwlNNeQ"/>
+          </children>
+          <styles xmi:type="notation:TitleStyle" xmi:id="_mu9-sFVDEe2JdrtfwlNNeQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_mu9-sVVDEe2JdrtfwlNNeQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_mu9-slVDEe2JdrtfwlNNeQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mu9-s1VDEe2JdrtfwlNNeQ"/>
+        </children>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_mu9-tFVDEe2JdrtfwlNNeQ" type="Class_OperationCompartment_CN">
+          <children xmi:type="notation:Shape" xmi:id="_DoqQYFVQEe2JdrtfwlNNeQ" type="Operation_ClassOperationLabel">
+            <element xmi:type="uml:Operation" href="model.uml#_DogfYFVQEe2JdrtfwlNNeQ"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_DoqQYVVQEe2JdrtfwlNNeQ"/>
+          </children>
+          <styles xmi:type="notation:TitleStyle" xmi:id="_mu9-tVVDEe2JdrtfwlNNeQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_mu9-tlVDEe2JdrtfwlNNeQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_mu9-t1VDEe2JdrtfwlNNeQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mu9-uFVDEe2JdrtfwlNNeQ"/>
+        </children>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_mu9-uVVDEe2JdrtfwlNNeQ" type="Class_NestedClassifierCompartment_CN">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_mu9-ulVDEe2JdrtfwlNNeQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_mu9-u1VDEe2JdrtfwlNNeQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_mu9-vFVDEe2JdrtfwlNNeQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mu9-vVVDEe2JdrtfwlNNeQ"/>
+        </children>
+        <element xmi:type="uml:Class" href="model.uml#_mu2C4FVDEe2JdrtfwlNNeQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mu8wkVVDEe2JdrtfwlNNeQ" x="134" y="232"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_j_PoEFVOEe2JdrtfwlNNeQ" type="Class_Shape_CN">
+        <children xmi:type="notation:DecorationNode" xmi:id="_j_PoElVOEe2JdrtfwlNNeQ" type="Class_NameLabel_CN"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_j_PoE1VOEe2JdrtfwlNNeQ" type="Class_FloatingNameLabel_CN">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_j_PoFFVOEe2JdrtfwlNNeQ" y="15"/>
+        </children>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_j_PoFVVOEe2JdrtfwlNNeQ" type="Class_AttributeCompartment_CN">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_j_PoFlVOEe2JdrtfwlNNeQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_j_PoF1VOEe2JdrtfwlNNeQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_j_PoGFVOEe2JdrtfwlNNeQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_j_PoGVVOEe2JdrtfwlNNeQ"/>
+        </children>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_j_PoGlVOEe2JdrtfwlNNeQ" type="Class_OperationCompartment_CN">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_j_PoG1VOEe2JdrtfwlNNeQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_j_PoHFVOEe2JdrtfwlNNeQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_j_PoHVVOEe2JdrtfwlNNeQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_j_PoHlVOEe2JdrtfwlNNeQ"/>
+        </children>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_j_PoH1VOEe2JdrtfwlNNeQ" type="Class_NestedClassifierCompartment_CN">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_j_PoIFVOEe2JdrtfwlNNeQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_j_PoIVVOEe2JdrtfwlNNeQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_j_PoIlVOEe2JdrtfwlNNeQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_j_PoI1VOEe2JdrtfwlNNeQ"/>
+        </children>
+        <element xmi:type="uml:Class" href="model.uml#_j_LWoFVOEe2JdrtfwlNNeQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_j_PoEVVOEe2JdrtfwlNNeQ" x="230" y="67"/>
+      </children>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_UiOhclVDEe2JdrtfwlNNeQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UiOhc1VDEe2JdrtfwlNNeQ"/>
+    </children>
+    <element xmi:type="uml:Package" href="model.uml#_UiLeIFVDEe2JdrtfwlNNeQ"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UiN6YVVDEe2JdrtfwlNNeQ" x="140" y="260" width="441" height="361"/>
+  </children>
+  <styles xmi:type="notation:StringValueStyle" xmi:id="_Rd1OQVVBEe2JdrtfwlNNeQ" name="diagram_compatibility_version" stringValue="1.4.0"/>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_Rd1OQlVBEe2JdrtfwlNNeQ"/>
+  <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_Rd1OQ1VBEe2JdrtfwlNNeQ" diagramKindId="org.eclipse.papyrus.uml.diagram.class">
+    <owner xmi:type="uml:Model" href="model.uml#_Rc1vwFVBEe2JdrtfwlNNeQ"/>
+  </styles>
+  <element xmi:type="uml:Model" href="model.uml#_Rc1vwFVBEe2JdrtfwlNNeQ"/>
+  <edges xmi:type="notation:Connector" xmi:id="_Z34hEFVPEe2JdrtfwlNNeQ" type="Generalization_Edge" source="_mu8wkFVDEe2JdrtfwlNNeQ" target="_j_PoEFVOEe2JdrtfwlNNeQ">
+    <children xmi:type="notation:DecorationNode" xmi:id="_Z35IIFVPEe2JdrtfwlNNeQ" type="Generalization_StereotypeLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Z35IIVVPEe2JdrtfwlNNeQ" y="40"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_Z34hEVVPEe2JdrtfwlNNeQ"/>
+    <element xmi:type="uml:Generalization" href="model.uml#_Z3dqUFVPEe2JdrtfwlNNeQ"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Z34hElVPEe2JdrtfwlNNeQ" points="[416, 520, -643984, -643984]$[420, 455, -643984, -643984]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Z5MvsFVPEe2JdrtfwlNNeQ" id="(0.6210045662100456,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Z5MvsVVPEe2JdrtfwlNNeQ" id="(0.44,1.0)"/>
+  </edges>
+</notation:Diagram>

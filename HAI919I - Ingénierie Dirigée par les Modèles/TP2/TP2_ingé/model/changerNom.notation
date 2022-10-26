@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_M-59IFVHEe2JdrtfwlNNeQ" type="PapyrusUMLClassDiagram" name="Class Diagram" measurementUnit="Pixel">
+  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Tlrc0FVHEe2JdrtfwlNNeQ" source="PapyrusCSSForceValue">
+    <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Tlrc0VVHEe2JdrtfwlNNeQ" key="canonical" value="true"/>
+  </eAnnotations>
+  <children xmi:type="notation:Shape" xmi:id="_Tl0mwFVHEe2JdrtfwlNNeQ" type="Package_Shape">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Tm3voFVHEe2JdrtfwlNNeQ" source="PapyrusCSSForceValue">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Tm3voVVHEe2JdrtfwlNNeQ" key="mutable" value="true"/>
+    </eAnnotations>
+    <children xmi:type="notation:DecorationNode" xmi:id="_Tl1N0FVHEe2JdrtfwlNNeQ" type="Package_NameLabel"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_Tl1N0VVHEe2JdrtfwlNNeQ" type="Package_PackagedElementCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_Tl1N0lVHEe2JdrtfwlNNeQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Tl1N01VHEe2JdrtfwlNNeQ"/>
+    </children>
+    <element xmi:type="uml:Package" href="changerNom.uml#_M-uW8lVHEe2JdrtfwlNNeQ"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Tl0mwVVHEe2JdrtfwlNNeQ" x="60" y="240"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_Tl104FVHEe2JdrtfwlNNeQ" type="Package_Shape">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Tm3volVHEe2JdrtfwlNNeQ" source="PapyrusCSSForceValue">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Tm3vo1VHEe2JdrtfwlNNeQ" key="mutable" value="true"/>
+    </eAnnotations>
+    <children xmi:type="notation:DecorationNode" xmi:id="_Tl104lVHEe2JdrtfwlNNeQ" type="Package_NameLabel"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_Tl1041VHEe2JdrtfwlNNeQ" type="Package_PackagedElementCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_Tl2b8FVHEe2JdrtfwlNNeQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Tl2b8VVHEe2JdrtfwlNNeQ"/>
+    </children>
+    <element xmi:type="uml:Package" href="changerNom.uml#_M-uW9FVHEe2JdrtfwlNNeQ"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Tl104VVHEe2JdrtfwlNNeQ" x="300" y="180"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_Tl2b8lVHEe2JdrtfwlNNeQ" type="Package_Shape">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Tm3vpFVHEe2JdrtfwlNNeQ" source="PapyrusCSSForceValue">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Tm3vpVVHEe2JdrtfwlNNeQ" key="mutable" value="true"/>
+    </eAnnotations>
+    <children xmi:type="notation:DecorationNode" xmi:id="_Tl3DAFVHEe2JdrtfwlNNeQ" type="Package_NameLabel"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_Tl3DAVVHEe2JdrtfwlNNeQ" type="Package_PackagedElementCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_Tl3DAlVHEe2JdrtfwlNNeQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Tl3DA1VHEe2JdrtfwlNNeQ"/>
+    </children>
+    <element xmi:type="uml:Package" href="changerNom.uml#_M-uW9lVHEe2JdrtfwlNNeQ"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Tl2b81VHEe2JdrtfwlNNeQ" x="660" y="260"/>
+  </children>
+  <styles xmi:type="notation:StringValueStyle" xmi:id="_M-59IVVHEe2JdrtfwlNNeQ" name="diagram_compatibility_version" stringValue="1.4.0"/>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_M-59IlVHEe2JdrtfwlNNeQ"/>
+  <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_M-59I1VHEe2JdrtfwlNNeQ" diagramKindId="org.eclipse.papyrus.uml.diagram.class">
+    <owner xmi:type="uml:Model" href="changerNom.uml#_M-uW8FVHEe2JdrtfwlNNeQ"/>
+  </styles>
+  <styles xmi:type="notation:CanonicalStyle" xmi:id="_TlqOsFVHEe2JdrtfwlNNeQ"/>
+  <element xmi:type="uml:Model" href="changerNom.uml#_M-uW8FVHEe2JdrtfwlNNeQ"/>
+</notation:Diagram>
