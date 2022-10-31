@@ -17,8 +17,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class Parser {
-    String path;
-    ArrayList<MethodDeclaration> methodDeclarations ;
+    private String path;
+    private ArrayList<MethodDeclaration> methodDeclarations ;
 
 
     Graph<String, DefaultEdge> graph;

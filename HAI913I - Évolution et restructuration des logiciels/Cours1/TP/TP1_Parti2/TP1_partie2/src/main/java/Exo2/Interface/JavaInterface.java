@@ -87,6 +87,7 @@ public class JavaInterface extends JFrame implements ActionListener {
         });
         Writer writer = new StringWriter();
         exporter.exportGraph(graph, writer);
+        System.out.println(writer.toString());
         createDotGraph(writer.toString());
     }
     public static void createDotGraph(String dotFormat) throws IOException, ExecutionException, InterruptedException {
