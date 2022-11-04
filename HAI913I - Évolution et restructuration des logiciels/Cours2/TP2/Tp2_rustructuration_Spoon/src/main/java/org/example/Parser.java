@@ -35,16 +35,19 @@ public class Parser {
 
     private DirectedWeightedPseudograph<String, MyWeightedEdge> graphcluster;
 
+    private DirectedWeightedPseudograph<String, MyWeightedEdge> Graphmodule;
     private SimpleDirectedGraph<String, MyWeightedEdge> dendogramme;
     private Launcher parser;
-    public Parser(String path,int etape) throws IOException {
-        this.path = path;
+    public Parser(String path,int etape,float CP) throws IOException, ExecutionException, InterruptedException {
         ArrayList<String> f = Scan(path);
+        //creation du graph d'appel
         this.graph = Parse(f);
-        DirectedWeightedPseudograph<String, MyWeightedEdge> g1 = newgraph(this.graph);
-        this.graphcluster = HierarchieCluster(g1,etape);
-        DirectedWeightedPseudograph<String, MyWeightedEdge> g2 = newgraph(this.graph);
-        this.dendogramme = DrawDendrogramme(g2);
+        //Création du graph contenant les différents modules
+        this.Graphmodule = GroupeClasse(this.graph, CP);
+        //Création du graph avec les différents cluster a une etape
+        this.graphcluster = HierarchieCluster(this.graph,etape);
+        //création du Dendrogramme du graph
+        this.dendogramme = DrawDendrogramme(this.graph);
     }
     public CtModel AST(String Path) throws IOException {
         parser = new Launcher(); // create launcher
@@ -60,8 +63,6 @@ public class Parser {
             for (CtType type : model.getAllTypes()){
                 HashMap<String,Integer> map = new HashMap<>();
                 AtomicInteger nbappel = new AtomicInteger();
-                //parcourt les methodes de cette classe
-                System.out.println(type.getSimpleName());
                 for(Object method : type.getMethods()){
                     if (!g.containsVertex(type.getSimpleName())) {
                         //On enregistre la méthode dans le graph
@@ -69,24 +70,23 @@ public class Parser {
 
                     }
                     CtMethod p = (CtMethod) method;
-                    System.out.println("    "+p.getSimpleName());
                     p.filterChildren(new TypeFilter(CtInvocation.class)).forEach(inv->{
+
                         nbappel.incrementAndGet();
                         CtInvocation<?> invocation = (CtInvocation<?>) inv;
-                        //System.out.println("        " +inv);
-                        if (!g.containsVertex(invocation.getExecutable().getDeclaringType().getSimpleName())) {
-                            //si la méthode n'a pas deja été enregistrer on le met dans le graph
-                            g.addVertex(invocation.getExecutable().getDeclaringType().getSimpleName());
+                        if(invocation.getExecutable().getDeclaringType() != null) {
+                            if (!g.containsVertex(invocation.getExecutable().getDeclaringType().getSimpleName())) {
+                                //si la méthode n'a pas deja été enregistrer on le met dans le graph
+                                g.addVertex(invocation.getExecutable().getDeclaringType().getSimpleName());
+                            }
+                            if (!map.containsKey(type.getSimpleName() + ":" + invocation.getExecutable().getDeclaringType().getSimpleName())) {
+                                map.put(type.getSimpleName() + ":" + invocation.getExecutable().getDeclaringType().getSimpleName(), 1);
+                                //g.setEdgeWeight(e, 1);
+                            } else {
+                                map.put(type.getSimpleName() + ":" + invocation.getExecutable().getDeclaringType().getSimpleName(), map.get(type.getSimpleName() + ":" + invocation.getExecutable().getDeclaringType().getSimpleName()) + 1);
+                                //g.setEdgeWeight(e, ((float)g.getEdgeWeight(e) + 1));
+                            }
                         }
-                        if (!map.containsKey(type.getSimpleName()+":"+ invocation.getExecutable().getDeclaringType().getSimpleName())) {
-                            map.put(type.getSimpleName()+":"+ invocation.getExecutable().getDeclaringType().getSimpleName(),1);
-                            //g.setEdgeWeight(e, 1);
-                        } else {
-                            map.put(type.getSimpleName()+":"+invocation.getExecutable().getDeclaringType().getSimpleName(), map.get(type.getSimpleName()+":"+ invocation.getExecutable().getDeclaringType().getSimpleName())+1);
-                            //g.setEdgeWeight(e, ((float)g.getEdgeWeight(e) + 1));
-                        }
-                        System.out.println("        " +invocation.getExecutable().getDeclaringType().getSimpleName());
-
                     });
 
                 }
@@ -108,120 +108,19 @@ public class Parser {
 
     }
 
-    public String[] ClusterProche(DirectedWeightedPseudograph graph){
 
-        String[] ret = new String[2];
-        float valmax = 0;
-        for (Object m : graph.vertexSet()) {
-            Set<MyWeightedEdge> edges = graph.outgoingEdgesOf(m.toString());
-            for(MyWeightedEdge e : edges){
-                if(Float.valueOf(e.toString()) > valmax){
-                    ret[0] = m.toString();
-                    ret[1] = graph.getEdgeTarget(e).toString();
-                    valmax = Float.valueOf(e.toString());
-                }
-              //  System.out.println(e +  " " + m.toString() + " " + graph.getEdgeTarget(e));
-            }
-        }
-
-        return ret;
-    }
-
-    public DirectedWeightedPseudograph CreateCluster(DirectedWeightedPseudograph graph, String[] ex){
-
-        graph.addVertex(ex[0]+":"+ex[1]);
-
-        Set<MyWeightedEdge> edgesoutput1 = graph.outgoingEdgesOf(ex[0]);
-        for(MyWeightedEdge e : edgesoutput1){
-            if(!graph.containsEdge(graph.addEdge(ex[0]+":"+ex[1],graph.getEdgeTarget(e)))){
-                DefaultWeightedEdge tampon = (DefaultWeightedEdge)graph.addEdge(ex[0]+":"+ex[1],graph.getEdgeTarget(e));
-                graph.setEdgeWeight(tampon, Float.valueOf(e.toString()));
-                graph.removeEdge(e);
-            }else{
-                DefaultWeightedEdge arret = (DefaultWeightedEdge)graph.getEdge(ex[0]+":"+ex[1],graph.getEdgeTarget(e));
-                graph.setEdgeWeight(arret, (Float.valueOf(arret.toString()) +Float.valueOf(e.toString()))/2 );
-            }
-            //  System.out.println(e +  " " + m.toString() + " " + graph.getEdgeTarget(e));
-        }
-
-        Set<MyWeightedEdge> edgesoutput2 = graph.outgoingEdgesOf(ex[1]);
-        for(MyWeightedEdge e : edgesoutput2){
-            if(!graph.containsEdge(graph.addEdge(ex[0]+":"+ex[1],graph.getEdgeTarget(e)))){
-                DefaultWeightedEdge tampon = (DefaultWeightedEdge)graph.addEdge(ex[0]+":"+ex[1],graph.getEdgeTarget(e));
-                graph.setEdgeWeight(tampon, Float.valueOf(e.toString()));
-                graph.removeEdge(e);
-            }else{
-                DefaultWeightedEdge arret = (DefaultWeightedEdge)graph.getEdge(ex[0]+":"+ex[1],graph.getEdgeTarget(e));
-                graph.setEdgeWeight(arret, (Float.valueOf(arret.toString()) +Float.valueOf(e.toString()))/2 );
-            }
-            //  System.out.println(e +  " " + m.toString() + " " + graph.getEdgeTarget(e));
-        }
-
-        Set<MyWeightedEdge> edgesinput1 = graph.incomingEdgesOf(ex[0]);
-        for(MyWeightedEdge e : edgesinput1){
-            if(!graph.containsEdge(graph.addEdge(graph.getEdgeTarget(e),ex[0]+":"+ex[1]))){
-                DefaultWeightedEdge tampon = (DefaultWeightedEdge)graph.addEdge(graph.getEdgeTarget(e),ex[0]+":"+ex[1]);
-                graph.setEdgeWeight(tampon, Float.valueOf(e.toString()));
-                graph.removeEdge(e);
-            }else{
-                DefaultWeightedEdge arret = (DefaultWeightedEdge)graph.getEdge(graph.getEdgeTarget(e),ex[0]+":"+ex[1]);
-                graph.setEdgeWeight(arret, (Float.valueOf(arret.toString()) +Float.valueOf(e.toString()))/2 );
-            }
-            //  System.out.println(e +  " " + m.toString() + " " + graph.getEdgeTarget(e));
-        }
-
-        Set<MyWeightedEdge> edgesinput2 = graph.incomingEdgesOf(ex[1]);
-        for(MyWeightedEdge e : edgesinput2) {
-            if(!graph.containsEdge(graph.addEdge(graph.getEdgeTarget(e),ex[0]+":"+ex[1]))){
-                DefaultWeightedEdge tampon = (DefaultWeightedEdge)graph.addEdge(graph.getEdgeTarget(e),ex[0]+":"+ex[1]);
-                graph.setEdgeWeight(tampon, Float.valueOf(e.toString()));
-                graph.removeEdge(e);
-            }else{
-                DefaultWeightedEdge arret = (DefaultWeightedEdge)graph.getEdge(graph.getEdgeTarget(e),ex[0]+":"+ex[1]);
-                graph.setEdgeWeight(arret, (Float.valueOf(arret.toString()) +Float.valueOf(e.toString()))/2 );
-            }
-        }
-        graph.removeVertex(ex[0]);
-        graph.removeVertex(ex[1]);
-
-        return graph;
-    }
-
-    public DirectedWeightedPseudograph HierarchieCluster(DirectedWeightedPseudograph graph, int i){
-
-        //graph.getAllEdges();
-        int index = 0;
-        String[] ex ={"",""};
-        graph.vertexSet().size();
-        while(graph.vertexSet().size() > 1&& i != index){
-            System.out.println(index);
-            for (Object m : graph.vertexSet()) {
-                System.out.println(m.toString());
-                Set<MyWeightedEdge> edges = graph.outgoingEdgesOf(m.toString());
-                for(MyWeightedEdge e : edges){
-                    System.out.println("    " + e.toString() + " " + graph.getEdgeTarget(e));
-                }
-                System.out.println(graph.vertexSet().size());
-            }
-            ex = ClusterProche(graph);
-            if(ex[0] == null){
-                break;
-            }
-            System.out.println(ex[0] + "    " + ex[1]);
-            graph = CreateCluster(graph, ex);
-            ++index;
-
-        }
-
-        return graph;
-
-    }
-    public DirectedWeightedPseudograph newgraph(DirectedWeightedPseudograph<String, MyWeightedEdge> graph){
+    /*
+    cette méthode permet de faire une copi d'un graph
+     */
+    public DirectedWeightedPseudograph copygraph(DirectedWeightedPseudograph<String, MyWeightedEdge> graph){
         DirectedWeightedPseudograph g =new DirectedWeightedPseudograph<>(MyWeightedEdge.class);
-        for (Object m : graph.vertexSet()) {
 
+        //On copie les noeuds
+        for (Object m : graph.vertexSet()) {
             g.addVertex(m.toString());
         }
+
+        //On copie les arrets.
         for (Object m : graph.vertexSet()) {
             Set<MyWeightedEdge> edges = graph.outgoingEdgesOf(m.toString());
             for(MyWeightedEdge e : edges){
@@ -232,27 +131,325 @@ public class Parser {
 
         }
         return g;
+    }
+
+    /*
+    Cette fonction retourne un couple de noeud avec le plus grand couplage  d'un graph passé en paramètre.
+     */
+    public String[] ClusterProche(DirectedWeightedPseudograph<String, MyWeightedEdge> graph){
+
+        String[] ret = new String[2];
+        float valmax = 0;
+        //On parcourt tous les sommet et arrets du graph
+        for (Object m : graph.vertexSet()) {
+            //Pour chaque noeud on parcourt les arret sortant du noeud
+            Set<MyWeightedEdge> edges = graph.outgoingEdgesOf(m.toString());
+            for(MyWeightedEdge e : edges){
+                //couplage va contenir le couplage entre les 2 noeuds
+                float couplage = 0;
+                //valneoud va contenir la valeur de l'arret sortante
+                float valneoud = Float.valueOf(e.toString());
+                //valneoud va contenir la valeur de l'arret entrante
+                float valnoeudopposer = 0;
+
+                //On parcourt ensuite les noeuds entrant
+                Set<MyWeightedEdge> edgesoutput1 = graph.incomingEdgesOf(graph.getEdgeTarget(e).toString());
+                for(MyWeightedEdge in : edgesoutput1){
+                    //Si on trouve le meme sommet que pour le noeud sortant alors on enregistre ca valeur sinon elle reste a 0.
+                    if(graph.getEdgeTarget(in).toString().equals(m.toString())){
+                        valnoeudopposer = Float.valueOf(in.toString());
+                    }
+
+                }
+                //le couplage est ensuite égal a la moyenne des 2 arrets
+                couplage = (valneoud +valnoeudopposer)/2;
+                //si le coupla est le plus grand enregistrer alors on enregistre le nouveau couple de noeud.
+                if(couplage > valmax){
+                    ret[0] = m.toString();
+                    ret[1] = graph.getEdgeTarget(e).toString();
+                    valmax = couplage;
+                }
+            }
+        }
+        //On retourne le couple de noeud enregistré.
+        return ret;
 
     }
 
-    //permet de lire un fichier et retourne son contenu en String
-    public String readFileToString(String filePath) throws IOException {
-        StringBuilder fileData = new StringBuilder(1000);
-        BufferedReader reader = new BufferedReader(new FileReader(filePath));
+    /*
+    Cette fonction prend un graph et deux noeud et va retourner un nouveau graphe avec un noeud contenant les 2 noeuds passé en paramètre.
+     */
+    public DirectedWeightedPseudograph CreateCluster(DirectedWeightedPseudograph graph, String[] ex){
+        //on crée un noeud contenant le nom des 2 classes concaténé d'un :
+        graph.addVertex(ex[0]+":"+ex[1]);
 
-        char[] buf = new char[10];
-        int numRead = 0;
-        //récupère chaque ligne du fichier dans un buffer
-        while ((numRead = reader.read(buf)) != -1) {
-            String readData = String.valueOf(buf, 0, numRead);
-            fileData.append(readData);
-            buf = new char[1024];
+
+        //On récupère toutes les arrets entrante du premier noeud pour les mettres au nouveau noeud
+        Set<MyWeightedEdge> edgesoutput1 = graph.outgoingEdgesOf(ex[0]);
+        for(MyWeightedEdge e : edgesoutput1){
+            //On vérifie que le lien n'a pas déjà été créé par un autre noeud ayant un lien vers le même noeud
+            if(!graph.containsEdge(graph.addEdge(ex[0]+":"+ex[1],graph.getEdgeTarget(e)))){
+                DefaultWeightedEdge tampon = (DefaultWeightedEdge)graph.addEdge(ex[0]+":"+ex[1],graph.getEdgeTarget(e));
+                graph.setEdgeWeight(tampon, Float.valueOf(e.toString()));
+                //On supprime l'arret
+                graph.removeEdge(e);
+            }else{
+                DefaultWeightedEdge arret = (DefaultWeightedEdge)graph.getEdge(ex[0]+":"+ex[1],graph.getEdgeTarget(e));
+                //Si les 2 noeuds ont un lien vers le même noeud alors on fait la moyenne des 2 couplages
+                graph.setEdgeWeight(arret, (Float.valueOf(arret.toString()) +Float.valueOf(e.toString()))/2 );
+            }
+        }
+//On récupère toutes les arrets entrante du deuxième noeud pour les mettres au nouveau noeud
+        Set<MyWeightedEdge> edgesoutput2 = graph.outgoingEdgesOf(ex[1]);
+        for(MyWeightedEdge e : edgesoutput2){
+            //On vérifie que le lien n'a pas déjà été créé par un autre noeud ayant un lien vers le même noeud
+            if(!graph.containsEdge(graph.addEdge(ex[0]+":"+ex[1],graph.getEdgeTarget(e)))){
+                DefaultWeightedEdge tampon = (DefaultWeightedEdge)graph.addEdge(ex[0]+":"+ex[1],graph.getEdgeTarget(e));
+                graph.setEdgeWeight(tampon, Float.valueOf(e.toString()));
+                //On supprime l'arret
+                graph.removeEdge(e);
+            }else{
+                DefaultWeightedEdge arret = (DefaultWeightedEdge)graph.getEdge(ex[0]+":"+ex[1],graph.getEdgeTarget(e));
+                //Si les 2 noeuds ont un lien vers le même noeud alors on fait la moyenne des 2 couplages
+                graph.setEdgeWeight(arret, (Float.valueOf(arret.toString()) +Float.valueOf(e.toString()))/2 );
+            }
         }
 
-        reader.close();
 
-        return  fileData.toString();
+        //On récupère toutes les arrets sortante du premier noeud pour les mettres au nouveau noeud
+        Set<MyWeightedEdge> edgesinput1 = graph.incomingEdgesOf(ex[0]);
+        for(MyWeightedEdge e : edgesinput1){
+            //On vérifie que le lien n'a pas déjà été créé par un autre noeud ayant un lien vers le même noeud
+            if(!graph.containsEdge(graph.addEdge(graph.getEdgeTarget(e),ex[0]+":"+ex[1]))){
+                DefaultWeightedEdge tampon = (DefaultWeightedEdge)graph.addEdge(graph.getEdgeTarget(e),ex[0]+":"+ex[1]);
+                graph.setEdgeWeight(tampon, Float.valueOf(e.toString()));
+                //On supprime l'arret
+                graph.removeEdge(e);
+            }else{
+                DefaultWeightedEdge arret = (DefaultWeightedEdge)graph.getEdge(graph.getEdgeTarget(e),ex[0]+":"+ex[1]);
+                //Si les 2 noeuds ont un lien vers le même noeud alors on fait la moyenne des 2 couplages
+                graph.setEdgeWeight(arret, (Float.valueOf(arret.toString()) +Float.valueOf(e.toString()))/2 );
+            }
+        }
+
+
+        //On récupère toutes les arrets sortante du deuxième noeud pour les mettres au nouveau noeud
+        Set<MyWeightedEdge> edgesinput2 = graph.incomingEdgesOf(ex[1]);
+        for(MyWeightedEdge e : edgesinput2) {
+            //On vérifie que le lien n'a pas déjà été créé par un autre noeud ayant un lien vers le même noeud
+            if(!graph.containsEdge(graph.addEdge(graph.getEdgeTarget(e),ex[0]+":"+ex[1]))){
+                DefaultWeightedEdge tampon = (DefaultWeightedEdge)graph.addEdge(graph.getEdgeTarget(e),ex[0]+":"+ex[1]);
+                graph.setEdgeWeight(tampon, Float.valueOf(e.toString()));
+                //On supprime l'arret
+                graph.removeEdge(e);
+            }else{
+                DefaultWeightedEdge arret = (DefaultWeightedEdge)graph.getEdge(graph.getEdgeTarget(e),ex[0]+":"+ex[1]);
+                graph.setEdgeWeight(arret, (Float.valueOf(arret.toString()) +Float.valueOf(e.toString()))/2 );
+            }
+        }
+
+        //on supprime les anciens noeuds
+        graph.removeVertex(ex[0]);
+        graph.removeVertex(ex[1]);
+
+        return graph;
     }
+
+    /*
+    Cette fonction prend un graph et un entier i et va retourner un graph avec les diférents cluster a une etape i de l'algorithme en utilisant les fonctions écritent précédemment.
+     */
+    public DirectedWeightedPseudograph HierarchieCluster(DirectedWeightedPseudograph hierarchie, int i){
+        //On enregistre l'étape ou ce situe l'algorithme
+        int index = 0;
+        //On fait une copie du graph pour pas modifier le graph directement
+        DirectedWeightedPseudograph<String, MyWeightedEdge> graph = copygraph(hierarchie);
+
+        boolean exit = false;
+        //tant que le nombre de classe est supérieur a 1 et qu'on a pas passé la i éme étape
+        while(graph.vertexSet().size() > 1&& i != index && !exit){
+            //On récupère les 2  noeuds les plus couplet
+            String[] ex = ClusterProche(graph);
+            //si null alors c'est qu'il n'y en a pas de plus couplet donc sortir de la boucle
+            if(ex[0] == null){
+                break;
+            }
+            //Recréer le graph avec le nouveay cluster
+            graph = CreateCluster(graph, ex);
+            //incrémenté l'étape
+            ++index;
+
+        }
+        return graph;
+
+    }
+    /*
+    Cette fonction permet de créer un nouveau noeud contenant a partir du noeud cible symbolisant un cluster et lui enlève la class "cible" et retourne le nouveau noeud (cluster) sans la classe "cible"
+     */
+    public String newNode(String cible,String remove){
+        String newnode = "";
+        //On parcourt toutes les classes du cluster
+        for(String m : cible.split(":")){
+            //Si on trouve la classe que l'on veut supprimer on ne l'ajouter pas au nouveau cluster
+            if(!m.equals(remove)){
+                if(newnode.equals("")){
+                    newnode = m;
+                }else{
+                    newnode = newnode +":"+m;
+                }
+            }
+        }
+        return newnode;
+    }
+    /*
+    Cette fonction utilise la methode précédente pour intégrer le nouveau noeud dans le graph et suprimer le noeud "cible"
+     */
+    public DirectedWeightedPseudograph replaceVertex(String cible,String remove,DirectedWeightedPseudograph module){
+
+
+        //On copie le graph pour ne pas modifier le graph original vu que java passe les paramètre par référence et pas par copie
+        DirectedWeightedPseudograph ret = copygraph(module);
+        //on créer le nouveau noeud en enlevant la classe a supprimer
+        String newnode = newNode(cible,remove);
+        //On parcourt tout les clusters du graph
+        for(Object o : module.vertexSet()){
+            //Si on trouve le cluster visé
+            if(cible.equals(o.toString())){
+                //On rajoute le nouveau noeud avec la class en moins
+                ret.addVertex(newnode);
+                //On recréer chaque lien lié au l'ancien noeud vers le nouveau noeud avec les bons poids
+                for(Object i : ret.vertexSet()){
+                    if(ret.getEdge(i.toString(),cible) != null){
+                        DefaultWeightedEdge e = (DefaultWeightedEdge)ret.addEdge(i.toString(),newnode);
+                        ret.setEdgeWeight(e, (Float.valueOf(e.toString())));
+                        ret.removeEdge(i.toString(),cible);
+                    }
+                    if(ret.getEdge(cible,i.toString()) != null){
+                        DefaultWeightedEdge e = (DefaultWeightedEdge)ret.addEdge(newnode,cible);
+                        ret.setEdgeWeight(e, (Float.valueOf(e.toString())));
+                        ret.removeEdge(cible,i.toString());
+                    }
+                }
+                //On supprime l'ancien noeud
+                ret.removeVertex(o.toString());
+            }
+        }
+        return ret;
+    }
+
+    /*
+    Cette fonction retourne le couplage moyen d'un module en fonction du nom du module et du graph de couplage passé en paramètre.
+     */
+    public float moyennecouplage(String module,DirectedWeightedPseudograph graph){
+        //On récupères toutes les classes du cluster
+        String[] l = module.split(":");
+        float total = 0;
+        float nbedge = 0;
+        //On parcourt tout les classes du cluster afin de voir toutes les liens de chaque classe
+        for(String s : l){
+            for(String p : l){
+                //Pour chaque classe on regarde tous ces liens et on additionne le couplage total et on incrémente le nombre de lien du cluster
+                DefaultWeightedEdge edge = (DefaultWeightedEdge)graph.getEdge(s,p);
+                if(edge !=null){
+                    ++nbedge;
+                    total = total + Float.valueOf(edge.toString());
+                }
+
+            }
+        }
+        //Si il n'y a pas de lien dans le cluster alors le cluster a un couplage de 1.
+        if(nbedge == 0){
+            return 1;
+        }
+        else{
+            //On fait la moyenne du cluster.
+            return total/nbedge;
+        }
+
+    }
+
+    /*
+    Cette fonction retourne le noeud d'un cluster qui est le moin couplé en fonction du nom du cluster et du graph de coulage.
+     */
+    public String VertexMustSmall(String module,DirectedWeightedPseudograph graph){
+        //On récupère toutes les classes du cluster.
+        String[] l = module.split(":");
+        //On défini le couplage minimum
+        float min = Float.MAX_VALUE;
+        String vertex = "";
+        //On parcourt tous les classes du cluster.
+        for(String s : l){
+            float edgecurrent = 0;
+            //Pour chaque classe du cluster on vois toutes les liens entrant et sortant et on les additionne
+            for(String p : l){
+                DefaultWeightedEdge edge = (DefaultWeightedEdge)graph.getEdge(s,p);
+                if(edge !=null){
+                    edgecurrent = edgecurrent + Float.valueOf(edge.toString());
+                }
+                edge = (DefaultWeightedEdge)graph.getEdge(p,s);
+                if(edge !=null){
+                    edgecurrent = edgecurrent + Float.valueOf(edge.toString());
+                }
+
+            }
+
+            //Si l'addition de tout ces liens est le plus petit alors on l'enregistre comme la classe ayant le plus faible couplage
+            if(edgecurrent < min){
+                min = edgecurrent;
+                vertex = s;
+            }
+
+
+        }
+        return vertex;
+
+    }
+
+    /*
+Cette fonction répont à la question 2 de l'exo2 et créer différent module en respectant que le nombre de module ne dépasse pas M/2 ou M est le nombre de classe.
+Que chaque classe de chaque module face parti de la même branche du dendogramme.
+Et que le nombre moyen de couplage par module soit supérieur a CP.
+     */
+    public DirectedWeightedPseudograph GroupeClasse(DirectedWeightedPseudograph hierarchie, float CP) {
+        //On fait des copies du graph pour éviter de modifier le graph original
+        DirectedWeightedPseudograph module = HierarchieCluster(hierarchie, 0);
+        DirectedWeightedPseudograph module2 = HierarchieCluster(hierarchie, 0);
+        int index = 1;
+        while(module.vertexSet().size() > module2.vertexSet().size()/2){
+            module = HierarchieCluster(module2, index);
+            ++index;
+        }
+        //Je refais une copie du graph pour éviter de modifier le graph original
+        DirectedWeightedPseudograph ret = copygraph(module);
+        //On parcourt tout les clusters du graph
+        for(Object o : module.vertexSet()){
+
+
+            String classe = o.toString();
+            //On voit si la moyenne du premier cluster est bien inférieur a CP
+            while(moyennecouplage(classe,ret) < CP){
+                //Sinon non on recherche le noeud a le moin de couplage avec ces voisin afin d'avoir une moyenne plus haute.
+                String noeud = VertexMustSmall(classe,module2);
+
+
+                //On suprime le noeud du graph
+                module2.removeVertex(noeud);
+                ret = copygraph(replaceVertex(classe,noeud,ret));
+
+
+                classe = newNode(classe,noeud);
+            }
+
+        }
+
+
+
+        //On retourne le graph final
+        return ret;
+
+
+    }
+
+
 
     public void exportGraph(SimpleDirectedGraph graph , String filename) throws IOException, ExecutionException, InterruptedException {
 
@@ -302,30 +499,26 @@ public class Parser {
 
     }
     public SimpleDirectedGraph DrawDendrogramme(DirectedWeightedPseudograph hierarchie){
-        int index= 0;
-        SimpleDirectedGraph<String, DefaultEdge> dendrogramme =
-                new SimpleDirectedGraph<String, DefaultEdge>(DefaultEdge.class);
+        SimpleDirectedGraph<String, EmptyEdge> dendrogramme =
+                new SimpleDirectedGraph<String, EmptyEdge>(EmptyEdge.class);
 
-        for(Object o : hierarchie.vertexSet()){
+        DirectedWeightedPseudograph<String, MyWeightedEdge> graph = copygraph(hierarchie);
+        for(Object o : graph.vertexSet()){
             dendrogramme.addVertex(o.toString());
         }
-        while(hierarchie.vertexSet().size() > 1){
-            System.out.println(index);
-            for (Object m : hierarchie.vertexSet()) {
-                System.out.println(m.toString());
-                Set<MyWeightedEdge> edges = hierarchie.outgoingEdgesOf(m.toString());
+        while(graph.vertexSet().size() > 1){
+            for (Object m : graph.vertexSet()) {
+                Set<MyWeightedEdge> edges = graph.outgoingEdgesOf(m.toString());
             }
-            String[] ex = ClusterProche(hierarchie);
+            String[] ex = ClusterProche(graph);
             if(ex[0] == null){
                 break;
             }
-            System.out.println(ex[0] + "    " + ex[1]);
 
             dendrogramme.addVertex(ex[0]+":"+ex[1]);
             dendrogramme.addEdge(ex[0],ex[0]+":"+ex[1]);
             dendrogramme.addEdge(ex[1],ex[0]+":"+ex[1]);
-            hierarchie = CreateCluster(hierarchie, ex);
-            ++index;
+            graph = CreateCluster(graph, ex);
 
         }
         return dendrogramme;
@@ -341,6 +534,9 @@ public class Parser {
         return graphcluster;
     }
 
+    public DirectedWeightedPseudograph<String, MyWeightedEdge> getGraphmodule() {
+        return Graphmodule;
+    }
     public SimpleDirectedGraph<String, MyWeightedEdge> getDendogramme() {
         return dendogramme;
     }
