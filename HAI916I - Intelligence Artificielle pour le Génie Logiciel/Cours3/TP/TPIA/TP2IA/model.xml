@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+	<properties>
+		<graphics key="autolayoutconstraints" value="false"/>
+		<graphics key="legendautolayout" value="true"/>
+		<graphics key="showconstraints" value="true"/>
+		<graphics key="showshortnames" value="false"/>
+		<graphics key="layout" value="horizontal"/>
+		<graphics key="showcollapsedconstraints" value="true"/>
+		<graphics key="legendhidden" value="false"/>
+		<graphics key="layoutalgorithm" value="1"/>
+	</properties>
+	<struct>
+		<and mandatory="true" name="TextSizeMechanism">
+			<graphics key="collapsed" value="false"/>
+			<or name="CursorSize">
+				<and name="CursorSize_IntervalValue">
+					<feature name="HasPreviewCursorSize"/>
+				</and>
+				<or name="C_Size">
+					<feature name="CursorSize_Normal"/>
+					<feature name="CursorSize_Large"/>
+					<feature name="CursorSize_Small">
+						<graphics key="collapsed" value="false"/>
+					</feature>
+				</or>
+			</or>
+			<and abstract="true" mandatory="true" name="ThingsAreaTextSize">
+				<graphics key="collapsed" value="false"/>
+				<feature name="CaptionStyle"/>
+			</and>
+			<or mandatory="true" name="size">
+				<graphics key="collapsed" value="false"/>
+				<feature name="IntervalValue_Size"/>
+				<and name="largeSize">
+					<and name="SmallSize">
+						<feature mandatory="true" name="NormalSize"/>
+					</and>
+				</and>
+				<and name="VeryLargeSize">
+					<feature name="VerySmall_Size"/>
+				</and>
+			</or>
+			<and name="Font">
+				<and mandatory="true" name="Police">
+					<and name="FontSetting">
+						<and mandatory="true" name="HasPreviewFront">
+							<and mandatory="true" name="Icons">
+								<and mandatory="true" name="Tooltips">
+									<and mandatory="true" name="Menus">
+										<and mandatory="true" name="TilteBars">
+											<and mandatory="true" name="MessageBoxes">
+												<feature mandatory="true" name="PaletteTitles"/>
+											</and>
+										</and>
+									</and>
+								</and>
+							</and>
+						</and>
+					</and>
+				</and>
+			</and>
+			<and name="Style">
+				<and name="VoiceOverVisual">
+					<and mandatory="true" name="Createnew_Style">
+						<and mandatory="true" name="Classic_Style">
+							<and mandatory="true" name="Dafault_Style">
+								<feature name="VoiceOverCuros"/>
+								<and name="VoiceOverMenuFrontSize">
+									<and mandatory="true" name="BraillePanelFontSize">
+										<and mandatory="true" name="CaptionPanelFontSize">
+											<and mandatory="true" name="VoiceOverBrailleLayout">
+												<feature name="showextendedTextStyle"/>
+												<feature name="ShowTextStyle"/>
+											</and>
+										</and>
+									</and>
+								</and>
+							</and>
+						</and>
+					</and>
+				</and>
+				<feature name="Bold"/>
+			</and>
+		</and>
+	</struct>
+	<constraints>
+		<rule>
+			<imp>
+				<var>HasPreviewCursorSize</var>
+				<var>Bold</var>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<var>HasPreviewCursorSize</var>
+				<var>TilteBars</var>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<var>HasPreviewCursorSize</var>
+				<var>MessageBoxes</var>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<var>HasPreviewCursorSize</var>
+				<var>PaletteTitles</var>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<var>HasPreviewCursorSize</var>
+				<var>Menus</var>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<var>HasPreviewCursorSize</var>
+				<var>Tooltips</var>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<var>HasPreviewCursorSize</var>
+				<var>Icons</var>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<var>HasPreviewCursorSize</var>
+				<var>HasPreviewFront</var>
+			</imp>
+		</rule>
+	</constraints>
+</featureModel>

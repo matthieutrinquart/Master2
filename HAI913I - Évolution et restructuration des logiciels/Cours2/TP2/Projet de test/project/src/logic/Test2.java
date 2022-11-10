@@ -48,6 +48,10 @@ public class Test2 {
             } while (attr3.size() > 5); // do while represent 1 statement
         }
         t1.printSwitchTest();
+        t1.printSwitchTest();
+        t1.printSwitchTest();
+        t1.printSwitchTest();
+        t1.printSwitchTest();
     }
 
 //    @Override public String toString()

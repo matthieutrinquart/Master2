@@ -74,7 +74,7 @@ public class JavaInterface extends JFrame implements ActionListener {
             parser.exportGraph(parser.getGraph(),"image/Graph");
             parser.exportGraph(parser.getGraphmodule(),"image/Module");
             parser.exportGraph(parser.getGraphcluster(),"image/Cluster");
-            parser.exportGraph(parser.getDendogramme(),"image/Dendogramme");
+            parser.exportDendrogramme(parser.getDendogramme(),"image/Dendogramme");
         } catch (IOException | ExecutionException | InterruptedException ex) {
             throw new RuntimeException(ex);
         }

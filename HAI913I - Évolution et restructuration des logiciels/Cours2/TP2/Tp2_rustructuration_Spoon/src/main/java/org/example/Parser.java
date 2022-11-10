@@ -1,11 +1,14 @@
 package org.example;
 
 
-import com.mxgraph.layout.mxCircleLayout;
-import com.mxgraph.layout.mxIGraphLayout;
-import com.mxgraph.util.mxCellRenderer;
-import org.jgrapht.ext.JGraphXAdapter;
+import guru.nidi.graphviz.engine.Format;
+import guru.nidi.graphviz.engine.Graphviz;
+import guru.nidi.graphviz.model.MutableGraph;
+import org.jgrapht.Graph;
 import org.jgrapht.graph.*;
+import org.jgrapht.nio.Attribute;
+import org.jgrapht.nio.DefaultAttribute;
+import org.jgrapht.nio.dot.DOTExporter;
 import spoon.Launcher;
 import spoon.reflect.CtModel;
 import spoon.reflect.code.CtInvocation;
@@ -13,30 +16,23 @@ import spoon.reflect.declaration.CtMethod;
 import spoon.reflect.declaration.CtType;
 import spoon.reflect.visitor.filter.TypeFilter;
 
-import javax.imageio.ImageIO;
-import java.awt.*;
-import java.awt.image.BufferedImage;
-import java.io.BufferedReader;
+
 import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import java.io.StringWriter;
+import java.io.Writer;
+import java.util.*;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class Parser {
-    private String path;
-
     public static final String jrePath = "/usr/lib/jvm/jrt-fs.jar";
     private DirectedWeightedPseudograph<String, MyWeightedEdge> graph;
 
     private DirectedWeightedPseudograph<String, MyWeightedEdge> graphcluster;
 
     private DirectedWeightedPseudograph<String, MyWeightedEdge> Graphmodule;
-    private SimpleDirectedGraph<String, MyWeightedEdge> dendogramme;
+    private SimpleDirectedGraph<String, DefaultEdge> dendogramme;
     private Launcher parser;
     public Parser(String path,int etape,float CP) throws IOException, ExecutionException, InterruptedException {
         ArrayList<String> f = Scan(path);
@@ -49,7 +45,7 @@ public class Parser {
         //création du Dendrogramme du graph
         this.dendogramme = DrawDendrogramme(this.graph);
     }
-    public CtModel AST(String Path) throws IOException {
+    public CtModel AST(String Path)  {
         parser = new Launcher(); // create launcher
         parser.addInputResource(Path); // set project source path
         return parser.buildModel();
@@ -125,7 +121,7 @@ public class Parser {
             Set<MyWeightedEdge> edges = graph.outgoingEdgesOf(m.toString());
             for(MyWeightedEdge e : edges){
                 DefaultWeightedEdge val = (DefaultWeightedEdge)g.addEdge(m.toString(),graph.getEdgeTarget(e).toString() );
-                g.setEdgeWeight(val, Float.valueOf(e.toString()));
+                g.setEdgeWeight(val, graph.getEdgeWeight(e));
             }
 
 
@@ -139,25 +135,25 @@ public class Parser {
     public String[] ClusterProche(DirectedWeightedPseudograph<String, MyWeightedEdge> graph){
 
         String[] ret = new String[2];
-        float valmax = 0;
+        double valmax = 0;
         //On parcourt tous les sommet et arrets du graph
         for (Object m : graph.vertexSet()) {
             //Pour chaque noeud on parcourt les arret sortant du noeud
             Set<MyWeightedEdge> edges = graph.outgoingEdgesOf(m.toString());
             for(MyWeightedEdge e : edges){
                 //couplage va contenir le couplage entre les 2 noeuds
-                float couplage = 0;
+                double couplage = 0;
                 //valneoud va contenir la valeur de l'arret sortante
-                float valneoud = Float.valueOf(e.toString());
+                double valneoud = graph.getEdgeWeight(e);
                 //valneoud va contenir la valeur de l'arret entrante
-                float valnoeudopposer = 0;
+                double valnoeudopposer = 0;
 
                 //On parcourt ensuite les noeuds entrant
                 Set<MyWeightedEdge> edgesoutput1 = graph.incomingEdgesOf(graph.getEdgeTarget(e).toString());
                 for(MyWeightedEdge in : edgesoutput1){
                     //Si on trouve le meme sommet que pour le noeud sortant alors on enregistre ca valeur sinon elle reste a 0.
                     if(graph.getEdgeTarget(in).toString().equals(m.toString())){
-                        valnoeudopposer = Float.valueOf(in.toString());
+                        valnoeudopposer =graph.getEdgeWeight(in) ;
                     }
 
                 }
@@ -190,13 +186,13 @@ public class Parser {
             //On vérifie que le lien n'a pas déjà été créé par un autre noeud ayant un lien vers le même noeud
             if(!graph.containsEdge(graph.addEdge(ex[0]+":"+ex[1],graph.getEdgeTarget(e)))){
                 DefaultWeightedEdge tampon = (DefaultWeightedEdge)graph.addEdge(ex[0]+":"+ex[1],graph.getEdgeTarget(e));
-                graph.setEdgeWeight(tampon, Float.valueOf(e.toString()));
+                graph.setEdgeWeight(tampon, graph.getEdgeWeight(e));
                 //On supprime l'arret
                 graph.removeEdge(e);
             }else{
                 DefaultWeightedEdge arret = (DefaultWeightedEdge)graph.getEdge(ex[0]+":"+ex[1],graph.getEdgeTarget(e));
                 //Si les 2 noeuds ont un lien vers le même noeud alors on fait la moyenne des 2 couplages
-                graph.setEdgeWeight(arret, (Float.valueOf(arret.toString()) +Float.valueOf(e.toString()))/2 );
+                graph.setEdgeWeight(arret, ( graph.getEdgeWeight(arret)+graph.getEdgeWeight(e))/2 );
             }
         }
 //On récupère toutes les arrets entrante du deuxième noeud pour les mettres au nouveau noeud
@@ -205,13 +201,13 @@ public class Parser {
             //On vérifie que le lien n'a pas déjà été créé par un autre noeud ayant un lien vers le même noeud
             if(!graph.containsEdge(graph.addEdge(ex[0]+":"+ex[1],graph.getEdgeTarget(e)))){
                 DefaultWeightedEdge tampon = (DefaultWeightedEdge)graph.addEdge(ex[0]+":"+ex[1],graph.getEdgeTarget(e));
-                graph.setEdgeWeight(tampon, Float.valueOf(e.toString()));
+                graph.setEdgeWeight(tampon,graph.getEdgeWeight(e));
                 //On supprime l'arret
                 graph.removeEdge(e);
             }else{
                 DefaultWeightedEdge arret = (DefaultWeightedEdge)graph.getEdge(ex[0]+":"+ex[1],graph.getEdgeTarget(e));
                 //Si les 2 noeuds ont un lien vers le même noeud alors on fait la moyenne des 2 couplages
-                graph.setEdgeWeight(arret, (Float.valueOf(arret.toString()) +Float.valueOf(e.toString()))/2 );
+                graph.setEdgeWeight(arret, (graph.getEdgeWeight(arret)  +graph.getEdgeWeight(e))/2 );
             }
         }
 
@@ -222,13 +218,13 @@ public class Parser {
             //On vérifie que le lien n'a pas déjà été créé par un autre noeud ayant un lien vers le même noeud
             if(!graph.containsEdge(graph.addEdge(graph.getEdgeTarget(e),ex[0]+":"+ex[1]))){
                 DefaultWeightedEdge tampon = (DefaultWeightedEdge)graph.addEdge(graph.getEdgeTarget(e),ex[0]+":"+ex[1]);
-                graph.setEdgeWeight(tampon, Float.valueOf(e.toString()));
+                graph.setEdgeWeight(tampon, graph.getEdgeWeight(e));
                 //On supprime l'arret
                 graph.removeEdge(e);
             }else{
                 DefaultWeightedEdge arret = (DefaultWeightedEdge)graph.getEdge(graph.getEdgeTarget(e),ex[0]+":"+ex[1]);
                 //Si les 2 noeuds ont un lien vers le même noeud alors on fait la moyenne des 2 couplages
-                graph.setEdgeWeight(arret, (Float.valueOf(arret.toString()) +Float.valueOf(e.toString()))/2 );
+                graph.setEdgeWeight(arret, (graph.getEdgeWeight(arret)  +graph.getEdgeWeight(e))/2 );
             }
         }
 
@@ -244,7 +240,7 @@ public class Parser {
                 graph.removeEdge(e);
             }else{
                 DefaultWeightedEdge arret = (DefaultWeightedEdge)graph.getEdge(graph.getEdgeTarget(e),ex[0]+":"+ex[1]);
-                graph.setEdgeWeight(arret, (Float.valueOf(arret.toString()) +Float.valueOf(e.toString()))/2 );
+                graph.setEdgeWeight(arret, (graph.getEdgeWeight(arret) +graph.getEdgeWeight(e))/2 );
             }
         }
 
@@ -319,13 +315,13 @@ public class Parser {
                 //On recréer chaque lien lié au l'ancien noeud vers le nouveau noeud avec les bons poids
                 for(Object i : ret.vertexSet()){
                     if(ret.getEdge(i.toString(),cible) != null){
-                        DefaultWeightedEdge e = (DefaultWeightedEdge)ret.addEdge(i.toString(),newnode);
-                        ret.setEdgeWeight(e, (Float.valueOf(e.toString())));
+                        MyWeightedEdge e = (MyWeightedEdge)ret.addEdge(i.toString(),newnode);
+                        ret.setEdgeWeight(e, graph.getEdgeWeight(e) );
                         ret.removeEdge(i.toString(),cible);
                     }
                     if(ret.getEdge(cible,i.toString()) != null){
-                        DefaultWeightedEdge e = (DefaultWeightedEdge)ret.addEdge(newnode,cible);
-                        ret.setEdgeWeight(e, (Float.valueOf(e.toString())));
+                        MyWeightedEdge e = (MyWeightedEdge)ret.addEdge(newnode,cible);
+                        ret.setEdgeWeight(e, (graph.getEdgeWeight(e)));
                         ret.removeEdge(cible,i.toString());
                     }
                 }
@@ -339,19 +335,19 @@ public class Parser {
     /*
     Cette fonction retourne le couplage moyen d'un module en fonction du nom du module et du graph de couplage passé en paramètre.
      */
-    public float moyennecouplage(String module,DirectedWeightedPseudograph graph){
+    public double moyennecouplage(String module,DirectedWeightedPseudograph graph){
         //On récupères toutes les classes du cluster
         String[] l = module.split(":");
-        float total = 0;
-        float nbedge = 0;
+        double total = 0;
+        double nbedge = 0;
         //On parcourt tout les classes du cluster afin de voir toutes les liens de chaque classe
         for(String s : l){
             for(String p : l){
                 //Pour chaque classe on regarde tous ces liens et on additionne le couplage total et on incrémente le nombre de lien du cluster
-                DefaultWeightedEdge edge = (DefaultWeightedEdge)graph.getEdge(s,p);
+                MyWeightedEdge edge = (MyWeightedEdge)graph.getEdge(s,p);
                 if(edge !=null){
                     ++nbedge;
-                    total = total + Float.valueOf(edge.toString());
+                    total = total + graph.getEdgeWeight(edge);
                 }
 
             }
@@ -374,20 +370,20 @@ public class Parser {
         //On récupère toutes les classes du cluster.
         String[] l = module.split(":");
         //On défini le couplage minimum
-        float min = Float.MAX_VALUE;
+        double min = Float.MAX_VALUE;
         String vertex = "";
         //On parcourt tous les classes du cluster.
         for(String s : l){
-            float edgecurrent = 0;
+            double edgecurrent = 0;
             //Pour chaque classe du cluster on vois toutes les liens entrant et sortant et on les additionne
             for(String p : l){
                 DefaultWeightedEdge edge = (DefaultWeightedEdge)graph.getEdge(s,p);
                 if(edge !=null){
-                    edgecurrent = edgecurrent + Float.valueOf(edge.toString());
+                    edgecurrent = edgecurrent + graph.getEdgeWeight(edge);
                 }
                 edge = (DefaultWeightedEdge)graph.getEdge(p,s);
                 if(edge !=null){
-                    edgecurrent = edgecurrent + Float.valueOf(edge.toString());
+                    edgecurrent = edgecurrent + graph.getEdgeWeight(edge);
                 }
 
             }
@@ -451,26 +447,47 @@ Et que le nombre moyen de couplage par module soit supérieur a CP.
 
 
 
-    public void exportGraph(SimpleDirectedGraph graph , String filename) throws IOException, ExecutionException, InterruptedException {
+    public void exportGraph(Graph<String, MyWeightedEdge> graph , String filename) throws IOException {
 
-        JGraphXAdapter<String, DefaultWeightedEdge> graphAdapter =
-                new JGraphXAdapter<String, DefaultWeightedEdge>(graph);
-        mxIGraphLayout layout = new mxCircleLayout(graphAdapter);
-        layout.execute(graphAdapter.getDefaultParent());
-        BufferedImage image = mxCellRenderer.createBufferedImage(graphAdapter, null, 2, new Color(0f,0f,0f,.5f), true, null);
-        File imgFile = new File(filename+".png");
-        ImageIO.write(image, "PNG", imgFile);
-    }
-    public void exportGraph(DirectedWeightedPseudograph graph , String filename) throws IOException, ExecutionException, InterruptedException {
-        JGraphXAdapter<String, DefaultWeightedEdge> graphAdapter =
-                new JGraphXAdapter<String, DefaultWeightedEdge>(graph);
-        mxIGraphLayout layout = new mxCircleLayout(graphAdapter);
-        layout.execute(graphAdapter.getDefaultParent());
-        BufferedImage image = mxCellRenderer.createBufferedImage(graphAdapter, null, 2, new Color(0f,0f,0f,.5f), true, null);
-        File imgFile = new File(filename + ".png");
-        ImageIO.write(image, "PNG", imgFile);
+
+
+        DOTExporter<String, MyWeightedEdge> exporter = new DOTExporter<String, MyWeightedEdge>();
+        exporter.setVertexAttributeProvider((v) -> {
+            Map<String, Attribute> map = new LinkedHashMap<String, Attribute>();
+            map.put("label", DefaultAttribute.createAttribute(v.toString()));
+            return map;
+        });
+        exporter.setEdgeAttributeProvider((e) -> {
+            Map<String, Attribute> map = new LinkedHashMap<String, Attribute>();
+            map.put("weight", DefaultAttribute.createAttribute(graph.getEdgeWeight(e)));
+            map.put("label", DefaultAttribute.createAttribute(graph.getEdgeWeight(e)));
+            return map;
+        });
+        Writer writer = new StringWriter();
+        exporter.exportGraph(graph, writer);
+        MutableGraph g = new guru.nidi.graphviz.parse.Parser().read(writer.toString());
+        Graphviz.fromGraph(g).height(1000).render(Format.PNG).toFile(new File(filename +".png"));
+
+
     }
 
+    public void exportDendrogramme(Graph<String, DefaultEdge> graph , String filename) throws IOException {
+
+
+
+        DOTExporter<String, DefaultEdge> exporter = new DOTExporter<String, DefaultEdge>();
+        exporter.setVertexAttributeProvider((v) -> {
+            Map<String, Attribute> map = new LinkedHashMap<String, Attribute>();
+            map.put("label", DefaultAttribute.createAttribute(v.toString()));
+            return map;
+        });
+        Writer writer = new StringWriter();
+        exporter.exportGraph(graph, writer);
+        MutableGraph g = new guru.nidi.graphviz.parse.Parser().read(writer.toString());
+        Graphviz.fromGraph(g).height(1000).render(Format.PNG).toFile(new File(filename +".png"));
+
+
+    }
 
     //parcrourt récursivement le projet
     public ArrayList<String> Scan(String Path){
@@ -537,7 +554,7 @@ Et que le nombre moyen de couplage par module soit supérieur a CP.
     public DirectedWeightedPseudograph<String, MyWeightedEdge> getGraphmodule() {
         return Graphmodule;
     }
-    public SimpleDirectedGraph<String, MyWeightedEdge> getDendogramme() {
+    public SimpleDirectedGraph<String, DefaultEdge> getDendogramme() {
         return dendogramme;
     }
 }
