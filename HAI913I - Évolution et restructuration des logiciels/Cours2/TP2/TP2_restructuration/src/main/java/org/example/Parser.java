@@ -463,7 +463,7 @@ Et que le nombre moyen de couplage par module soit supérieur a CP.
 
     public void exportGraph(Graph<String, MyWeightedEdge> graph , String filename) throws IOException {
 
-        
+
         DOTExporter<String, MyWeightedEdge> exporter = new DOTExporter<String, MyWeightedEdge>();
         exporter.setVertexAttributeProvider((v) -> {
             Map<String, Attribute> map = new LinkedHashMap<String, Attribute>();

@@ -23,6 +23,7 @@ import org.eclipse.rdf4j.rio.RDFParser;
 import org.eclipse.rdf4j.rio.Rio;
 import org.eclipse.rdf4j.rio.helpers.AbstractRDFHandler;
 import qengine.program.Dictionary.Dictonnary;
+import qengine.program.Index.Index;
 
 /**
  * Programme simple lisant un fichier de requête et un fichier de données.
@@ -86,11 +87,17 @@ final class Main {
 	 */
 	public static void main(String[] args) throws Exception {
 		Dictonnary dictonnary = new Dictonnary();
-		RDFHandlerDictionary rdfHandlerDictionary = new RDFHandlerDictionary(dictonnary);
 
-		parseData(rdfHandlerDictionary);
+		parseData();
 		parseQueries();
-		dictonnary.printDictionaty();
+
+		/*
+		Dictonnary d = Dictonnary.getInstance();
+		Index i = Index.getInstance();
+		d.saveDictionnary();
+		i.saveIndex();
+		System.out.println(i.get(""4432131"","http://db.uwaterloo.ca/~galuc/wsdbm/User6%22));
+		*/
 	}
 
 	// ========================================================================
@@ -136,20 +143,16 @@ final class Main {
 	/**
 	 * Traite chaque triple lu dans {@link #dataFile} avec {@link MainRDFHandler}.
 	 */
-	private static void parseData(RDFHandlerDictionary handlers) throws FileNotFoundException, IOException {
-
+	private static void parseData() throws FileNotFoundException, IOException {
 		try (Reader dataReader = new FileReader(dataFile)) {
 			// On va parser des données au format ntriples
 			RDFParser rdfParser = Rio.createParser(RDFFormat.NTRIPLES);
 
 			// On utilise notre implémentation de handler
-			//rdfParser.setRDFHandler(new MainRDFHandler());
+			rdfParser.setRDFHandler(new MainRDFHandler());
 
-				rdfParser.setRDFHandler(handlers);
-
-				// Parsing et traitement de chaque triple par le handler
-				rdfParser.parse(dataReader, baseURI);
-				//d.printDictionaty();
+			// Parsing et traitement de chaque triple par le handler
+			rdfParser.parse(dataReader, baseURI);
 		}
 	}
 }
