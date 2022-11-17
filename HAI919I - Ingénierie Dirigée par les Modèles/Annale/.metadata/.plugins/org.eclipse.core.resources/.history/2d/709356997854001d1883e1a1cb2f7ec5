@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objet:GammePersonnalisable
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:objet="objet"
+    xsi:schemaLocation="objet Objet.ecore">
+  <objets nom="bols"/>
+  <objets nom="tasses"/>
+  <elementsdepersonnalisation
+      nom="Impression de texte"/>
+  <elementsdepersonnalisation
+      nom="Impression d'image"/>
+  <elementsvariables
+      nom="Prix"/>
+  <elementsvariables
+      nom="imageimprimee"/>
+</objet:GammePersonnalisable>
