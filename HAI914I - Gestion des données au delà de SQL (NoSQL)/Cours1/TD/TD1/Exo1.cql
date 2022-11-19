@@ -27,7 +27,7 @@ MATCH (h:Departement {nom:'GARD', numero:'30'})
 CREATE (m:Commune {nom:'GARONS', latitude:43.770059, longitude:4.424545,
 codeinsee:'30125'}) -[:WITHIN]-> (h), (m) -[:NEARBY]-> (s:Commune {nom:'SOMMIERES',
 codeinsee:'30321'}), (s) -[:WITHIN]-> (h)
-'HERAULT''
+'HERAULT'
 
 MATCH (g:Commune {nom:'GARONS'})
 MATCH (n:Commune {nom:'NIMES'})

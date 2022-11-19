@@ -168,8 +168,59 @@ MATCH (d:Departement)-[:WITHIN]->(r:Region)
 RETURN r.name, count(d);
 
 3)
-MATCH (r:Region)
-MATCH (d:Departement)-[:WITHIN]->(r)
+MATCH (d:Departement)-[:WITHIN]->(r:Region)
 WITH r,count(d) AS departements
 WHERE departements >6
-RETURN r.name, count(d);
+RETURN r.name, departements;
+
+4)
+
+MATCH (c1:Commune)-[:NEARBY]->(m:Commune {name:"MONTPELLIER"})
+MATCH (c1)-[:WITHIN]->(d:Departement)
+RETURN c1.name, d.name;
+
+
+5)
+MATCH (c1:Commune)-[:NEARBY]-(m:Commune {name:"MONTPELLIER"})
+MATCH (c1)-[:WITHIN]->(d:Departement)
+WHERE d.name <> "HERAULT"
+RETURN c1.name, d.name;
+
+
+MATCH (m:Commune) -[:NEARBY]- (v1:Commune)
+-[:NEARBY]- (v2:Commune) -[:WITHIN]-> (d:Departement)
+WHERE m.name ="MONTPELLIER" AND d.name <> "HERAULT"
+RETURN v2.name, d.name
+
+
+6)
+MATCH (c:Commune)-[:WITHIN]-(d:Departement)
+RETURN c.name, d.name;
+
+
+7)
+MATCH p=((m:Commune {name:"MONTPELLIER"}) -[:NEARBY*]-(n:Commune{name:"NIMES"}))
+RETURN p;
+
+8)
+
+MATCH (c1:Commune {name:"MONTPELLIER"}), (c2:Commune {name:"NIMES"}),
+path = shortestpath((c1)-[:NEARBY*]-(c2))
+RETURN path
+
+
+exercice 6)
+
+
+1)
+MATCH(n) RETURN distinct labels(n)
+
+2)
+MATCH ()-[r]-() RETURN distinct type(r)
+
+3)
+MATCH (n)-[r]-() RETURN distinct labels(n),type(r)
+
+
+4)
+MATCH ()-[r]->() RETURN type(r), count(*) as cardinality_relation
