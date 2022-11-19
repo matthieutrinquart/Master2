@@ -6,24 +6,17 @@ import java.io.IOException;
 import java.io.Reader;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Stream;
 
-import org.apache.jena.base.Sys;
-import org.eclipse.rdf4j.query.algebra.Projection;
-import org.eclipse.rdf4j.query.algebra.StatementPattern;
-import org.eclipse.rdf4j.query.algebra.helpers.AbstractQueryModelVisitor;
-import org.eclipse.rdf4j.query.algebra.helpers.StatementPatternCollector;
 import org.eclipse.rdf4j.query.parser.ParsedQuery;
 import org.eclipse.rdf4j.query.parser.sparql.SPARQLParser;
 import org.eclipse.rdf4j.rio.RDFFormat;
 import org.eclipse.rdf4j.rio.RDFParser;
 import org.eclipse.rdf4j.rio.Rio;
-import org.eclipse.rdf4j.rio.helpers.AbstractRDFHandler;
 import qengine.program.Dictionary.Dictonnary;
 import qengine.program.Index.Index;
+import qengine.program.Utils.EvaluateStarRequest;
 
 /**
  * Programme simple lisant un fichier de requête et un fichier de données.
@@ -57,7 +50,8 @@ final class Main {
 	/**
 	 * Fichier contenant des données rdf
 	 */
-	static final String dataFile = workingDir + "sample_data.nt";
+	//static final String dataFile = workingDir + "sample_data.nt";
+	static final String dataFile = workingDir + "100K.nt";
 
 	// ========================================================================
 
@@ -65,9 +59,21 @@ final class Main {
 	 * Méthode utilisée ici lors du parsing de requête sparql pour agir sur l'objet obtenu.
 	 */
 	public static void processAQuery(ParsedQuery query) {
-		List<StatementPattern> patterns = StatementPatternCollector.process(query.getTupleExpr());
+		long lStartTime = System.nanoTime();
+		ArrayList<Integer> results = EvaluateStarRequest.evaluateStarRequest(query) ;
+		long lEndTime = System.nanoTime();
 
-		System.out.println("first pattern : " + patterns.get(0));
+		long executionTime = (lEndTime - lStartTime) / 1000000;
+		System.out.println("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*");
+
+		System.out.println("Querry : " + query);
+		System.out.println("Result (in " + executionTime + " ms) : " + Arrays.toString(results.toArray()));
+		for (int r : results) { System.out.println(Dictonnary.getInstance().decode(r)); }
+
+		System.out.println("\n\n\n");
+
+
+/*		System.out.println("first pattern : " + patterns.get(0));
 
 		System.out.println("object of the first pattern : " + patterns.get(0).getObjectVar().getValue());
 
@@ -79,25 +85,21 @@ final class Main {
 			public void meet(Projection projection) {
 				System.out.println(projection.getProjectionElemList().getElements());
 			}
-		});
+		});*/
 	}
 
 	/**
 	 * Entrée du programme
 	 */
 	public static void main(String[] args) throws Exception {
-		Dictonnary dictonnary = new Dictonnary();
-
 		parseData();
 		parseQueries();
 
-		/*
+
 		Dictonnary d = Dictonnary.getInstance();
 		Index i = Index.getInstance();
 		d.saveDictionnary();
 		i.saveIndex();
-		System.out.println(i.get(""4432131"","http://db.uwaterloo.ca/~galuc/wsdbm/User6%22));
-		*/
 	}
 
 	// ========================================================================
