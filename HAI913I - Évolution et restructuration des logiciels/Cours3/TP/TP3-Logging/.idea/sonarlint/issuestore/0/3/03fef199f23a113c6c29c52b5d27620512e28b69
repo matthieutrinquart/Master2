@@ -1,0 +1,33 @@
+
+[	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(¯¸–ë
+[	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(ƒ¼è¯
+`	java:S112*"FDefine and throw a dedicated exception instead of using a generic one.(°œá‘øÿÿÿÿ
+g	java:S112""FDefine and throw a dedicated exception instead of using a generic one.(ÝÿŽéúÿÿÿÿ8ÓÎ¬úÈ0
+i
+java:S1192"NDefine a constant instead of duplicating this literal "Product ID = " 3 times.(œˆ²Óÿÿÿÿÿ
+a
+java:S1192"KDefine a constant instead of duplicating this literal "01-01-2023" 7 times.(¢Õ ª
+†
+java:S1319."pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(‹Ú²Ý
+L
+java:S2629%"7Use the built-in formatting to construct this argument.(áªïy
+M
+java:S2629)"7Use the built-in formatting to construct this argument.(õôîñ
+R
+java:S26294"7Use the built-in formatting to construct this argument.(Ö¨‹Ýÿÿÿÿÿ
+M
+java:S2629:"7Use the built-in formatting to construct this argument.(ƒª‰î
+R
+java:S4973$"<Strings and Boxed types should be compared using "equals()".(“Íï­
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(æŽìÂûÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(°€ÂÖ
+c
+java:S3457"AFormat specifiers should be used instead of string concatenation.(œˆ²Óÿÿÿÿÿ8ïÎ¬úÈ0
+V
+java:S3457%"AFormat specifiers should be used instead of string concatenation.(áªïy
+W
+java:S3457)"AFormat specifiers should be used instead of string concatenation.(õôîñ
+\
+java:S34574"AFormat specifiers should be used instead of string concatenation.(Ö¨‹Ýÿÿÿÿÿ
+W
+java:S3457:"AFormat specifiers should be used instead of string concatenation.(ƒª‰î
