@@ -1,8 +1,6 @@
 
 ]
 -src/main/java/me/sanchez/logging/CLI/CLI.java,2\d\2d642d4dc1c8267fb13fdc896cc025f87ac697ec
-e
-5src/main/java/me/sanchez/logging/Product/Product.java,8\0\8021c6d9e2d94f59184825fc72bb8dd496a929de
 o
 ?src/main/java/me/sanchez/logging/Product/ProductRepository.java,0\3\03fef199f23a113c6c29c52b5d27620512e28b69
 7
@@ -13,3 +11,5 @@ i
 9src/main/java/me/sanchez/logging/User/UserRepository.java,b\6\b607eb64c332930c795f28c58153c898ea546103
 Z
 *src/main/java/me/sanchez/logging/Main.java,5\0\50840a89cd68bde056a3e95cd26bf386c0a5816f
+e
+5src/main/java/me/sanchez/logging/Product/Product.java,8\0\8021c6d9e2d94f59184825fc72bb8dd496a929de
