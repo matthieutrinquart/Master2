@@ -74,7 +74,7 @@ class ProfileHomePage extends StatelessWidget {
           radius: 60,
           child: CircleAvatar(
             radius: 58,
-            backgroundImage: AssetImage('images/capture.jpg'),
+            backgroundImage: AssetImage('images/leodagan.jpg'),
           ),
         )
     )
