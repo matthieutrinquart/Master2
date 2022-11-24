@@ -1,0 +1,83 @@
+TD
+context MultiplicityElement
+	def : lowerBound() : Integer =
+	if (lowerValue=null or lowerValue.integerValue()=null) then 1
+	else lowerValue.integerValue() endif
+
+
+context MultiplicityElement
+	def : upperBound() : UnlimitedNatural =
+	if (upperValue=null or upperValue.unlimitedValue()=null) then 1
+	else upperValue.unlimitedValue() endif
+
+
+Q1.1)
+
+— La borne inférieure doit être positive ou nulle:
+context MultiplicityElement inv:
+	self.lowerBound()>=0
+
+
+— La borne supérieure doit être supérieure à la borne inférieure:
+context MultiplicityElement inv:
+	self.upperBound()>self.lowerBound()
+
+
+— La valeur dérivée de /lower doit être égale à la borne inférieure donnée par 
+la requête ci-dessus:
+
+context MultiplicityElement inv:
+	self.lower=self.lowerBound()
+
+— La valeur dérivée de /upper doit être égale à la borne supérieure par
+la requête ci-dessus:
+
+context MultiplicityElement inv:
+	self.upper=self.upperBound()
+
+— La requête isMultivalued() retourne vrai si la propriété peut prendre
+plus d’une valeur ; elle ne s’applique que lorsqu’une borne supérieure
+a été spécifiée.
+
+context MultiplicityElement
+	def : isMultivalued() : Boolean =
+	if ((self.upperBound())>1) then true
+	else false endif
+
+
+context MultiplicityElement::isMultivalued()
+	pre: upperValue->notEmpty() 
+
+
+
+— La requête isMultivalued() retourne vrai si la propriété peut prendre
+plus d’une valeur ; elle ne s’applique que lorsqu’une borne supérieure
+a été spécifiée.
+
+
+context MultiplicityElement::isMultivalued()
+	pre: self.upperValue->notEmpty() and self.lowerBound->notEmpty() and M.upperValue->notEmpty() and M.lowerBound->notEmpty()  
+
+context MultiplicityElement
+	def : includesMultiplicity(M: MultiplicityElement) : Boolean =
+	if (self.upperBound())>M.upperBound() and self.lowerBound() >M.lowerBound()) then true
+	else false endif
+
+
+
+Q2.1)
+
+
+
+
+
+Q2.2)
+
+
+
+
+
+
+
+
+
