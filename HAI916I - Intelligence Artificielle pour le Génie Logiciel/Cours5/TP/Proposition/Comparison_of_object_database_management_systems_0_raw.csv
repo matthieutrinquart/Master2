@@ -12,3 +12,9 @@ OpenAccess,2.2,C++,no,,Proprietary,EDA database
 Picolisp,3.1.1,Picolisp,,,MIT License,DB built into the language
 Twig,,Java,,,Apache license 2.0,Built on Google App Engine's low-level Datastore API
 WakandaDB,4,"JavaScript, C++",No support. Use REST & SSJS instead,JavaScript and 4D data types,"AGPL, proprietary",NoSQL REST / Server-Side JavaScript engine. Integrates Webkit JavaScriptCore engine with HTML5 JS APIs supported on the server. Tables and columns are replaced by JavaScript DataClasses and attributes.
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,0,
