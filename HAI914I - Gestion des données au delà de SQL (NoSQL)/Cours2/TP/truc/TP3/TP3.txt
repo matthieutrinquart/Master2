@@ -1,0 +1,29 @@
+TP3:
+
+Préparation :
+curl -X PUT $COUCH3/trinquart_vaccination?q=8
+
+
+curl -X POST $COUCH3/trinquart_vaccination/_bulk_docs -d @vaccin1.json -H "Content-Type:application/json"
+
+
+curl -X POST $COUCH3/trinquart_vaccination/_bulk_docs -d @departement.json -H "Content-Type:application/json"
+
+
+2.2)
+
+1) curl -X GET $COUCH3/trinquart_vaccination
+
+
+2) 
+
+curl -X GET $COUCH3/trinquart_vaccination/_all_docs
+
+
+3)
+
+curl -X GET $COUCH3/trinquart_vaccination/91/
+
+
+3.1)
+

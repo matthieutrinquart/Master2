@@ -2,9 +2,8 @@ package BeforeRefactor;
 
 public class Main {
     public static void main(String[] args) {
-
         /*
-        Le problème de générissité à été reglé car maintenant on peut créer un objet Animal et le nomé ou éléphant par exemple.
+        Le problème de ce programme est qu'il est pas assez générique car on ne peut pas créer des animaux eléphant ou chien par exemple.
          */
 
         Felin chat = new Felin("Chat","européen","Kuma",20,true,"petite griffe","Touffu");
@@ -49,38 +48,5 @@ public class Main {
         System.out.println("    Domestiqué : "+puma.isDomestique());
         System.out.println("    Type griffe : "+puma.getTypegriffe());
         System.out.println("    Type poile : "+puma.getTypepoil());
-
-
-        /*
-        Q1)
-        Extract SuperClass:
-            Cette super classe créer un nouvelle objet (dans notre exemple Animal) avec les attribut et fonctions qu'on a selectionné.
-            Elle met les attribut selectioné en protected
-            Elle prend la classe de base et l'hérite de la classe Animal.
-            Et supprime les attributs et fonction qu'on a selectionné.
-
-
-            Avantage:
-            Cela change rien au fonctionnement du programme et cela évite d'écrire des lignes de code ce qui fait gagner du temps.
-
-
-         */
-
-        /*
-        Q2
-        1)Extract superclass
-        2)Image explication
-        3)Cela évite d'écrire du code et  ca fait gagner du temps
-        4)Je trouve la mise en oeuvre bien réalisé
-        5)le main s'éxécute bien
-
-         */
-
-        /*
-        Q3
-        Exctract Delegate est sur Intellij mais pas sur le catalogue ni sur eclipse
-        Extract Constant est sur eclipse mais n'est pas sur le catalogue.
-
-         */
     }
 }

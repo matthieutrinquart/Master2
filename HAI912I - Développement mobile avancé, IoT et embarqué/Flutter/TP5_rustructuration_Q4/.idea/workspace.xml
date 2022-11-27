@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8311b6fb-3626-40fe-a560-ac5828870b9f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ListeChainee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ListeTableau.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/QueueAvecPriorite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/QueueDoubleEntree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../HAI913I - Évolution et restructuration des logiciels/Cours4/TP/TP5_rustructuration/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../HAI913I - Évolution et restructuration des logiciels/Cours4/TP/TP5_rustructuration/.idea/sonarlint/issuestore/4/6/460f076052b4dd99194c9a18e5bd024365376410" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../HAI913I - Évolution et restructuration des logiciels/Cours4/TP/TP5_rustructuration/.idea/sonarlint/issuestore/5/5/553ac1ea8c578af090bc100c63a50b9698395764" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../HAI913I - Évolution et restructuration des logiciels/Cours4/TP/TP5_rustructuration/.idea/sonarlint/issuestore/6/a/6a3236663bedf4611b4aa32c6935f99b2ed7f397" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../HAI913I - Évolution et restructuration des logiciels/Cours4/TP/TP5_rustructuration/.idea/sonarlint/issuestore/b/e/be65d5969b47423cf35a67074d732c0f846daf4f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../HAI913I - Évolution et restructuration des logiciels/Cours4/TP/TP5_rustructuration/.idea/sonarlint/issuestore/f/5/f58dd6b576cfaac9e354d6f0a6d0493be1f21238" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../HAI913I - Évolution et restructuration des logiciels/Cours4/TP/TP5_rustructuration/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../HAI913I - Évolution et restructuration des logiciels/Cours4/TP/TP5_rustructuration/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../HAI919I - Ingénierie Dirigée par les Modèles/Huchart/Cours2/TP/Q2.1.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../../HAI919I - Ingénierie Dirigée par les Modèles/Huchart/Cours2/TP/Q2.1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../HAI919I - Ingénierie Dirigée par les Modèles/Huchart/Cours2/TP/TD_OCL.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../HAI919I - Ingénierie Dirigée par les Modèles/Huchart/Cours2/TP/TD_OCL.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2I0KqcaHPREbsfsFsHrpMDs0xPa" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8311b6fb-3626-40fe-a560-ac5828870b9f" name="Changes" comment="" />
+      <created>1669313255386</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669313255386</updated>
+      <workItem from="1669313257046" duration="370000" />
+      <workItem from="1669313759845" duration="1553000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
