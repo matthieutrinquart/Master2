@@ -1,0 +1,13 @@
+BDD;SQL_subset;CBQL;db4o-sql;None;JPA;JDO;DQL;REST;SSJS
+ConceptBase;0;0;0;0;0;0;0;0;0
+GemStone/S;0;0;1;1;0;0;0;0;0
+NeoDatis ODB;0;0;0;1;0;0;0;0;0
+ObjectDatabase++;0;0;0;1;0;0;0;0;0
+ObjectDB;0;0;0;1;1;1;0;0;0
+Objectivity/DB;1;0;0;0;0;0;0;0;0
+ObjectStore;1;0;0;0;0;0;0;0;0
+ODABA;1;0;0;0;0;0;1;0;0
+OpenAccess;0;0;0;1;0;0;0;0;0
+Picolisp;0;0;0;1;0;0;0;0;0
+Twig;0;0;0;1;0;0;0;0;0
+WakandaDB;0;0;0;1;0;0;0;1;1

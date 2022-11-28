@@ -1,0 +1,1253 @@
+[
+{
+"attributes": {
+"exist_BDD2Languages": {
+"concepts": [
+34,
+42
+],
+"operator": "exist",
+"relation": "BDD2Languages",
+"target": "Languages"
+}
+},
+"children": [
+9,
+54,
+55,
+59
+],
+"context": "BDD",
+"id": 53,
+"objects": [],
+"parents": []
+},
+{
+"attributes": {
+"exist_BDD2Languages": {
+"concepts": [
+35
+],
+"operator": "exist",
+"relation": "BDD2Languages",
+"target": "Languages"
+}
+},
+"children": [
+57,
+65
+],
+"context": "BDD",
+"id": 55,
+"objects": [],
+"parents": [
+53
+]
+},
+{
+"attributes": {
+"exist_BDD2Languages": {
+"concepts": [
+33,
+38,
+40,
+43,
+44
+],
+"operator": "exist",
+"relation": "BDD2Languages",
+"target": "Languages"
+},
+"exist_BDD2Licenses": {
+"concepts": [
+19
+],
+"operator": "exist",
+"relation": "BDD2Licenses",
+"target": "Licenses"
+}
+},
+"children": [
+56,
+57,
+64
+],
+"context": "BDD",
+"id": 54,
+"objects": [],
+"parents": [
+53
+]
+},
+{
+"attributes": {
+"exist_BDD2Languages": {
+"concepts": [
+36
+],
+"operator": "exist",
+"relation": "BDD2Languages",
+"target": "Languages"
+}
+},
+"children": [
+60,
+64,
+65
+],
+"context": "BDD",
+"id": 59,
+"objects": [],
+"parents": [
+53
+]
+},
+{
+"attributes": {
+"exist_BDD2Languages": {
+"concepts": [
+39,
+47,
+49
+],
+"operator": "exist",
+"relation": "BDD2Languages",
+"target": "Languages"
+}
+},
+"children": [
+10,
+58,
+60,
+68
+],
+"context": "BDD",
+"id": 57,
+"objects": [],
+"parents": [
+54,
+55
+]
+},
+{
+"attributes": {
+"None": "None"
+},
+"children": [
+11,
+58,
+72,
+76
+],
+"context": "BDD",
+"id": 9,
+"objects": [],
+"parents": [
+53
+]
+},
+{
+"attributes": {
+"exist_BDD2Licenses": {
+"concepts": [
+21
+],
+"operator": "exist",
+"relation": "BDD2Licenses",
+"target": "Licenses"
+}
+},
+"children": [
+10,
+58,
+68,
+69
+],
+"context": "BDD",
+"id": 56,
+"objects": [],
+"parents": [
+54
+]
+},
+{
+"attributes": {
+"exist_BDD2Languages": {
+"concepts": [
+45
+],
+"operator": "exist",
+"relation": "BDD2Languages",
+"target": "Languages"
+}
+},
+"children": [
+66,
+69
+],
+"context": "BDD",
+"id": 64,
+"objects": [],
+"parents": [
+54,
+59
+]
+},
+{
+"attributes": {
+"exist_BDD2Languages": {
+"concepts": [
+46
+],
+"operator": "exist",
+"relation": "BDD2Languages",
+"target": "Languages"
+}
+},
+"children": [
+66,
+72
+],
+"context": "BDD",
+"id": 65,
+"objects": [],
+"parents": [
+55,
+59
+]
+},
+{
+"attributes": {
+"exist_BDD2Languages": {
+"concepts": [
+37,
+41
+],
+"operator": "exist",
+"relation": "BDD2Languages",
+"target": "Languages"
+}
+},
+"children": [
+61,
+66
+],
+"context": "BDD",
+"id": 60,
+"objects": [],
+"parents": [
+57,
+59
+]
+},
+{
+"attributes": {
+"exist_BDD2Licenses": {
+"concepts": [
+18
+],
+"operator": "exist",
+"relation": "BDD2Licenses",
+"target": "Licenses"
+}
+},
+"children": [
+13,
+14,
+67
+],
+"context": "BDD",
+"id": 63,
+"objects": [],
+"parents": []
+},
+{
+"attributes": {
+"exist_BDD2Licenses": {
+"concepts": [
+17
+],
+"operator": "exist",
+"relation": "BDD2Licenses",
+"target": "Licenses"
+}
+},
+"children": [
+67,
+70
+],
+"context": "BDD",
+"id": 62,
+"objects": [],
+"parents": []
+},
+{
+"attributes": {},
+"children": [
+61
+],
+"context": "BDD",
+"id": 58,
+"objects": [
+"OpenAccess"
+],
+"parents": [
+9,
+56,
+57
+]
+},
+{
+"attributes": {
+"exist_BDD2Licenses": {
+"concepts": [
+22
+],
+"operator": "exist",
+"relation": "BDD2Licenses",
+"target": "Licenses"
+}
+},
+"children": [
+14,
+70
+],
+"context": "BDD",
+"id": 68,
+"objects": [],
+"parents": [
+56,
+57
+]
+},
+{
+"attributes": {
+"exist_BDD2Languages": {
+"concepts": [
+51
+],
+"operator": "exist",
+"relation": "BDD2Languages",
+"target": "Languages"
+}
+},
+"children": [
+11,
+73
+],
+"context": "BDD",
+"id": 69,
+"objects": [],
+"parents": [
+56,
+64
+]
+},
+{
+"attributes": {
+"exist_BDD2Languages": {
+"concepts": [
+48,
+50
+],
+"operator": "exist",
+"relation": "BDD2Languages",
+"target": "Languages"
+}
+},
+"children": [
+12,
+73,
+76
+],
+"context": "BDD",
+"id": 66,
+"objects": [],
+"parents": [
+60,
+64,
+65
+]
+},
+{
+"attributes": {
+"exist_BDD2Licenses": {
+"concepts": [
+20,
+28
+],
+"operator": "exist",
+"relation": "BDD2Licenses",
+"target": "Licenses"
+}
+},
+"children": [
+71,
+76
+],
+"context": "BDD",
+"id": 67,
+"objects": [],
+"parents": [
+62,
+63
+]
+},
+{
+"attributes": {},
+"children": [
+12,
+14,
+75
+],
+"context": "BDD",
+"id": 61,
+"objects": [
+"ObjectDatabase++"
+],
+"parents": [
+58,
+60
+]
+},
+{
+"attributes": {
+"exist_BDD2Licenses": {
+"concepts": [
+23
+],
+"operator": "exist",
+"relation": "BDD2Licenses",
+"target": "Licenses"
+}
+},
+"children": [
+13,
+75
+],
+"context": "BDD",
+"id": 70,
+"objects": [],
+"parents": [
+62,
+68
+]
+},
+{
+"attributes": {
+"SQL": "subset"
+},
+"children": [
+13,
+74
+],
+"context": "BDD",
+"id": 10,
+"objects": [
+"ObjectStore"
+],
+"parents": [
+56,
+57
+]
+},
+{
+"attributes": {
+"exist_BDD2Languages": {
+"concepts": [
+52
+],
+"operator": "exist",
+"relation": "BDD2Languages",
+"target": "Languages"
+}
+},
+"children": [
+74,
+75
+],
+"context": "BDD",
+"id": 73,
+"objects": [],
+"parents": [
+66,
+69
+]
+},
+{
+"attributes": {
+"exist_BDD2Licenses": {
+"concepts": [
+26,
+30,
+31
+],
+"operator": "exist",
+"relation": "BDD2Licenses",
+"target": "Licenses"
+}
+},
+"children": [
+72
+],
+"context": "BDD",
+"id": 71,
+"objects": [
+"ConceptBase"
+],
+"parents": [
+67
+]
+},
+{
+"attributes": {
+"exist_BDD2Licenses": {
+"concepts": [
+29
+],
+"operator": "exist",
+"relation": "BDD2Licenses",
+"target": "Licenses"
+}
+},
+"children": [
+15
+],
+"context": "BDD",
+"id": 76,
+"objects": [
+"Twig"
+],
+"parents": [
+9,
+66,
+67
+]
+},
+{
+"attributes": {
+"REST": "REST",
+"SSJS": "SSJS",
+"exist_BDD2Licenses": {
+"concepts": [
+32
+],
+"operator": "exist",
+"relation": "BDD2Licenses",
+"target": "Licenses"
+}
+},
+"children": [
+15
+],
+"context": "BDD",
+"id": 14,
+"objects": [
+"WakandaDB"
+],
+"parents": [
+61,
+63,
+68
+]
+},
+{
+"attributes": {
+"DQL": "DQL",
+"exist_BDD2Licenses": {
+"concepts": [
+24,
+25
+],
+"operator": "exist",
+"relation": "BDD2Licenses",
+"target": "Licenses"
+}
+},
+"children": [
+15
+],
+"context": "BDD",
+"id": 13,
+"objects": [
+"ODABA"
+],
+"parents": [
+10,
+63,
+70
+]
+},
+{
+"attributes": {
+"JDO": "JDO",
+"JPA": "JPA"
+},
+"children": [
+15
+],
+"context": "BDD",
+"id": 12,
+"objects": [
+"ObjectDB"
+],
+"parents": [
+61,
+66
+]
+},
+{
+"attributes": {
+"db4o-sql": "db4o-sql"
+},
+"children": [
+15
+],
+"context": "BDD",
+"id": 11,
+"objects": [
+"GemStone\/S"
+],
+"parents": [
+9,
+69
+]
+},
+{
+"attributes": {},
+"children": [
+15
+],
+"context": "BDD",
+"id": 75,
+"objects": [
+"NeoDatis ODB"
+],
+"parents": [
+61,
+70,
+73
+]
+},
+{
+"attributes": {},
+"children": [
+15
+],
+"context": "BDD",
+"id": 74,
+"objects": [
+"Objectivity\/DB"
+],
+"parents": [
+10,
+73
+]
+},
+{
+"attributes": {},
+"children": [
+15
+],
+"context": "BDD",
+"id": 72,
+"objects": [
+"Picolisp"
+],
+"parents": [
+9,
+65,
+71
+]
+},
+{
+"attributes": {
+"CBQL": "CBQL",
+"exist_BDD2Licenses": {
+"concepts": [
+27
+],
+"operator": "exist",
+"relation": "BDD2Licenses",
+"target": "Licenses"
+}
+},
+"children": [],
+"context": "BDD",
+"id": 15,
+"objects": [],
+"parents": [
+11,
+12,
+13,
+14,
+72,
+74,
+75,
+76
+]
+},
+{
+"attributes": {
+"Private use": "Private use"
+},
+"children": [
+20,
+23,
+24,
+26
+],
+"context": "Licenses",
+"id": 17,
+"objects": [],
+"parents": []
+},
+{
+"attributes": {
+"Linking": "Linking"
+},
+"children": [
+20,
+24,
+32
+],
+"context": "Licenses",
+"id": 18,
+"objects": [],
+"parents": []
+},
+{
+"attributes": {
+"Patent grant": "Patent grant"
+},
+"children": [
+21,
+22,
+27,
+29
+],
+"context": "Licenses",
+"id": 19,
+"objects": [],
+"parents": []
+},
+{
+"attributes": {
+"Manual TM grant": "Manual TM grant"
+},
+"children": [
+27,
+30
+],
+"context": "Licenses",
+"id": 26,
+"objects": [],
+"parents": [
+17
+]
+},
+{
+"attributes": {
+"Distribution": "Distribution",
+"Modification": "Modification"
+},
+"children": [
+28,
+30
+],
+"context": "Licenses",
+"id": 20,
+"objects": [],
+"parents": [
+17,
+18
+]
+},
+{
+"attributes": {
+"Distribution Copyleft": "Distribution Copyleft",
+"Modification Copyleft": "Modification Copyleft",
+"Sublicensing Copyleft": "Sublicensing Copyleft"
+},
+"children": [
+23,
+24,
+32
+],
+"context": "Licenses",
+"id": 22,
+"objects": [],
+"parents": [
+19
+]
+},
+{
+"attributes": {
+"Grants TM": "Grants TM"
+},
+"children": [
+23,
+32
+],
+"context": "Licenses",
+"id": 21,
+"objects": [
+"Proprietary"
+],
+"parents": [
+19
+]
+},
+{
+"attributes": {
+"Manual patent grant": "Manual patent grant"
+},
+"children": [
+31
+],
+"context": "Licenses",
+"id": 30,
+"objects": [
+"Cryptix General License"
+],
+"parents": [
+20,
+26
+]
+},
+{
+"attributes": {
+"Sublicensing": "Sublicensing"
+},
+"children": [
+29,
+31
+],
+"context": "Licenses",
+"id": 28,
+"objects": [],
+"parents": [
+20
+]
+},
+{
+"attributes": {},
+"children": [
+25
+],
+"context": "Licenses",
+"id": 24,
+"objects": [
+"Mozilla Public License"
+],
+"parents": [
+17,
+18,
+22
+]
+},
+{
+"attributes": {},
+"children": [
+25
+],
+"context": "Licenses",
+"id": 23,
+"objects": [
+"GNU Lesser General Public License(LGPL)"
+],
+"parents": [
+17,
+21,
+22
+]
+},
+{
+"attributes": {
+"Private use Copyleft": "Private use Copyleft"
+},
+"children": [],
+"context": "Licenses",
+"id": 32,
+"objects": [
+"GNU Affero General Public License(AGPL)"
+],
+"parents": [
+18,
+21,
+22
+]
+},
+{
+"attributes": {},
+"children": [],
+"context": "Licenses",
+"id": 31,
+"objects": [
+"BSD License",
+"MIT license \/ X11 license"
+],
+"parents": [
+28,
+30
+]
+},
+{
+"attributes": {},
+"children": [],
+"context": "Licenses",
+"id": 29,
+"objects": [
+"Apache License"
+],
+"parents": [
+19,
+28
+]
+},
+{
+"attributes": {},
+"children": [],
+"context": "Licenses",
+"id": 27,
+"objects": [
+"Eclipse Public License"
+],
+"parents": [
+19,
+26
+]
+},
+{
+"attributes": {},
+"children": [],
+"context": "Licenses",
+"id": 25,
+"objects": [
+"GNU General Public License(GPL)"
+],
+"parents": [
+23,
+24
+]
+},
+{
+"attributes": {
+"Procedural": "Procedural"
+},
+"children": [
+43,
+46
+],
+"context": "Languages",
+"id": 42,
+"objects": [],
+"parents": []
+},
+{
+"attributes": {
+"Imperative": "Imperative"
+},
+"children": [
+37,
+40,
+43,
+47
+],
+"context": "Languages",
+"id": 33,
+"objects": [],
+"parents": []
+},
+{
+"attributes": {
+"Object-oriented": "Object-oriented"
+},
+"children": [
+36,
+40,
+47
+],
+"context": "Languages",
+"id": 34,
+"objects": [],
+"parents": []
+},
+{
+"attributes": {
+"Functional": "Functional"
+},
+"children": [
+37,
+39,
+46,
+47
+],
+"context": "Languages",
+"id": 35,
+"objects": [],
+"parents": []
+},
+{
+"attributes": {},
+"children": [
+44,
+45
+],
+"context": "Languages",
+"id": 43,
+"objects": [
+"Bash"
+],
+"parents": [
+33,
+42
+]
+},
+{
+"attributes": {
+"Standardized?": "Standardized?"
+},
+"children": [
+39,
+40,
+44
+],
+"context": "Languages",
+"id": 38,
+"objects": [],
+"parents": []
+},
+{
+"attributes": {
+"Reflective": "Reflective"
+},
+"children": [
+37,
+45,
+46
+],
+"context": "Languages",
+"id": 36,
+"objects": [],
+"parents": [
+34
+]
+},
+{
+"attributes": {
+"Generic": "Generic"
+},
+"children": [
+48,
+49
+],
+"context": "Languages",
+"id": 47,
+"objects": [
+"OCaml"
+],
+"parents": [
+33,
+34,
+35
+]
+},
+{
+"attributes": {},
+"children": [
+49,
+51
+],
+"context": "Languages",
+"id": 44,
+"objects": [
+"C"
+],
+"parents": [
+38,
+43
+]
+},
+{
+"attributes": {},
+"children": [
+41,
+49,
+51
+],
+"context": "Languages",
+"id": 40,
+"objects": [
+"Dart"
+],
+"parents": [
+33,
+34,
+38
+]
+},
+{
+"attributes": {},
+"children": [
+41,
+49
+],
+"context": "Languages",
+"id": 39,
+"objects": [
+"Lisp"
+],
+"parents": [
+35,
+38
+]
+},
+{
+"attributes": {},
+"children": [
+41,
+48
+],
+"context": "Languages",
+"id": 37,
+"objects": [
+"Python"
+],
+"parents": [
+33,
+35,
+36
+]
+},
+{
+"attributes": {},
+"children": [
+50,
+51
+],
+"context": "Languages",
+"id": 45,
+"objects": [
+"PHP"
+],
+"parents": [
+36,
+43
+]
+},
+{
+"attributes": {},
+"children": [
+50
+],
+"context": "Languages",
+"id": 49,
+"objects": [
+"C++"
+],
+"parents": [
+39,
+40,
+44,
+47
+]
+},
+{
+"attributes": {},
+"children": [
+50
+],
+"context": "Languages",
+"id": 48,
+"objects": [
+"Kotlin"
+],
+"parents": [
+37,
+47
+]
+},
+{
+"attributes": {},
+"children": [
+50
+],
+"context": "Languages",
+"id": 46,
+"objects": [
+"Picolisp"
+],
+"parents": [
+35,
+36,
+42
+]
+},
+{
+"attributes": {},
+"children": [
+50
+],
+"context": "Languages",
+"id": 41,
+"objects": [
+"JavaScript",
+"TScript"
+],
+"parents": [
+37,
+39,
+40
+]
+},
+{
+"attributes": {
+"Event-driven": "Event-driven"
+},
+"children": [
+52
+],
+"context": "Languages",
+"id": 51,
+"objects": [
+"Smalltalk"
+],
+"parents": [
+40,
+44,
+45
+]
+},
+{
+"attributes": {},
+"children": [
+52
+],
+"context": "Languages",
+"id": 50,
+"objects": [
+"Java"
+],
+"parents": [
+41,
+45,
+46,
+48,
+49
+]
+},
+{
+"attributes": {},
+"children": [],
+"context": "Languages",
+"id": 52,
+"objects": [
+"C#"
+],
+"parents": [
+50,
+51
+]
+}
+]

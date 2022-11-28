@@ -1,0 +1,21 @@
+digraph G { 
+	rankdir=BT;
+subgraph BDD { 
+label="BDD";
+2 [shape=record,label="{Concept_BDD_2|exist_BDD2Licenses(C_Licenses_4)\n|ConceptBase\nGemStone/S\nNeoDatis ODB\nObjectDatabase++\nObjectDB\nObjectivity/DB\nObjectStore\nODABA\nOpenAccess\nPicolisp\nTwig\nWakandaDB\n}"];
+3 [shape=record,label="{Concept_BDD_3|Java\nC#\nSmalltalk\nTScript\nPython\nPicolisp\nJavaScript\nC++\nProprietary\nGNU General Public License(GPL)\nGNU Lesser General Public License(LGPL)\nBSD License\nMIT license / X11 license\nApache License\nGNU Affero General Public License(AGPL)\nSQL_subset\nCBQL\ndb4o-sql\nNone\nJPA\nJDO\nDQL\nREST\nSSJS\nexist_BDD2Licenses(C_Licenses_5)\nexist_BDD2Languages(C_Languages_6)\nexist_BDD2Languages(C_Languages_7)\n|}"];
+	3 -> 2
+}
+subgraph Licenses { 
+label="Licenses";
+4 [shape=record,label="{Concept_Licenses_4||Apache License\nBSD License\nCryptix General License\nEclipse Public License\nGNU Affero General Public License(AGPL)\nGNU General Public License(GPL)\nGNU Lesser General Public License(LGPL)\nMIT license / X11 license\nMozilla Public License\nProprietary\n}"];
+5 [shape=record,label="{Concept_Licenses_5|Linking\nDistribution\nModification\nPatent grant\nPrivate use\nSublicensing\nGrants TM\nDistribution Copyleft\nModification Copyleft\nPrivate use Copyleft\nSublicensing Copyleft\nManual patent grant\nManual TM grant\n|}"];
+	5 -> 4
+}
+subgraph Languages { 
+label="Languages";
+6 [shape=record,label="{Concept_Languages_6||Bash\nC\nC++\nC#\nDart\nJava\nJavaScript\nKotlin\nLisp\nOCaml\nPHP\nPython\nSmalltalk\nPicolisp\nTScript\n}"];
+7 [shape=record,label="{Concept_Languages_7|Imperative\nObject-oriented\nFunctional\nProcedural\nGeneric\nReflective\nEvent-driven\nStandardized?\n|}"];
+	7 -> 6
+}
+}
