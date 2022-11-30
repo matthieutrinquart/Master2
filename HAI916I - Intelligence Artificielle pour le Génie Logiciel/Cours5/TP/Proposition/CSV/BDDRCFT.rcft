@@ -1,17 +1,18 @@
 FormalContext BDD
-||SQL_subset|CBQL|db4o-sql|None|JPA|JDO|DQL|REST|SSJS|
-|ConceptBase||||||||||
-|GemStone/S|||x|x||||||
-|NeoDatis ODB||||x||||||
-|ObjectDatabase++||||x||||||
-|ObjectDB||||x|x|x||||
-|Objectivity/DB|x|||||||||
-|ObjectStore|x|||||||||
-|ODABA|x||||||x|||
-|OpenAccess||||x||||||
-|Picolisp||||x||||||
-|Twig||||x||||||
-|WakandaDB||||x||||x|x|
+||XML_support|.NET_support|SQL_subset|SQL_superset|None|JPA|JDO|DQL|REST|SSJS|OQL|
+|ObjectFile|x||||x|||||||
+|GemStone/S|||||x|||||||
+|NeoDatis ODB|||||x|||||||
+|ObjectDatabase++|||||x|||||||
+|ObjectDB|||||x|x|x|||||
+|Objectivity/DB|x|||x||||||||
+|ObjectStore||x|x|||||||||
+|ODABA||x|x|||||x||||
+|OpenAccess|||||x|||||||
+|Picolisp|||||x|||||||
+|Twig|||||x|||||||
+|WakandaDB|||||x||||x|x||
+|VersantObjectDatabase|||||||||||x|
 
 FormalContext Licenses
 ||Linking|Distribution|Modification|Patent grant|Private use|Sublicensing|Grants TM|Distribution Copyleft|Modification Copyleft|Private use Copyleft|Sublicensing Copyleft|Manual patent grant|Manual TM grant|
@@ -41,7 +42,7 @@ FormalContext Languages
 |PHP|x|x||x||x|||
 |Python|x|x|x|||x|||
 |Smalltalk|x|x||x||x|x|x|
-|Picolisp||x|x|x||x|||
+|Picolisp|x|x|x|x||x|||
 |TScript|x|x|x|||x||x|
 
 RelationalContext BDD2Licenses
@@ -49,7 +50,7 @@ source BDD
 target Licenses
 scaling exist
 ||Apache License|BSD License|Cryptix General License|Eclipse Public License|GNU Affero General Public License(AGPL)|GNU General Public License(GPL)|GNU Lesser General Public License(LGPL)|MIT license / X11 license|Mozilla Public License|Proprietary|
-|ConceptBase||x|||||||||
+|ObjectFile||||||||x|||
 |GemStone/S||||||||||x|
 |NeoDatis ODB|||||||x||||
 |ObjectDatabase++||||||||||x|
@@ -61,13 +62,14 @@ scaling exist
 |Picolisp||||||||x|||
 |Twig|x||||||||||
 |WakandaDB|||||x|||||x|
+|VersantObjectDatabase||||||||||x|
 
 RelationalContext BDD2Languages
 source BDD
 target Languages
 scaling exist
 ||Java|C#|Smalltalk|TScript|Python|Picolisp|JavaScript|C++|Bash|C|Dart|Kotlin|Lisp|OCaml|PHP|
-|ConceptBase||||||||||||||||
+|ObjectFile||||||||x||||||||
 |GemStone/S|||x|||||||||||||
 |NeoDatis ODB|x|x||||||||||||||
 |ObjectDatabase++||||x||||x||||||||
@@ -79,4 +81,5 @@ scaling exist
 |Picolisp||||||x||||||||||
 |Twig|x|||||||||||||||
 |WakandaDB|||||||x|x||||||||
+|VersantObjectDatabase|x|x||||||x||||||||
 

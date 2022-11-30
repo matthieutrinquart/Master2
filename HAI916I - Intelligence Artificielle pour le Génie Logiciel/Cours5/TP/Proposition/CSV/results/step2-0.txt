@@ -1,1 +1,1 @@
-BDD: step=3 nb.concepts=31 nb.attrib rel.=36
+BDD: step=3 nb.concepts=36 nb.attrib rel.=35
