@@ -1,30 +1,27 @@
 import 'package:flutter/material.dart';
 import 'package:tp1_2/QuestionRepository.dart';
-
-import 'Question.dart';
-class QuizzPage extends StatefulWidget {
-  const QuizzPage({Key? key}) : super(key: key);
+class Home extends StatefulWidget {
+  const Home({Key? key}) : super(key: key);
 
 
-  final String title = 'Question/Réponses';
+  final String title = 'QUIZZ';
 
   @override
-  State<QuizzPage> createState() => _QuizzPageState();
+  State<Home> createState() => _Home();
 }
 
-class _QuizzPageState extends State<QuizzPage> {
+class _Home extends State<Home> {
 
 
- // QuestionRepository questions = new QuestionRepository();
+  QuestionRepository questions = new QuestionRepository();
   int index=0;
   int score =0;
 
   Color Faux = Color(0xf0607d8b);
   Color Vrais = Color(0xf0607d8b);
-  List<Question> questions =[];
+
   @override
   Widget build(BuildContext context) {
-    questions = ModalRoute.of(context)!.settings.arguments as List<Question>;
     return Scaffold(
       backgroundColor:const Color(0xff0607d8b),
       appBar: AppBar(
@@ -39,59 +36,39 @@ class _QuizzPageState extends State<QuizzPage> {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
             _getImage(),
-          //  SizedBox(height:(MediaQuery.of(context).size.height*10)/100),
-            _getQuestion(),
-       //     SizedBox(height:(MediaQuery.of(context).size.height*5)/100),
-            _getButton(),
+            _getButton()
 
           ],
         ),
       ),
     );
   }
-
-  Container _getQuestion() {
-    return Container(
-      alignment: Alignment.center,
-      width: 300.00,
-      child: Container(
-        child: Card(
-          color:const Color(0xff0607d8b),
-          child: new Text (questions[index].questionText,
-              textAlign: TextAlign.left,style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.bold)),
-        ),
-      ),
-    );
-  }
-
   Container _getImage() {
     return Container(
       alignment: Alignment.center,
       child: Container(
         width: 300.00,
         height: 300.00,
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage('images/image.jpg'),
-            fit: BoxFit.fitHeight,
+        child: Icon(
+            Icons.quiz,
+            color: Colors.black,
+            size: 100,
           ),
-        ),
       ),
     );
 
   }
-
   Container _getButton() {
     return Container(
       alignment: Alignment.center,
-      child:Row(
+      child:Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>[
 
           Card(
             color:Vrais,
             child: Container(
-              width: 80.00,
+              width: 150.00,
               height: 50.00,
               child:TextButton(
                 style: ButtonStyle(
@@ -99,17 +76,13 @@ class _QuizzPageState extends State<QuizzPage> {
                 ),
                 onPressed: () {
                   setState(() {
-                    if(questions[index].isCorrect){
-                      Vrais  = Color(0xff32CD32);
-                      Faux = Color(0xffDC143C);
-                      ++score;
-                    }else{
-                      Vrais  = Color(0xffDC143C);
-                      Faux = Color(0xff32CD32);
-                    }
+                    Navigator.pushNamed(context,
+                      '/Quizz',
+                      arguments: questions.getFacileQuestion()
+                    );
                   });
                 },
-                child: Text('VRAI',
+                child: Text('FACILE',
                     textAlign: TextAlign.left,style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.bold)),
               ),
             ),
@@ -117,7 +90,7 @@ class _QuizzPageState extends State<QuizzPage> {
           Card(
             color:Faux,
             child: Container(
-              width: 80.00,
+              width: 150.00,
               height: 50.00,
               child:TextButton(
                 style: ButtonStyle(
@@ -125,17 +98,13 @@ class _QuizzPageState extends State<QuizzPage> {
                 ),
                 onPressed: () {
                   setState(() {
-                    if(questions[index].isCorrect){
-                      Vrais  = Color(0xff32CD32);
-                      Faux = Color(0xffDC143C);
-                    }else{
-                      Vrais  = Color(0xffDC143C);
-                      Faux = Color(0xff32CD32);
-                      ++score;
-                    }
+                    Navigator.pushNamed(context,
+                        '/Quizz',
+                        arguments: questions.getMoyenQuestion()
+                    );
                   });
                 },
-                child: Text('FAUX',
+                child: Text('MOYENNE',
                     textAlign: TextAlign.left,style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.bold)),
               ),
             ),
@@ -143,7 +112,7 @@ class _QuizzPageState extends State<QuizzPage> {
           Card(
             color:const Color(0xff0607d8b),
             child: Container(
-              width: 80.00,
+              width: 150.00,
               height: 50.00,
               child:TextButton(
                 style: ButtonStyle(
@@ -151,16 +120,14 @@ class _QuizzPageState extends State<QuizzPage> {
                 ),
                 onPressed: () {
                   setState(() {
-                    Faux = Color(0xf0607d8b);
-                    Vrais = Color(0xf0607d8b);
-                    ++index;
-                    if(index == questions.length){
-                      index =0;
-                    }
+                    Navigator.pushNamed(context, '/Quizz',
+                    arguments: questions.getDifficulterQuestion()
+
+                    );
                   });
                 },
-                child: Text('→',
-                    textAlign: TextAlign.center,style: TextStyle(color: Colors.white,fontSize: 50,fontWeight: FontWeight.bold)),
+                child: Text('DIFFICILE',
+                    textAlign: TextAlign.center,style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.bold)),
               ),
             ),
           ),

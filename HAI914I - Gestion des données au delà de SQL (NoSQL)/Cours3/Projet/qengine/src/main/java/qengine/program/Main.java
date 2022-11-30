@@ -16,7 +16,7 @@ import org.eclipse.rdf4j.rio.RDFParser;
 import org.eclipse.rdf4j.rio.Rio;
 import qengine.program.Dictionary.Dictonnary;
 import qengine.program.Index.Index;
-import qengine.program.Utils.EvaluateStarRequest;
+import qengine.program.Utils.EvaluateRequest;
 
 /**
  * Programme simple lisant un fichier de requête et un fichier de données.
@@ -45,9 +45,9 @@ final class Main {
 	/**
 	 * Fichier contenant les requêtes sparql
 	 */
-	static final String queryFile = workingDir + "sample_query.queryset";
+	static final String queryFile = workingDir + "STAR_ALL_workload.queryset";
 
-	/**
+	/*
 	 * Fichier contenant des données rdf
 	 */
 	//static final String dataFile = workingDir + "sample_data.nt";
@@ -59,33 +59,10 @@ final class Main {
 	 * Méthode utilisée ici lors du parsing de requête sparql pour agir sur l'objet obtenu.
 	 */
 	public static void processAQuery(ParsedQuery query) {
-		long lStartTime = System.nanoTime();
-		ArrayList<Integer> results = EvaluateStarRequest.evaluateStarRequest(query) ;
-		long lEndTime = System.nanoTime();
-
-		long executionTime = (lEndTime - lStartTime) / 1000000;
-		System.out.println("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*");
-
+		ArrayList<Integer> results = EvaluateRequest.evaluateStarRequest(query) ;
 		System.out.println("Querry : " + query);
-		System.out.println("Result (in " + executionTime + " ms) : " + Arrays.toString(results.toArray()));
 		for (int r : results) { System.out.println(Dictonnary.getInstance().decode(r)); }
-
 		System.out.println("\n\n\n");
-
-
-/*		System.out.println("first pattern : " + patterns.get(0));
-
-		System.out.println("object of the first pattern : " + patterns.get(0).getObjectVar().getValue());
-
-		System.out.println("variables to project : ");
-
-		// Utilisation d'une classe anonyme
-		query.getTupleExpr().visit(new AbstractQueryModelVisitor<RuntimeException>() {
-
-			public void meet(Projection projection) {
-				System.out.println(projection.getProjectionElemList().getElements());
-			}
-		});*/
 	}
 
 	/**
