@@ -83,6 +83,62 @@ IV)
         function (doc) {
             if(doc.type == "commune"){
                 emit([doc.old_reg,doc.dep, doc._id], 1);
-                }
             }
+        }
+
+
+
+        2)
+        function (doc) {
+            if(doc.type == "commune"){
+                emit(doc.nom, doc.populations[1].pop_1985);
+            }
+        }
+
+        3)
+        function (doc) {
+            if(doc.type == "commune"){
+                emit(doc.dep, doc.populations[1].pop_1985);
+            }
+        }
+        4)
+        function (doc) {
+            if(doc.type == "commune"){
+                emit(doc.old_reg, doc.populations[1].pop_1985);
+            }
+        }
+
+
+    III)
+        1)
+        function (doc) {
+            if(doc.type == "commune"){
+                if(doc.populations[1].pop_1985 < doc.populations[2].pop_1995)
+                emit(doc.nom, (doc.populations[1].pop_1985-doc.populations[2].pop_1995));
+            }
+        }
+
+
+        2)
+        function (doc) {
+            if(doc.type == "region"){
+                emit([doc._id,0], doc.nom_reg);
+            }
+            if(doc.type == "old_region"){
+                emit([doc._id,1], doc.nom_reg);
+            }
+        }
+
+
+
+    V)
+    1)
+    curl -X GET http:/admin:admin@localhost:5984/_membership
+
+    2)
+    curl -X GET http:/admin:admin@localhost:5984/matthieu_revision_occitanie/_shards
+    
+    
+    3)
+    curl -X GET http:/admin:admin@localhost:5984/matthieu_revision_occitanie/_shards/34172
   
