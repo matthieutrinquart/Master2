@@ -1,137 +1,162 @@
 package qengine.program;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
+import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.Reader;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.*;
 import java.util.stream.Stream;
 
-import org.eclipse.rdf4j.query.parser.ParsedQuery;
-import org.eclipse.rdf4j.query.parser.sparql.SPARQLParser;
-import org.eclipse.rdf4j.rio.RDFFormat;
-import org.eclipse.rdf4j.rio.RDFParser;
-import org.eclipse.rdf4j.rio.Rio;
 import qengine.program.Dictionary.Dictonnary;
 import qengine.program.Index.Index;
-import qengine.program.Utils.EvaluateRequest;
+import qengine.program.QueryEngine.Jena;
+import qengine.program.QueryEngine.QEngine;
+import qengine.program.Utils.OutputData;
+import qengine.program.Utils.QueryResultLogger;
 
-/**
- * Programme simple lisant un fichier de requête et un fichier de données.
- * 
- * <p>
- * Les entrées sont données ici de manière statique,
- * à vous de programmer les entrées par passage d'arguments en ligne de commande comme demandé dans l'énoncé.
- * </p>
- * 
- * <p>
- * Le présent programme se contente de vous montrer la voie pour lire les triples et requêtes
- * depuis les fichiers ; ce sera à vous d'adapter/réécrire le code pour finalement utiliser les requêtes et interroger les données.
- * On ne s'attend pas forcémment à ce que vous gardiez la même structure de code, vous pouvez tout réécrire.
- * </p>
- * 
- * @author Olivier Rodriguez <olivier.rodriguez1@umontpellier.fr>
- */
-final class Main {
-	static final String baseURI = null;
-
+public final class Main {
 	/**
 	 * Votre répertoire de travail où vont se trouver les fichiers à lire
 	 */
 	static final String workingDir = "data/";
-
 	/**
 	 * Fichier contenant les requêtes sparql
 	 */
-	static final String queryFile = workingDir + "STAR_ALL_workload.queryset";
-
-	/*
+	public static String queryFile = workingDir + "STAR_ALL_workload.queryset";
+	/**
 	 * Fichier contenant des données rdf
 	 */
-	//static final String dataFile = workingDir + "sample_data.nt";
-	static final String dataFile = workingDir + "100K.nt";
+	public static String dataFile = workingDir + "100K.nt";
+
+
+
+	/**
+	 * Fichier de output
+	 */
+	public static String outputFile = null;
+	/**
+	 * Vérification des résultats avec jena
+	 */
+	static boolean useJena = false;
+	/**
+	 * Echauffement du systeme avec x% de requettes prises au hazard
+	 */
+	static int warm = 0;
+	/**
+	 * Melanger la liste des requettes en entrée
+	 */
+	static boolean shuffle = false;
+
 
 	// ========================================================================
 
-	/**
-	 * Méthode utilisée ici lors du parsing de requête sparql pour agir sur l'objet obtenu.
-	 */
-	public static void processAQuery(ParsedQuery query) {
-		ArrayList<Integer> results = EvaluateRequest.evaluateStarRequest(query) ;
-		System.out.println("Querry : " + query);
-		for (int r : results) { System.out.println(Dictonnary.getInstance().decode(r)); }
-		System.out.println("\n\n\n");
-	}
 
 	/**
 	 * Entrée du programme
 	 */
-	public static void main(String[] args) throws Exception {
-		parseData();
-		parseQueries();
+	public static void main(String[] args) throws IOException {
+		long totalExecutionTime;   long totalstartTime = System.nanoTime();
+
+		QEngine.parseData();
+		// Si on utilise Jena, on par les data pour jena
+		if (useJena) { Jena.parseData(); }
+
+		// Liste des queries présentes dans le fichier
+		ArrayList<String> queries = parseQueries();
+
+		// Si warm, alors choisir un nombre de requettes et les executer avec QEngine
+		for(int i=0; i<warm; i++) { QEngine.processAQuery(queries.get(new Random().nextInt(queries.size()))) ; }
+		// Si shuffle, melanger la liste des requetes
+		if (shuffle) { Collections.shuffle(queries); }
 
 
-		Dictonnary d = Dictonnary.getInstance();
-		Index i = Index.getInstance();
-		d.saveDictionnary();
-		i.saveIndex();
+		QueryResultLogger logger = new QueryResultLogger() ;
+		long workloadTime;   long startTime = System.nanoTime();
+		for (String query : queries) {
+			List<String> qEngineResult = QEngine.processAQuery(query);
+			logger.logQueryResult(query, qEngineResult);
+
+			if (useJena) {
+				List<String> jenaResult = Jena.processAQuery(query);
+				Comparaison.verificationJena(jenaResult, qEngineResult);
+
+			}
+		}
+		long endTime = System.nanoTime();   workloadTime = (endTime - startTime) / 1000000;
+		logger.close();
+
+		long totalendTime = System.nanoTime(); 	totalExecutionTime = (totalendTime - totalstartTime) / 1000000;
+
+
+
+		OutputData data = new OutputData()
+				.setDataFileName(dataFile)
+				.setQueriesFileName(queryFile)
+				.setNumberOfData(Dictonnary.getInstance().getSize())
+				.setNumberOfQueries(queries.size())
+
+				.setTimeReadingData(QEngine.timeReadingData)
+				.setTimeReadingQueries(timeReadingQueries)
+				.setTimeCreatingDictionary(-1)
+
+				.setAmountOfIndexes(Index.getInstance().getSize())
+				.setTimeCreatingIndex(-1)
+				.setTimeWorkloadExecution(workloadTime)
+				.setTimeAllProgram(totalExecutionTime) ;
+
+		// Si output file, alors creer l'objet et l'ecrire
+		if (outputFile != null) {
+			File f = new File(outputFile);
+			if(!f.exists()){
+				f.createNewFile();
+				FileOutputStream fos = new FileOutputStream(outputFile, true);
+				fos.write(OutputData.getCSVHeader().getBytes());
+				fos.write("\n".getBytes());
+				fos.close();
+			}
+
+			FileOutputStream fos = new FileOutputStream(outputFile, true);
+			fos.write(data.toCSV().getBytes());
+			fos.write("\n".getBytes());
+			fos.close();
+		}
+
+		System.out.println(OutputData.getCSVHeader());
+		System.out.println(data.toCSV());
+
+		// Serialize Dictionary and Index on disk
+		Dictonnary.getInstance().saveDictionnary();
+		Index.getInstance().saveIndex();
 	}
 
 	// ========================================================================
 
 	/**
-	 * Traite chaque requête lue dans {@link #queryFile} avec {@link #processAQuery(ParsedQuery)}.
+	 * Parse le fichier des requettes, et retourne une liste de requettes
+	 * @return liste de requettes sous forme de string
+	 * @throws IOException
 	 */
-	private static void parseQueries() throws FileNotFoundException, IOException {
-		/**
-		 * Try-with-resources
-		 * 
-		 * @see <a href="https://docs.oracle.com/javase/tutorial/essential/exceptions/tryResourceClose.html">Try-with-resources</a>
-		 */
-		/*
-		 * On utilise un stream pour lire les lignes une par une, sans avoir à toutes les stocker
-		 * entièrement dans une collection.
-		 */
+	public static long timeReadingQueries;
+	public static ArrayList<String> parseQueries() throws IOException {
+		ArrayList<String> queries = new ArrayList<>();
+		long startTime = System.nanoTime();
 		try (Stream<String> lineStream = Files.lines(Paths.get(queryFile))) {
-			SPARQLParser sparqlParser = new SPARQLParser();
 			Iterator<String> lineIterator = lineStream.iterator();
 			StringBuilder queryString = new StringBuilder();
 
-			while (lineIterator.hasNext())
-			/*
-			 * On stocke plusieurs lignes jusqu'à ce que l'une d'entre elles se termine par un '}'
-			 * On considère alors que c'est la fin d'une requête
-			 */
-			{
+			while (lineIterator.hasNext()) {
 				String line = lineIterator.next();
 				queryString.append(line);
 
 				if (line.trim().endsWith("}")) {
-					ParsedQuery query = sparqlParser.parseQuery(queryString.toString(), baseURI);
-
-					processAQuery(query); // Traitement de la requête, à adapter/réécrire pour votre programme
-
-					queryString.setLength(0); // Reset le buffer de la requête en chaine vide
+					queries.add(queryString.toString());
+					queryString.setLength(0);
 				}
 			}
 		}
-	}
-
-	/**
-	 * Traite chaque triple lu dans {@link #dataFile} avec {@link MainRDFHandler}.
-	 */
-	private static void parseData() throws FileNotFoundException, IOException {
-		try (Reader dataReader = new FileReader(dataFile)) {
-			// On va parser des données au format ntriples
-			RDFParser rdfParser = Rio.createParser(RDFFormat.NTRIPLES);
-
-			// On utilise notre implémentation de handler
-			rdfParser.setRDFHandler(new MainRDFHandler());
-
-			// Parsing et traitement de chaque triple par le handler
-			rdfParser.parse(dataReader, baseURI);
-		}
+		long endTime = System.nanoTime();
+		timeReadingQueries = (endTime - startTime) / 1000000;
+		return queries;
 	}
 }
