@@ -63,8 +63,73 @@ Je sais pas je fais plus tard
 
 
 III)
-1)
+3.1)
 Je sais pas encore
 
 
+3.2)
+function(doc){
+    if(doc.type =='batiment' && doc.destination =='enseignement')
+        emit(doc.code, doc.annee_constrution);
+}
+
+Parcrourt tout les batiments ne selectionne que les ceux à destination de "enseignement".
+Retourne son nom de code ainsi que son année de construction.
+Key     |   Value
+t_b36       2019
+t_b16       1966
+t_b05       1964
+
+
 2)
+
+function (doc) { 
+    if (doc.type =='batiment' && doc.destination =='enseignement'){
+        if (Array.isArray(doc.salles)){
+            for (var s in doc.salles)
+                emit([doc.code, doc.salles[s].type], doc.salles[s.capacite]);
+            }
+    }
+}  
+
+parcrourt tout les batiments a destination "enseignement" et parcourt chaque salle de chaque batiment.
+Retourne le nom de code du batiment, le type de salle ainsi que la capacité de la salle.
+Key             |   Value
+[t_b36,amphi]       120
+[t_b36,amphi]      120
+[t_b36,amphi]      120
+[t_b36,TDInfo]      40
+[t_b36,amphi]      80
+[t_b16,amphi]      120
+[t_b16,TD]      18
+etc..
+
+
+
+3)
+function (doc) { 
+    if (doc.type =='batiment' && doc.destination =='enseignement')
+        {
+            if (Array.isArray(doc.salles)){
+                for (var s in doc.salles)
+                    emit([doc.code, doc.salles[s].type], do.salles[s].capaite);
+            }
+        }
+}
+
+function(keys, values, reredue) {
+    return sum(values);
+}
+
+Fait la même chose que la requet précédente mais en addittionnant a chaque fois les capacités des salles de classe.
+Key             |   Value
+[t_b36,amphi]       120
+[t_b36,amphi]      240
+[t_b36,amphi]      360
+[t_b36,TDInfo]      400
+[t_b36,amphi]      480
+[t_b16,amphi]      600
+[t_b16,TD]      618
+etc..
+
+
