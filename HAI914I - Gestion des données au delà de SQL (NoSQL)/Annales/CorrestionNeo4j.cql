@@ -4,10 +4,19 @@
 
 
 I)
+un système QNRW est un système ou 
+Q  représente le nombre de partition horizontale(shards)
+N  qui représente les réplications des données
+R : quorum de noeuds à consulter en lecture avant réponse au client
+W : quorum de noeuds à consulter en écriture avant réponse au client
 
-Je sais pas je fais plus tard.
+Consistency (cohérence) : toute modification de donnée estsuivie d’effet pour tous les nœuds du système
 
 
+Availability (disponibilité) : toute requête émise et traitée par un nœud du système, reçoit une réponse (même en situation d’échec à produire une réponse)
+
+
+Partition tolerance (recouvrement des nœuds) : assurer une continuité du fonctionnement en cas d’ajout/suppression de nœuds du système
 
 II)
 CREATE (louis:Personne:Homme {nom:'Claudel', prenom:'Louis', naissance:1826})
@@ -59,12 +68,40 @@ Louis vernhet
 
 
 4)
-Je sais pas je fais plus tard
+
+Cette requête Cypher retourne sous forme RDF une requête qui retourne toutes les personnes qui ont comme prénom "Camille"
+
+Le résulats est affiché sous forme rdf.
+
+neovoc :Femme et neovoc :Personne indique que l'objet retoruner est d'objet Personne et femme.
+neovoc :naissance "1864" indique que l'attribut naissance contient la valeur 1864
+neovoc :nom "Claudel" indique que l'attribut nom contient la valeur "Claudel"
+neovo :prenom "Camille" indique que l'attribut prenom contient la valeur "Camille"
 
 
 III)
 3.1)
-Je sais pas encore
+Le défault que je trouve sur la structure du document est sur le stockage de la liste de salle.
+Il serait pour moi plus malin de faire un passage par référence en créant des objet de type salle.
+Exemple :
+{
+    "_id" : "A36.03",
+    "type" : "amphi",
+    "capcite":120,
+    "accessibilite": "oui",
+    "video": "oui"
+
+}
+
+{ "_id" :"triolet_36",
+" ode" : "t_b36",
+" ampus" : "Triolet",
+"type": "batiment",
+"destination" : "enseignement",
+"annee_ onstru tion" : 2019,
+"salles": ["A36.03","A36.02","A36.01","TD36.202","SC36.04"]
+},
+
 
 
 3.2)
