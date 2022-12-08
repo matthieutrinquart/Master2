@@ -1,1 +1,1 @@
-Licenses: step=3 nb.concepts=16 nb.attrib rel.=0
+Licenses: step=3 nb.concepts=15 nb.attrib rel.=0

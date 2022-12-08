@@ -1,13 +1,13 @@
 BDD: step=1 nb.concepts=9 nb.attrib rel.=0
-Licenses: step=1 nb.concepts=16 nb.attrib rel.=0
+Licenses: step=1 nb.concepts=15 nb.attrib rel.=0
 Languages: step=1 nb.concepts=19 nb.attrib rel.=0
-time:21 ms
-BDD: step=2 nb.concepts=36 nb.attrib rel.=35
-Licenses: step=2 nb.concepts=16 nb.attrib rel.=0
+time:17 ms
+BDD: step=2 nb.concepts=33 nb.attrib rel.=34
+Licenses: step=2 nb.concepts=15 nb.attrib rel.=0
 Languages: step=2 nb.concepts=19 nb.attrib rel.=0
 time:12 ms
-BDD: step=3 nb.concepts=36 nb.attrib rel.=35
-Licenses: step=3 nb.concepts=16 nb.attrib rel.=0
+BDD: step=3 nb.concepts=33 nb.attrib rel.=34
+Licenses: step=3 nb.concepts=15 nb.attrib rel.=0
 Languages: step=3 nb.concepts=19 nb.attrib rel.=0
-time:7 ms
-total time: 51
+time:6 ms
+total time: 43

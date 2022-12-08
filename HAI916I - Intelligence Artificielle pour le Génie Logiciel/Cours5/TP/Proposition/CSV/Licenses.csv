@@ -1,11 +1,11 @@
 License,Linking,Distribution,Modification,Patent grant,Private use,Sublicensing,Grants TM,Distribution Copyleft,Modification Copyleft,Private use Copyleft,Sublicensing Copyleft,Manual patent grant,Manual TM grant
 Apache License,1,1,1,1,1,1,0,0,0,0,0,0,0
-BSD License,1,1,1,0,1,1,0,0,0,0,0,1,1
-Cryptix General License,1,1,1,0,1,0,0,0,0,0,0,1,1
-Eclipse Public License,0,0,0,1,1,0,0,0,0,0,0,0,1
-GNU Affero General Public License(AGPL),1,0,0,1,0,0,1,1,1,1,1,0,0
-GNU General Public License(GPL),1,0,0,1,1,0,1,1,1,0,1,0,0
-GNU Lesser General Public License(LGPL),0,0,0,1,1,0,1,1,1,0,1,0,0
-MIT license / X11 license,1,1,1,0,1,1,0,0,0,0,0,1,1
-Mozilla Public License,1,0,0,1,1,0,0,1,1,0,1,0,0
+BSD License,1,1,1,1,1,1,1,0,0,0,0,1,1
+Cryptix General License,1,1,1,1,1,0,1,0,0,0,0,1,1
+Eclipse Public License,0,0,0,1,1,0,1,0,0,0,0,0,1
+GNU Affero General Public License(AGPL),1,1,1,1,1,1,1,1,1,1,1,0,0
+GNU General Public License(GPL),1,1,1,1,1,1,1,1,1,0,1,0,0
+GNU Lesser General Public License(LGPL),0,1,1,1,1,1,1,1,1,0,1,0,0
+MIT license / X11 license,1,1,1,1,1,1,1,0,0,0,0,1,1
+Mozilla Public License,1,1,1,1,1,1,0,1,1,0,1,0,0
 Proprietary,0,0,0,1,0,0,1,0,0,0,0,0,0
