@@ -1,0 +1,16 @@
+Language,Imperative,Object-oriented,Functional,Procedural,Generic,Reflective,Event-driven,Standardized?
+Bash,1,0,0,1,0,0,0,0
+C,1,0,0,1,0,0,0,1
+C++,1,1,1,1,1,0,0,1
+C#,1,1,1,1,1,1,1,1
+Dart,1,1,0,0,0,0,0,1
+Java,1,1,1,1,1,1,0,1
+JavaScript,1,1,1,0,0,1,0,1
+Kotlin,1,1,1,0,1,1,0,0
+Lisp,0,0,1,0,0,0,0,1
+OCaml,1,1,1,0,1,0,0,0
+PHP,1,1,0,1,0,1,0,0
+Python,1,1,1,0,0,1,0,0
+Smalltalk,1,1,0,1,0,1,1,1
+Picolisp,1,1,1,1,0,1,0,0
+TScript,1,1,1,0,0,1,0,1

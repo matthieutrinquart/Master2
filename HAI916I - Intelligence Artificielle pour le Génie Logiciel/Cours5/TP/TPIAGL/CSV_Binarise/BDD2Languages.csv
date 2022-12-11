@@ -1,0 +1,14 @@
+BDD,Java,C#,Smalltalk,TScript,Python,Picolisp,JavaScript,C++,Bash,C,Dart,Kotlin,Lisp,OCaml,PHP
+ObjectFile,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+GemStone/S,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+NeoDatis ODB,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+ObjectDatabase++,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0
+ObjectDB,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Objectivity/DB,1,1,1,0,1,0,0,1,0,0,0,0,0,0,0
+ObjectStore,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+ODABA,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+OpenAccess,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+Picolisp,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+Twig,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+WakandaDB,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0
+VersantObjectDatabase,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0

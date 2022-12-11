@@ -1,0 +1,14 @@
+BDD,XML_support,.NET_support,SQL_subset,SQL_superset,None,JPA,JDO,DQL,REST,SSJS,OQL
+ObjectFile,1,0,0,0,1,0,0,0,0,0,0
+GemStone/S,0,0,0,0,1,0,0,0,0,0,0
+NeoDatis ODB,0,0,0,0,1,0,0,0,0,0,0
+ObjectDatabase++,0,0,0,0,1,0,0,0,0,0,0
+ObjectDB,0,0,0,0,1,1,1,0,0,0,0
+Objectivity/DB,1,0,0,1,0,0,0,0,0,0,0
+ObjectStore,0,1,1,0,0,0,0,0,0,0,0
+ODABA,0,1,1,0,0,0,0,1,0,0,0
+OpenAccess,0,0,0,0,1,0,0,0,0,0,0
+Picolisp,0,0,0,0,1,0,0,0,0,0,0
+Twig,0,0,0,0,1,0,0,0,0,0,0
+WakandaDB,0,0,0,0,1,0,0,0,1,1,0
+VersantObjectDatabase,0,0,0,0,0,0,0,0,0,0,1

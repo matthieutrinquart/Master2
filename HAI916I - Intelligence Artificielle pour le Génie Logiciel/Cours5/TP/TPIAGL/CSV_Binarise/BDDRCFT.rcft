@@ -1,0 +1,85 @@
+FormalContext BDD
+||XML_support|.NET_support|SQL_subset|SQL_superset|None|JPA|JDO|DQL|REST|SSJS|OQL|
+|ObjectFile|x||||x|||||||
+|GemStone/S|||||x|||||||
+|NeoDatis ODB|||||x|||||||
+|ObjectDatabase++|||||x|||||||
+|ObjectDB|||||x|x|x|||||
+|Objectivity/DB|x|||x||||||||
+|ObjectStore||x|x|||||||||
+|ODABA||x|x|||||x||||
+|OpenAccess|||||x|||||||
+|Picolisp|||||x|||||||
+|Twig|||||x|||||||
+|WakandaDB|||||x||||x|x||
+|VersantObjectDatabase|||||||||||x|
+
+FormalContext Licenses
+||Linking Permissive|Distribution Permissive|Modification Permissive|Patent Grant Automatic|Private use|Sublicensing Permissive|TM Grant Automatic|Linking Copyleft|Distribution Copyleft|Modification Copyleft|Sublicensing Copyleft|Manual patent grant|Manual TM grant|
+|Apache License|x|x|x|x|x|x||||||||
+|BSD License|x|x|x||x|x||||||x|x|
+|Cryptix General License|x|x|x||x|||||||x|x|
+|Eclipse Public License|x|||x|x||||x|x|x|||
+|GNU Affero General Public License(AGPL)||||x|||x|x|x|x|x|||
+|GNU General Public License(GPL)||||x|x||x|x|x|x|x|||
+|GNU Lesser General Public License(LGPL)||||x|x||x|x|x|x|x|||
+|MIT license / X11 license|x|x|x||x|x||||||x|x|
+|Mozilla Public License|x|||x|x||||x|x|x|||
+|Proprietary||||x|||x|||||||
+
+FormalContext Languages
+||Imperative|Object-oriented|Functional|Procedural|Generic|Reflective|Event-driven|Standardized?|
+|Bash|x|||x|||||
+|C|x|||x||||x|
+|C++|x|x|x|x|x|||x|
+|C#|x|x|x|x|x|x|x|x|
+|Dart|x|x||||||x|
+|Java|x|x|x|x|x|x||x|
+|JavaScript|x|x|x|||x||x|
+|Kotlin|x|x|x||x|x|||
+|Lisp|||x|||||x|
+|OCaml|x|x|x||x||||
+|PHP|x|x||x||x|||
+|Python|x|x|x|||x|||
+|Smalltalk|x|x||x||x|x|x|
+|Picolisp|x|x|x|x||x|||
+|TScript|x|x|x|||x||x|
+
+RelationalContext BDD2Licenses
+source BDD
+target Licenses
+scaling exist
+||Apache License|BSD License|Cryptix General License|Eclipse Public License|GNU Affero General Public License(AGPL)|GNU General Public License(GPL)|GNU Lesser General Public License(LGPL)|MIT license / X11 license|Mozilla Public License|Proprietary|
+|ObjectFile||||||||x|||
+|GemStone/S||||||||||x|
+|NeoDatis ODB|||||||x||||
+|ObjectDatabase++||||||||||x|
+|ObjectDB||||||||||x|
+|Objectivity/DB||||||||||x|
+|ObjectStore||||||||||x|
+|ODABA||||||x|||||
+|OpenAccess||||||||||x|
+|Picolisp||||||||x|||
+|Twig|x||||||||||
+|WakandaDB|||||x|||||x|
+|VersantObjectDatabase||||||||||x|
+
+RelationalContext BDD2Languages
+source BDD
+target Languages
+scaling exist
+||Java|C#|Smalltalk|TScript|Python|Picolisp|JavaScript|C++|Bash|C|Dart|Kotlin|Lisp|OCaml|PHP|
+|ObjectFile||||||||x||||||||
+|GemStone/S|||x|||||||||||||
+|NeoDatis ODB|x|x||||||||||||||
+|ObjectDatabase++||||x||||x||||||||
+|ObjectDB|x|||||||||||||||
+|Objectivity/DB|x|x|x||x|||x||||||||
+|ObjectStore||||||||x||||||||
+|ODABA||||||||x||||||||
+|OpenAccess||||||||x||||||||
+|Picolisp||||||x||||||||||
+|Twig|x|||||||||||||||
+|WakandaDB|||||||x|x||||||||
+|VersantObjectDatabase|x|x||||||x||||||||
+
