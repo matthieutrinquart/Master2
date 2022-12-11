@@ -1,15 +1,0 @@
-
-`	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(°·àœúÿÿÿÿ
-g	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(à—µèýÿÿÿÿ8¡…ÄúÈ0
-‹
-java:S1319-"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Ëª“†ýÿÿÿÿ
-^
-java:S4973'"<Strings and Boxed types should be compared using "equals()".(›Ë¢œýÿÿÿÿ8Ô‘øÈ0
-^
-java:S49732"<Strings and Boxed types should be compared using "equals()".(ÝŠ„ìøÿÿÿÿ8þ°“øÈ0
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(…›ÚŒ
-Q	java:S125"<This block of commented-out lines of code should be removed.(Áƒ³
-c
-java:S3457""AFormat specifiers should be used instead of string concatenation.(„Úé¯þÿÿÿÿ8í¤ÆúÈ0
-f
-java:S1128"IRemove this unused import 'me.sanchez.logging.Product.ProductRepository'.(•ð¦ý8³…ÄúÈ0

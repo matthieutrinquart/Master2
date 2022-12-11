@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tp1_2/Question.dart';
+import 'package:tp1_2/finalPage.dart';
 import 'package:tp1_2/QuizzPage.dart';
 import 'package:tp1_2/Home.dart';
 void main() {
@@ -23,6 +23,7 @@ class MyApp extends StatelessWidget {
         '/': (context) => const Home(),
         // When navigating to the "/second" route, build the SecondScreen widget.
         '/Quizz': (context) => const QuizzPage(),
+        '/FinalPage': (context) => const finalPage(),
       },
     );
   }

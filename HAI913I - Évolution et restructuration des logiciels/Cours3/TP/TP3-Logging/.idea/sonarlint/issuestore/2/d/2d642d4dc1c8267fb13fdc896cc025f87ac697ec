@@ -1,4 +1,40 @@
 
+s
+java:S1192:"QDefine a constant instead of duplicating this literal "Id du produit : " 3 times.(¼¾µãúÿÿÿÿ8ÇüÎ¹Î0
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(½Ïéüÿÿÿÿ
-X
-java:S2094"BRemove this empty class, write its code or make it an "interface".(·éŸË
+D
+java:S2189""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8„ıÎ¹Î0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ê³—ÿÿÿÿÿ8¢ıÎ¹Î0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(Ì×¼úÿÿÿÿ8¤ıÎ¹Î0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(µÖºÎøÿÿÿÿ8¥ıÎ¹Î0
+U	java:S106 "9Replace this use of System.out or System.err by a logger.(„€ÎÒ8¦ıÎ¹Î0
+Z	java:S106!"9Replace this use of System.out or System.err by a logger.(ÄĞÔúøÿÿÿÿ8§ıÎ¹Î0
+U	java:S106""9Replace this use of System.out or System.err by a logger.(§ÁËĞ8©ıÎ¹Î0
+U	java:S106#"9Replace this use of System.out or System.err by a logger.(ñ‰ÎË8ªıÎ¹Î0
+H
+java:S1481("+Remove this unused "choice" local variable.(±£“8®ıÎ¹Î0
+U	java:S1067"9Replace this use of System.out or System.err by a logger.(•ŠŞ“8ºıÎ¹Î0
+Z	java:S106:"9Replace this use of System.out or System.err by a logger.(¼¾µãúÿÿÿÿ8»ıÎ¹Î0
+U	java:S106<"9Replace this use of System.out or System.err by a logger.(ıóÙÁ8½ıÎ¹Î0
+Z	java:S106?"9Replace this use of System.out or System.err by a logger.(ôŸÑœúÿÿÿÿ8¿ıÎ¹Î0
+Z	java:S106A"9Replace this use of System.out or System.err by a logger.(ÆÃïüÿÿÿÿ8ÁıÎ¹Î0
+U	java:S106C"9Replace this use of System.out or System.err by a logger.(õüÁ¤8ÃıÎ¹Î0
+Z	java:S106H"9Replace this use of System.out or System.err by a logger.(¼¾µãúÿÿÿÿ8ÆıÎ¹Î0
+T	java:S106K"9Replace this use of System.out or System.err by a logger.(Çğõ"8ÉıÎ¹Î0
+Z	java:S106N"9Replace this use of System.out or System.err by a logger.(¼¾µãúÿÿÿÿ8ËıÎ¹Î0
+Z	java:S106P"9Replace this use of System.out or System.err by a logger.(è‚˜³ÿÿÿÿÿ8ÍıÎ¹Î0
+U	java:S106R"9Replace this use of System.out or System.err by a logger.(­âÂÀ8ÏıÎ¹Î0
+Z	java:S106T"9Replace this use of System.out or System.err by a logger.(±àäüøÿÿÿÿ8ÒıÎ¹Î0
+T	java:S106b"9Replace this use of System.out or System.err by a logger.(„™†z8ØıÎ¹Î0
+Z	java:S106e"9Replace this use of System.out or System.err by a logger.(ƒÅ•üÿÿÿÿ8ÛıÎ¹Î0
+U	java:S106j"9Replace this use of System.out or System.err by a logger.(‡¤ãŞ8ßıÎ¹Î0
+U	java:S106s"9Replace this use of System.out or System.err by a logger.(ÜÁĞù8âıÎ¹Î0
+Z	java:S106v"9Replace this use of System.out or System.err by a logger.(ˆ‰Ú¤ûÿÿÿÿ8äıÎ¹Î0
+U	java:S106y"9Replace this use of System.out or System.err by a logger.(©Ñ½»8æıÎ¹Î0
+Z	java:S106|"9Replace this use of System.out or System.err by a logger.(ƒ†²“úÿÿÿÿ8èıÎ¹Î0
+Z
+java:S1854†"7Remove this useless assignment to local variable "cli".(ÜÊ±Óùÿÿÿÿ8îıÎ¹Î0
+K
+java:S1481†"(Remove this unused "cli" local variable.(ÜÊ±Óùÿÿÿÿ8ğıÎ¹Î0
+Q
+java:S1128"/Remove this unused import 'java.sql.SQLOutput'.(ê¤òÃùÿÿÿÿ8ñıÎ¹Î0

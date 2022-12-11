@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:tp1_2/QuestionRepository.dart';
 
 import 'Question.dart';
+import 'ScoreArguments.dart';
 class QuizzPage extends StatefulWidget {
   const QuizzPage({Key? key}) : super(key: key);
 
@@ -29,6 +30,7 @@ class _QuizzPageState extends State<QuizzPage> {
       backgroundColor:const Color(0xff0607d8b),
       appBar: AppBar(
         backgroundColor:const Color(0xff0607d8b),
+        automaticallyImplyLeading: false,
         title: Center(
           child: Text(widget.title),
         ),
@@ -155,7 +157,8 @@ class _QuizzPageState extends State<QuizzPage> {
                     Vrais = Color(0xf0607d8b);
                     ++index;
                     if(index == questions.length){
-                      index =0;
+                      Navigator.pushNamed(context, '/FinalPage',
+                      arguments: new ScoreArguments(questions.length,this.score));
                     }
                   });
                 },

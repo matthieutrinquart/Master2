@@ -26,6 +26,7 @@ class _Home extends State<Home> {
       backgroundColor:const Color(0xff0607d8b),
       appBar: AppBar(
         backgroundColor:const Color(0xff0607d8b),
+        automaticallyImplyLeading: false,
         title: Center(
           child: Text(widget.title),
         ),
