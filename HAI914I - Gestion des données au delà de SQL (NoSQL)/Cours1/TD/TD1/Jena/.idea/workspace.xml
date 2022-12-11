@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="941e1aed-7128-4ef6-89f2-668844fe218b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Jena.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/100K.nt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/500K.nt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Q_1_eligibleregion_1000.queryset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/all.queryset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/requête/Q_1_eligibleregion_1000.queryset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/requête/Q_1_includes_1000.queryset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/requête/Q_1_likes_1000.queryset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/requête/Q_1_nationality_1000.queryset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/requête/Q_1_subscribes_1000.queryset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/requête/Q_2_includes_eligibleRegion_1000.queryset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/requête/Q_2_likes_nationality_1000.queryset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/requête/Q_2_subscribes_likes_1000.queryset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/requête/Q_2_tag_homepage_1000.queryset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/requête/Q_3_location_gender_type_1000.queryset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/requête/Q_3_location_nationality_gender_1000.queryset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/requête/Q_3_nationality_gender_type_1000.queryset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/requête/Q_4_location_nationality_gender_type_1000.queryset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cours3/Projet/qengine/.idea/sonarlint/issuestore/1/0/10e5b05693dacba9987d4b1e3ef19617a6d9cdb8" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Cours3/Projet/qengine/.idea/sonarlint/issuestore/1/0/10e5b05693dacba9987d4b1e3ef19617a6d9cdb8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cours3/Projet/qengine/.idea/sonarlint/issuestore/a/b/abd9d0e212d82d9195c8fdc59c52f603a65dab11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cours3/Projet/qengine/.idea/sonarlint/issuestore/a/f/af56781ae00f5af8e6b2508d6d0426cf5ec8cc64" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Cours3/Projet/qengine/.idea/sonarlint/issuestore/a/f/af56781ae00f5af8e6b2508d6d0426cf5ec8cc64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cours3/Projet/qengine/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Cours3/Projet/qengine/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cours3/Projet/qengine/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Cours3/Projet/qengine/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cours3/Projet/qengine/src/main/java/qengine/program/Comparaison.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Cours3/Projet/qengine/src/main/java/qengine/program/Comparaison.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cours3/Projet/qengine/src/main/java/qengine/program/Dictionary/Dictonnary.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Cours3/Projet/qengine/src/main/java/qengine/program/Dictionary/Dictonnary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cours3/Projet/qengine/src/main/java/qengine/program/Index/Index.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Cours3/Projet/qengine/src/main/java/qengine/program/Index/Index.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cours3/Projet/qengine/src/main/java/qengine/program/JarCliMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Cours3/Projet/qengine/src/main/java/qengine/program/JarCliMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cours3/Projet/qengine/src/main/java/qengine/program/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Cours3/Projet/qengine/src/main/java/qengine/program/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cours3/Projet/qengine/src/main/java/qengine/program/QueryEngine/QEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Cours3/Projet/qengine/src/main/java/qengine/program/QueryEngine/QEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cours3/Projet/qengine/src/main/java/qengine/program/todo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../HAI916I - Intelligence Artificielle pour le Génie Logiciel/Cours5/TP/Proposition/CSV/BDDRCFT.rcft" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../HAI916I - Intelligence Artificielle pour le Génie Logiciel/Cours5/TP/Proposition/CSV/BDDRCFT.rcft" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../HAI916I - Intelligence Artificielle pour le Génie Logiciel/Cours5/TP/Proposition/CSV/Licenses.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../HAI916I - Intelligence Artificielle pour le Génie Logiciel/Cours5/TP/Proposition/CSV/Licenses.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../HAI916I - Intelligence Artificielle pour le Génie Logiciel/Cours5/TP/Proposition/CSV/results/BDDRCFT.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../HAI916I - Intelligence Artificielle pour le Génie Logiciel/Cours5/TP/Proposition/CSV/results/BDDRCFT.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../HAI916I - Intelligence Artificielle pour le Génie Logiciel/Cours5/TP/Proposition/CSV/results/resultat.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../HAI916I - Intelligence Artificielle pour le Génie Logiciel/Cours5/TP/Proposition/CSV/results/resultat.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../HAI916I - Intelligence Artificielle pour le Génie Logiciel/Cours5/TP/Proposition/CSV/results/results.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../HAI916I - Intelligence Artificielle pour le Génie Logiciel/Cours5/TP/Proposition/CSV/results/results.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../HAI916I - Intelligence Artificielle pour le Génie Logiciel/Cours5/TP/Proposition/CSV/results/step0-1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../HAI916I - Intelligence Artificielle pour le Génie Logiciel/Cours5/TP/Proposition/CSV/results/step0-1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../HAI916I - Intelligence Artificielle pour le Génie Logiciel/Cours5/TP/Proposition/CSV/results/step1-0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../HAI916I - Intelligence Artificielle pour le Génie Logiciel/Cours5/TP/Proposition/CSV/results/step1-0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../HAI916I - Intelligence Artificielle pour le Génie Logiciel/Cours5/TP/Proposition/CSV/results/step1-1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../HAI916I - Intelligence Artificielle pour le Génie Logiciel/Cours5/TP/Proposition/CSV/results/step1-1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../HAI916I - Intelligence Artificielle pour le Génie Logiciel/Cours5/TP/Proposition/CSV/results/step2-0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../HAI916I - Intelligence Artificielle pour le Génie Logiciel/Cours5/TP/Proposition/CSV/results/step2-0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../HAI916I - Intelligence Artificielle pour le Génie Logiciel/Cours5/TP/Proposition/CSV/results/step2-1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../HAI916I - Intelligence Artificielle pour le Génie Logiciel/Cours5/TP/Proposition/CSV/results/step2-1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../HAI916I - Intelligence Artificielle pour le Génie Logiciel/Cours5/TP/Proposition/CSV/results/step2.dot" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../HAI916I - Intelligence Artificielle pour le Génie Logiciel/Cours5/TP/Proposition/CSV/results/step2.dot" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2IdcDN06hWUsZNlmddST3uRyNcg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/matthieu/Bureau/Github/Master2/HAI914I - Gestion des données au delà de SQL (NoSQL)/Cours1/TD/TD1/Jena/src/main/resources/requête&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/requête" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
+      <module name="Jena" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="941e1aed-7128-4ef6-89f2-668844fe218b" name="Changes" comment="" />
+      <created>1670514781881</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670514781881</updated>
+      <workItem from="1670514783287" duration="894000" />
+      <workItem from="1670515800148" duration="1367000" />
+      <workItem from="1670518893128" duration="613000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
