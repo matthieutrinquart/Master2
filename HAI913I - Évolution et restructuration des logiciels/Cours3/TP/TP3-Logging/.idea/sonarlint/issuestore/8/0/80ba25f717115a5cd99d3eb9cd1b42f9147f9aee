@@ -1,6 +1,0 @@
-
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(…›ÚŒ
-:
-java:S3010"$Remove this assignment of "countID".(ÆµÊ¼
-_
-java:S1128"IRemove this unused import 'me.sanchez.logging.Product.ProductRepository'.(•ð¦ý
