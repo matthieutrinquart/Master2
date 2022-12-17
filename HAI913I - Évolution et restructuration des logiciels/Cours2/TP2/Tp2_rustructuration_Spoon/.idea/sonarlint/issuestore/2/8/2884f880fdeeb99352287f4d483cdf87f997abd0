@@ -1,0 +1,134 @@
+
+E
+java:S37406"/Provide the parametrized type for this generic.(À±Áá
+J
+java:S37407"/Provide the parametrized type for this generic.(ïçïáıÿÿÿÿ
+J
+java:S3740;"/Provide the parametrized type for this generic.(¥ÔÒûÿÿÿÿ
+E
+java:S3740D"/Provide the parametrized type for this generic.(ˆ²¶Ñ
+E
+java:S3740E"/Provide the parametrized type for this generic.(É› ¾
+J
+java:S3740Y"/Provide the parametrized type for this generic.(°ûÿÿÿÿ
+E
+java:S3740o"/Provide the parametrized type for this generic.(¸¢‹
+J
+java:S3740p"/Provide the parametrized type for this generic.(ïçïáıÿÿÿÿ
+F
+java:S3740²"/Provide the parametrized type for this generic.(Áµı†
+F
+java:S3740²"/Provide the parametrized type for this generic.(Áµı†
+F
+java:S3740"/Provide the parametrized type for this generic.(ï“€ò
+F
+java:S3740"/Provide the parametrized type for this generic.(ï“€ò
+F
+java:S3740®"/Provide the parametrized type for this generic.(¯×«
+F
+java:S3740®"/Provide the parametrized type for this generic.(¯×«
+K
+java:S3740²"/Provide the parametrized type for this generic.(ëæİûÿÿÿÿ
+F
+java:S3740Ò"/Provide the parametrized type for this generic.(·ìêİ
+K
+java:S3740ñ"/Provide the parametrized type for this generic.(éØç·şÿÿÿÿ
+F
+java:S3740˜"/Provide the parametrized type for this generic.(õÌ‹
+F
+java:S3740˜"/Provide the parametrized type for this generic.(õÌ‹
+F
+java:S3740š"/Provide the parametrized type for this generic.(½“Òê
+F
+java:S3740›"/Provide the parametrized type for this generic.(­Â¾¼
+K
+java:S3740¢"/Provide the parametrized type for this generic.(ëæİûÿÿÿÿ
+K
+java:S3740†"/Provide the parametrized type for this generic.(‡Ÿ´úÿÿÿÿ
+K
+java:S3740†"/Provide the parametrized type for this generic.(‡Ÿ´úÿÿÿÿ
+E
+java:S3740¢"/Provide the parametrized type for this generic.(Œ£˜
+p
+java:S2293Æ"YReplace the type specification in this constructor call with the diamond operator ("<>").(×Å‘Ë
+o
+java:S2293È"YReplace the type specification in this constructor call with the diamond operator ("<>").(š’˜
+o
+java:S2293Í"YReplace the type specification in this constructor call with the diamond operator ("<>").(š’˜
+p
+java:S2293Ş"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ù§ŸÎ
+o
+java:S2293à"YReplace the type specification in this constructor call with the diamond operator ("<>").(š’˜
+p
+java:S2293ï"YReplace the type specification in this constructor call with the diamond operator ("<>").(‡Ö÷ÿ
+p
+java:S2293ˆ"YReplace the type specification in this constructor call with the diamond operator ("<>").(Àºßí
+]
+java:S1192É"FDefine a constant instead of duplicating this literal "label" 3 times.(Çä²è
+w
+java:S13196"aThe type of "f" should be an interface such as "List" rather than the implementation "ArrayList".(À±Áá
+†
+java:S1319í"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Š×œZ
+f	java:S117%"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×Ë•Ø
+f	java:S1170"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íò¡œ
+g	java:S117˜"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õÌ‹
+f	java:S117í"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Š×œZ
+8
+java:S1643¥"Use a StringBuilder instead.(ëó€ªùÿÿÿÿ
++
+java:S1700$"Rename field "parser"(¢§”Ñ
+S
+java:S2589‰"7Remove this expression which always evaluates to "true"(‡¥ïËıÿÿÿÿ
+t	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Ùıò¥ûÿÿÿÿ
+k	java:S116""VRename this field "Graphmodule" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªà›°
+k
+java:S1450$"URemove the "parser" field and declare it as a local variable in the relevant methods.(¢§”Ñ
+\
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(Ùıò¥ûÿÿÿÿ
+œ
+java:S1130%"…Remove the declaration of thrown exception 'java.util.concurrent.ExecutionException', as it cannot be thrown from constructor's body.(×Ë•Ø
+’
+java:S1130%"|Remove the declaration of thrown exception 'java.lang.InterruptedException', as it cannot be thrown from constructor's body.(×Ë•Ø
+c	java:S1000"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íò¡œ
+c	java:S1006"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(À±Áá
+h
+java:S37766"RRefactor this method to reduce its Cognitive Complexity from 31 to the 15 allowed.(À±Áá
+‚
+java:S11306"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(À±Áá
+Q	java:S125P"<This block of commented-out lines of code should be removed.(òùÉ†
+Q	java:S125S"<This block of commented-out lines of code should be removed.(Îíïƒ
+b
+java:S1858{"G"getEdgeTarget" returns a string, there's no need to call "toString()".(Œ¡ÅÈúÿÿÿÿ
+i	java:S100‡"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—ê‚ÿùÿÿÿÿ
+^
+java:S1858˜"G"getEdgeTarget" returns a string, there's no need to call "toString()".(¦·²³
+^
+java:S1858›"G"getEdgeTarget" returns a string, there's no need to call "toString()".(ÿö‡
+^
+java:S1858¥"G"getEdgeTarget" returns a string, there's no need to call "toString()".(¬ŒÃ¥
+d	java:S100²"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Áµı†
+i
+java:S3776²"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(Áµı†
+d	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ï“€ò
+U
+java:S1117…"9Rename "graph" which hides the field declared at line 30.(¬ŠŞ˜øÿÿÿÿ
+i	java:S100ñ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éØç·şÿÿÿÿ
+d	java:S100˜"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õÌ‹
+K
+java:S1611Ç"/Remove the parentheses around the "v" parameter(Á²†üÿÿÿÿ
+[
+java:S1858É"D"v" is already a string, there's no need to call "toString()" on it.(Çä²è
+F
+java:S1611Ì"/Remove the parentheses around the "e" parameter(¯ò¶É
+K
+java:S1611ß"/Remove the parentheses around the "v" parameter(Á²†üÿÿÿÿ
+[
+java:S1858á"D"v" is already a string, there's no need to call "toString()" on it.(Çä²è
+c	java:S100í"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Š×œZ
+i	java:S100†"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡Ÿ´úÿÿÿÿ
+U
+java:S1854"9Remove this useless assignment to local variable "edges".(Òí®½ÿÿÿÿÿ
+U
+java:S1117Š"9Rename "graph" which hides the field declared at line 30.(¬ŠŞ˜øÿÿÿÿ
+F
+java:S1481"*Remove this unused "edges" local variable.(Òí®½ÿÿÿÿÿ

@@ -1,0 +1,24 @@
+
+`	java:S112O"FDefine and throw a dedicated exception instead of using a generic one.(¼ÿ¾¹ÿÿÿÿÿ
+o
+java:S2293,"YReplace the type specification in this constructor call with the diamond operator ("<>").(±Ò·
+o
+java:S2293o"YReplace the type specification in this constructor call with the diamond operator ("<>").(Û™‡Î
+k	java:S117`"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰àãñıÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(üÏÖ¦
+l	java:S116"RRename this field "LabelCP" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñ––ßúÿÿÿÿ
+>
+java:S1948"(Make "parser" transient or serializable.(ğ“†‰
+7
+java:S11162"Remove this empty statement.(–³âÕüÿÿÿÿ
+d
+java:S32525"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ
+y
+java:S2142N"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(šÈìùÿÿÿÿ
+h	java:S100T"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´ñ¹Ùıÿÿÿÿ
+c	java:S100^"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æ²ß£
+R
+java:S6353f"<Use concise character class syntax '\\d' instead of '[0-9]'.(¶ö–æ
+R
+java:S6353f"<Use concise character class syntax '\\d' instead of '[0-9]'.(¶ö–æ
+N	java:S106k"9Replace this use of System.out or System.err by a logger.(ƒÎÊÙ

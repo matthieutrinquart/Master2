@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="trace">
+    <appenders>
+        <RollingFile name="Writelog" fileName="writelog.log"
+                     filePattern="%d{yyyyMMdd}_writelog-%i.log" >
+            <PatternLayout>
+                <pattern>%m%n</pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy />
+            </Policies>
+        </RollingFile>
+
+
+        <RollingFile name="Readlog" fileName="readlog.log"
+                     filePattern="%d{yyyyMMdd}_readlog-%i.log" >
+            <PatternLayout>
+                <pattern>%m%n</pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy />
+            </Policies>
+        </RollingFile>
+
+        <RollingFile name="Pricelog" fileName="pricelog.log"
+                     filePattern="%d{yyyyMMdd}_pricelog-%i.log" >
+            <PatternLayout>
+                <pattern>%m%n</pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy />
+            </Policies>
+        </RollingFile>
+    </appenders>
+    <Loggers>
+        <Logger name="Write" level="trace" additivity="false">
+            <AppenderRef ref="Writelog" />
+        </Logger>
+        <Logger name="Read" level="trace" additivity="false">
+            <AppenderRef ref="Readlog" />
+        </Logger>
+
+        <Logger name="Price" level="trace" additivity="false">
+            <AppenderRef ref="Pricelog" />
+        </Logger>
+    </Loggers>
+</configuration>
