@@ -1,0 +1,14 @@
+
+t
+java:S1192"RDefine a constant instead of duplicating this literal "\\src\\main\\java" 3 times.(Üåò¿ÿÿÿÿÿ8åô£…Ò0
+f
+java:S1192 "IDefine a constant instead of duplicating this literal "\\target" 3 times.(¯û´Ñ8ë’ñ…Ò0
+p
+java:S2095O"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(ÆÇì£üÿÿÿÿ8Ó¾£…Ò0
+j
+java:S2095N"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(Öøêù8Ò¾£…Ò0
+Z	java:S106!"9Replace this use of System.out or System.err by a logger.(…ê×ÿÿÿÿÿ8à¾£…Ò0
+U	java:S106@"9Replace this use of System.out or System.err by a logger.(Öª€â8ä¾£…Ò0
+L
+java:S1197C"*Move the array designators [] to the type.(‰ª±Øúÿÿÿÿ8á¾£…Ò0
+U	java:S106Z"9Replace this use of System.out or System.err by a logger.(ŒŒë«8’Ùğ…Ò0

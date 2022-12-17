@@ -1,0 +1,10 @@
+
+g	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(°·àœúÿÿÿÿ8³ÇÛ‰Ò0
+g	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(à—µèıÿÿÿÿ8³ÇÛ‰Ò0
+’
+java:S1319&"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Ëª“†ıÿÿÿÿ8µÇÛ‰Ò0
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(…›ÚŒ8¸ÇÛ‰Ò0
+>
+java:S1170"!Make this final field static too.(€ÍœÜ8éÇÛ‰Ò0
+L
+java:S1611+"/Remove the parentheses around the "u" parameter(”–ığ8ÈÛ‰Ò0
