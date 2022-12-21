@@ -1,0 +1,43 @@
+
+J
+java:S3740J"/Provide the parametrized type for this generic.(÷ÍÍÑûÿÿÿÿ
+J
+java:S3740h"/Provide the parametrized type for this generic.(÷ÍÍÑûÿÿÿÿ
+F
+java:S3740"/Provide the parametrized type for this generic.(ôËşİ
+F
+java:S3740–"/Provide the parametrized type for this generic.(ÈºÃÎ
+d
+java:S1192O"IDefine a constant instead of duplicating this literal "UserName" 3 times.(ÍÌåûÿÿÿÿ
+^
+java:S1192>"HDefine a constant instead of duplicating this literal "UserID" 14 times.(ä–ÏÔ
+e	java:S117L"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ï‰‰J
+e	java:S117j"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ï‰‰J
+f	java:S117w"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜‚ˆÇ
+e	java:S117x"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ë´Õ9
+f	java:S117˜"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ï‰‰J
+h
+java:S2095·"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(îŞÀ‘ûÿÿÿÿ
+h
+java:S2095Ã"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(îŞÀ‘ûÿÿÿÿ
+h
+java:S2095«"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(îŞÀ‘ûÿÿÿÿ
+c	java:S100:"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´ªª˜
+@
+java:S1905P"*Remove this unnecessary cast to "Integer".(Ğ©µË
+c	java:S100X"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³³«§
+@
+java:S1905n"*Remove this unnecessary cast to "Integer".(Ğ©µË
+c	java:S100v"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©çÿç
+E
+java:S1905œ")Remove this unnecessary cast to "Double".(Ş—”æúÿÿÿÿ
+d	java:S100¤"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜ÍŒß
+]	java:S899¨"BDo something with the "boolean" value returned by "createNewFile".(Ğ’Íùÿÿÿÿ
+i	java:S100°"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŸâÙïûÿÿÿÿ
+]	java:S899´"BDo something with the "boolean" value returned by "createNewFile".(Ğ’Íùÿÿÿÿ
+i	java:S100¼"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÍÃ—ÿùÿÿÿÿ
+]	java:S899À"BDo something with the "boolean" value returned by "createNewFile".(Ğ’Íùÿÿÿÿ
+9
+java:S1128"$Remove this unused import 'java.io'.(¬›ãD
+<
+java:S1128"&Remove this unused import 'java.util'.(Î€ŒÙ

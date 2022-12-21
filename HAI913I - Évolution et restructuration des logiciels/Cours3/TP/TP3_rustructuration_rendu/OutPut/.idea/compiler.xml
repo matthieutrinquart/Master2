@@ -9,5 +9,8 @@
         <module name="TP3-Logging" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="TP3-Logging" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
