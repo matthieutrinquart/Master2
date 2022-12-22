@@ -17,11 +17,11 @@ f	java:S117w"QRename this local variable to match the regular expression '^[a-
 e	java:S117x"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ë´Õ9
 f	java:S117˜"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ï‰‰J
 h
-java:S2095·"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(îÞÀ‘ûÿÿÿÿ
+java:S2095«"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(îÞÀ‘ûÿÿÿÿ
 h
 java:S2095Ã"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(îÞÀ‘ûÿÿÿÿ
 h
-java:S2095«"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(îÞÀ‘ûÿÿÿÿ
+java:S2095·"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(îÞÀ‘ûÿÿÿÿ
 c	java:S100:"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´ªª˜
 @
 java:S1905P"*Remove this unnecessary cast to "Integer".(Ð©µË
