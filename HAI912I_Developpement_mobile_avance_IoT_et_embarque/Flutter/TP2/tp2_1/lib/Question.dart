@@ -1,12 +1,6 @@
 class Question {
-  String? questionText;
-  bool? isCorrect;
-  Question.vide() {
-  // TODO: implement vide
-  throw UnimplementedError();
-}
-  Question(questionText, isCorrect){
-    this.questionText = questionText;
-    this.isCorrect = isCorrect;
-  }
+  String questionText;
+  bool isCorrect;
+  String image;
+  Question({required this.questionText, required this.isCorrect,required this.image});
 }

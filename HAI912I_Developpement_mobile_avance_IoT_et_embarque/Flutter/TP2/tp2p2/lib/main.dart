@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:tp2p2/cubit/WeatherForecastModel.dart';
 import 'package:tp2p2/cubit/weather_bloc.dart';
+import 'package:geolocator/geolocator.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -70,6 +71,8 @@ class _MyHomePageState extends State<MyHomePage> {
             children: <Widget>[
               SizedBox(height: 100),
               _getTextField(),
+              _getButton(),
+              SizedBox(height: 20),
               _getWeather()
 
 
@@ -577,6 +580,68 @@ class _MyHomePageState extends State<MyHomePage> {
 
     return day! + ", " + month! + " " + tm.day.toString() +", " + tm.year.toString();
   }
+  Container _getButton() {
+    return Container(
+      alignment: Alignment.center,
+      child:Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: <Widget>[
 
+          Card(
+            color:Colors.pink,
+            child: Container(
+              width: 150.00,
+              height: 50.00,
+              child:TextButton(
+                style: ButtonStyle(
+                  foregroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                ),
+                onPressed: () {
+                  setState(() async {
+                    bool servicestatus = await Geolocator
+                        .isLocationServiceEnabled();
+
+                    if (servicestatus) {
+                      print("GPS service is enabled");
+                    } else {
+                      print("GPS service is disabled.");
+                    }
+                    LocationPermission permission = await Geolocator
+                        .checkPermission();
+
+                    if (permission == LocationPermission.denied) {
+                      permission = await Geolocator.requestPermission();
+                      if (permission == LocationPermission.denied) {
+                        print('Location permissions are denied');
+                      } else
+                      if (permission == LocationPermission.deniedForever) {
+                        print("'Location permissions are permanently denied");
+                      } else {
+                        print("GPS Location service is granted");
+                      }
+                    } else {
+                      print("GPS Location permission granted.");
+                    }
+                    Position position = await Geolocator.getCurrentPosition(
+                        desiredAccuracy: LocationAccuracy.high);
+                    print(position.longitude); //Output: 80.24599079
+                    print(position.latitude); //Output: 29.6593457
+
+                    context.read<WeatherBloc>().add(
+                        LoadWeather.coord(
+                            position.latitude, position.longitude));
+                  });
+                },
+
+
+                child: Text('Localisation',
+                    textAlign: TextAlign.left,style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.bold)),
+              ),
+            ),
+          )
+        ]
+    )
+    );
+  }
 
 }

@@ -70,7 +70,7 @@ class _QuizzPageState extends State<QuizzPage> {
         height: 300.00,
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('images/image.jpg'),
+            image: AssetImage(context.read<Questionprovider>().getQuestion().image),
             fit: BoxFit.fitHeight,
           ),
         ),

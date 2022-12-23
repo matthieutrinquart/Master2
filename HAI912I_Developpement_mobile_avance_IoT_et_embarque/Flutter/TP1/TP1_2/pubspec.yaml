@@ -55,7 +55,7 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - images/
+    - images/questionnaire/
     - images/good.gif
     - images/moyen.gif
     - images/mauvais.gif
