@@ -12,9 +12,7 @@ part 'weather_state.dart';
 class WeatherBloc extends Bloc<WeatherEvent, WeatherState> {
   WeatherBloc() : super(WeatherInitial()) {
     on<LoadWeather>((event, emit) async {
-      print("city  " + event.city);
       bool g = event.city == "";
-      print("condition  "+ g.toString());
       if(event.city != ""){
         WeatherForecastModel weather = await Network.getWeatherForecast(
             cityname: event.city);

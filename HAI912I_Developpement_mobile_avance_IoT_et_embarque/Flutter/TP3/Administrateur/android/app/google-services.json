@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "54626228483",
+    "project_id": "tp3flutter-9021a",
+    "storage_bucket": "tp3flutter-9021a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:54626228483:android:abac7cddd49d187ae8f136",
+        "android_client_info": {
+          "package_name": "com.example.administrateur"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "54626228483-eruqclcak2i3mneeasjk4s72ni51ssbs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIIJTF_gIWakYOXlH-UJarZ0SB9gMrVsA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "54626228483-eruqclcak2i3mneeasjk4s72ni51ssbs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
