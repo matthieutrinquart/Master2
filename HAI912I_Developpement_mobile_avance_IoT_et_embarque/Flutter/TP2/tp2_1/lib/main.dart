@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:tp2_1/Provider/QuestionProvider.dart';
-import 'package:tp2_1/finalPage.dart';
-import 'package:tp2_1/QuizzPage.dart';
-import 'package:tp2_1/Home.dart';
+import 'package:tp2_1/GUI/finalPage.dart';
 import 'package:provider/provider.dart';
+
+import 'GUI/Home.dart';
+import 'GUI/QuizzPage.dart';
 void main() {
   runApp(
       MultiProvider(

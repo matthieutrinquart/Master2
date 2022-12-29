@@ -2,15 +2,15 @@ import 'dart:typed_data';
 
 import 'package:flutter/cupertino.dart';
 
-import '../Question.dart';
-import '../QuestionRepository.dart';
+import '../model/Question.dart';
+import '../model/QuestionRepository.dart';
 class Questionprovider with ChangeNotifier{
 
-  List<Question>? questions;
+  List<Question>? questions = [];
   QuizzDificulty? dificulty;
-  int? count;
+  int? count=0;
   QuestionRepository? questionRepository;
-  int? score;
+  int? score=0;
 
   Questionprovider(){
     questions = [];
@@ -20,6 +20,7 @@ class Questionprovider with ChangeNotifier{
   }
   void initdificulty(QuizzDificulty quizzDificulty){
     this.dificulty = quizzDificulty;
+    Questionprovider();
     switch(this.dificulty){
       case QuizzDificulty.facile:{
         questions = questionRepository?.getFacileQuestion();
@@ -41,7 +42,7 @@ class Questionprovider with ChangeNotifier{
   }
 
   bool end(){
-    return count == questions?.length;
+    return count == (questions?.length ??0)-1;
   }
 
   void nextquestion(){

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:tp1_2/finalPage.dart';
-import 'package:tp1_2/QuizzPage.dart';
-import 'package:tp1_2/Home.dart';
+import 'package:tp1_2/GUI/finalPage.dart';
+
+import 'GUI/Home.dart';
+import 'GUI/QuizzPage.dart';
 void main() {
   runApp(const MyApp());
 }
