@@ -148,7 +148,7 @@ class _QuizzPageState extends State<QuizzPage> {
               height: 50.00,
               child:TextButton(
                 style: ButtonStyle(
-                  foregroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                  foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
                 ),
                 onPressed: () {
                   setState(() {
