@@ -5,7 +5,7 @@ import 'package:equatable/equatable.dart';
 import 'package:meta/meta.dart';
 import 'package:tp2p2/business_logic/service/Network.dart';
 
-import '../../model/WeatherForecastModel.dart';
+import '../../model/Weather/WeatherForecastModel.dart';
 
 part 'weather_event.dart';
 part 'weather_state.dart';

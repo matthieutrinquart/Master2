@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:tp2_1/Provider/QuestionProvider.dart';
-import 'package:tp2_1/model/QuestionRepository.dart';
-
-import '../model/Question.dart';
-import '../model/ScoreArguments.dart';
 class QuizzPage extends StatefulWidget {
   const QuizzPage({Key? key}) : super(key: key);
 

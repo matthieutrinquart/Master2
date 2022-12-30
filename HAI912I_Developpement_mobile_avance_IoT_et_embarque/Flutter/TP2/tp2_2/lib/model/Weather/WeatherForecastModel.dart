@@ -1,8 +1,8 @@
 
 
 
-import 'Weather/City.dart';
-import 'Weather/Liste.dart';
+import 'City.dart';
+import 'Liste.dart';
 
 class WeatherForecastModel {
   String? cod;

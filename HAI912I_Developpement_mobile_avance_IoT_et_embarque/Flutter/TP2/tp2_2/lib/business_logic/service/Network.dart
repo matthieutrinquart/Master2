@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:http/http.dart';
 import 'package:geolocator/geolocator.dart';
-import '../../model/WeatherForecastModel.dart';
+import '../../model/Weather/WeatherForecastModel.dart';
 
 class Network{
 
