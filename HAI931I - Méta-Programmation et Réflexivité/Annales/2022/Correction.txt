@@ -1,0 +1,11 @@
+I) Utilisation de Système réflexifs
+
+a) 1 class -> SmallInteger
+b) 1 class class -> SmallInteger class.
+c) 1 class class class -> Metaclass.
+d) (Pile new) class -> Pile
+e) (Pile new) class class class -> Metaclass
+f) (1 class class class) == ((Pile new) class class class)->true
+g) ((1 class class class) == ((Pile new) class class class)) class->True class
+
+2)

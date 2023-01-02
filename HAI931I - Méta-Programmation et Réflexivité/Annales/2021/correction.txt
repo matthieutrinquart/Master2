@@ -1,0 +1,186 @@
+I) Utilisation de Système réflexifs
+
+a) 5 class -> SmallInteger
+b) (Pile new compiledMethod at : #pop) class -> Pile (normalement)
+c)(Pile new) class -> Pile
+d) 1 class class class.-> Metaclass
+e) (Pile new) class class class. -> Metaclass
+f) (1 class class class) == ((Pile new) class class class)->true
+g) ((1 class class class) == ((Pile new) class class class)) class->True class
+
+2)
+a)
+understands: selector
+ [self perform: selector]
+ on: MessageNotUnderstood  do: [ ^ false].
+ ^ true
+	
+
+b)
+
+Java
+import java.reflect.*
+
+public static understands(Object o, String selector) thow Exception{
+
+	Method m = o.getclass().getMethod(selector,param);
+
+
+	if(m == null){
+		throw("Il n'y a pas de methode "+ selector + " dans la class " + o.getclass().toString());
+		return false
+
+	}else{
+	
+		m.invoke(o,param);
+		return true;
+	}
+}
+
+c)
+javascript:
+
+  function getMethodsOf(obj, namemethode){
+    if(Object.getOwnPropertyNames( Object.getPrototypeOf(obj) ).getOwnPropertyNames(namemethode)){
+
+        return true
+    }else{
+        return false;
+    }
+  }
+
+3)
+a)
+RemoveAbstractMethods:ClassName
+|class method|
+class := (Smalltalk classNamed:ClassName).
+method := class methodDict keys select:[:aMethod | (class>>method) isAbstract].
+method do: [ :method | class removeSelector: method].
+b)
+
+c)
+
+
+
+II)
+1)
+class new(
+	#Memoclass,
+	Class,
+	(listinstances),
+	(new(...), initialize(), ...)
+)
+
+2)
+la variable listInstance est une collection qui permet de stocker toutes les instances d'une classe donnée. Memoclass sera unique pour chaque class.
+
+
+
+3) 
+Memoclass new(
+	#Point, ;; son nom
+	Object, ;; sa superclasse
+	(x, y), ;; la liste des attributs qu’elle d´eclare
+	(getx(){...}, gety(){...}, setx(..){...}, sety(..){...})) ;; liste des m´ethodes qu’elle d´efinit
+
+
+
+4)
+
+On exécute la méthode new de la SuperClass class
+
+5)
+
+On exécute la méthode new de memoclass car l'envoie du message new est chercher a partir de la classe du receveur. La classe de Point étant MemoClass.
+
+
+6)
+
+Image
+
+7) 
+
+MemoClass new
+	name: #AbstractClass
+	superclass: Class
+	attributs: ''
+	methods: 'override of new to throw an error'
+
+AbstractClass addMethod: #new
+	body: [ :receiver :initargs | receiver error: 'this is an abstract class' ]
+
+
+8)
+
+
+2.2)
+1)
+Object subClass: #Singleton1
+	instanceVariableNames: ''
+	classVariableNames: 'Instance'
+	package: 'MySingleton1'
+
+Singleton1 class>>new
+	^ Instance ifNil: [Instance := super new]
+
+2)
+
+Non, parce que la création de méta-class en Pharo est implicite. Pharo permet d'éditer les méta-class mais pas de modifier leur héritages.
+ Cela est fait pour garder le modèle cohérent.
+
+
+3)
+Les limitations de Pharo par rapport à Objvlisp sont les suivantes :
+Pharo crée implicitement la méta-class d'une classe lors de la création de cette dernière, ceci est un avantage pour le programmeur
+ qui ne veut pas s'attarder dessus, tout ayant la capacité de les modifier. Cependant, cela lui prive de la liberté de modifier l'arbre
+  d'héritage des méta-class (pour le garder l'héritage parallèle avec celui des classes et éviter des conflits de message non compris).
+
+
+III)
+1)
+Obj est la classe Pharo nous permettant de créer nos propres classes Objvlisp en Pharo. Ces instances vont modélisez des classes du systèmes
+ Objvlisp (par exemple ObjClass et ObjObject).
+
+
+2)
+C'est une sous classe de Array pour faciliter l'utilisation de méthode Pharo ainsi que pour moduler (variableSubclass) la taille en mémoire
+ de cette objet en lui rajoutant un certains nombre de champs non connus par la classe de base.
+
+
+3)
+ObjObject est la racine du graphe d’héritage (de notre modèle ObjVLisp) et est une instance de ObjClass. Alors que Obj est la classe Pharo qui
+ permet d'implémenter ObjObject et ObjClass. De plus, ObjClass est la première classe et la racine de l’arbre d’instanciation et l’instance
+  d’elle-même dans ce modèle (ObjVLisp). (cf. section 1.3 Aperçu du noy
+
+4)
+La primitive manualObjClassStructure renvoie un objObject (avec une minuscule c'est une instance) qui représente la classe ObjClass
+ (avec une majuscule c'est une Classe) (cf. 4.1 Création manuelle de la classe ObjClass). Elle comporte le mot "manually" puisque c'est nous
+  même qui créons l'objet qui référence la classe ObjClass instance de ObjClass. Cette instance de méta-classe, nous sert a bootstrap le système
+   avec un minimum d'information. Ce qui nous permet par la suite de crée ObjObject "normalement" et de recrée ObjClass "normalement".
+
+
+5)
+
+Elle retourne une instance de la classe Obj sous classe de Array de taille 6. Et 6 c'est le nombre minimal permettant de décrire une classe,
+ plus de détail :
+un slot qui contient pointeur sur la classe l'ayant instancié,
+un slot pour son nom,
+un slot pour les variables d'instances (instance-variables),
+un slot vers la superclasse, un slot pour le dico de méthode,
+un slot pour le constructeur (keywords), contient lui meme ces variables là ... spoiler de la question 3.2.3
+
+
+6)
+Il représentent les messages nécéssaires pour créez de nouvelles clases.
+
+
+IV)
+J'ai compris grâce a l'article "Reflective Object Kernel" que les mots clés super et self en pharo (respectivement super et this en Java et cie.)
+ sont identiques. C'est a dire qu'elles références toutes les deux le receveur du message. Cependant self permet au lookup de chercher depuis
+  la classe du receveur, alors que super permet au lookup de chercher depuis la super-classe de la classe du receveur. Remarque :
+   Dans l'implémentation de ObjVLisp en Pharo, il y a une petite simplification a ce niveau la, il y a deux lookup implémenté, un pour tous
+    les cas (en gros self) qui se nomme quelque chose comme basic: ... withArgs:... et un pour le super qui se nom quelque chose comme super:
+	... withArgs:..
+
+
+J'ai compris grâce a un des articles lu qu'il n'existe qu'un seul mécanisme de recherche de méthode identiques pour tous les objets (sans exception).
