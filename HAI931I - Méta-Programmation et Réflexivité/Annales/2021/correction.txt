@@ -39,15 +39,9 @@ public static understands(Object o, String selector) thow Exception{
 
 c)
 javascript:
-
-  function getMethodsOf(obj, namemethode){
-    if(Object.getOwnPropertyNames( Object.getPrototypeOf(obj) ).getOwnPropertyNames(namemethode)){
-
-        return true
-    }else{
-        return false;
-    }
-  }
+function understands(o, selector) {
+	return Reflect.has(o, selector);
+}
 
 3)
 a)
@@ -72,7 +66,8 @@ class new(
 )
 
 2)
-la variable listInstance est une collection qui permet de stocker toutes les instances d'une classe donnée. Memoclass sera unique pour chaque class.
+la variable listInstance est une collection qui permet de stocker toutes les
+ instances d'une classe donnée. Memoclass sera unique pour chaque class.
 
 
 

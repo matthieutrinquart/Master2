@@ -6,6 +6,177 @@ c) 1 class class class -> Metaclass.
 d) (Pile new) class -> Pile
 e) (Pile new) class class class -> Metaclass
 f) (1 class class class) == ((Pile new) class class class)->true
-g) ((1 class class class) == ((Pile new) class class class)) class->True class
+g) ((1 class class class) == ((Pile new) class class class)) class->True
 
 2)
+
+Pharo
+a)
+understands: selector
+
+[self perform: selector]
+on: MessageNotUnderstood do: [^ false]
+^true
+
+b)
+
+Java
+
+
+public boolean understands(Object o, String selector) throw Execption{
+
+
+Method = o.getclass().getMethod(selector,param);
+
+if(method != null){
+Method.invok(o,param);
+return true
+
+}else{
+throw("Il n'y a pas de methode "+ selector + " dans la class " + o.getclass().toString());
+return false;
+
+}
+
+}
+
+
+
+
+
+
+3)
+
+a)
+
+removeAbstractMethods: aClassName 
+
+| aClass abstractMethods |
+
+aClass := (Smalltalk classNamed: aClassName).
+abstractMethods := aClass methodDict keys select: [:aMethod | (aClass>>aMethod) isAbstract ].
+abstractMethods do: [ :method | aClass removeSelector: method ].
+
+
+
+b)
+Il n'est pas possible de faire la même chose avec Java Reflect. En effet, le système Java n'est pas réfléxif
+ (la capacité d'introspection et d'intercession), il ne possède que la capacité d'introspection de son système.
+ C'est a dire qu'il ne possède pas la capacité a modifier causalement la représentation utilisateur et la représentation en machine.
+
+c)
+
+Nous avons aborder en cours la notion d'Aspect et de Traits. En Java, les Traits ont été ajoutés dès Java 8, les Aspects sont à rajouté
+ comme framework dans Eclipse pour augmenter Java. Nous avons aussi vu que les annotations implémentés en Java, est mécanisme permettant
+ d'émuler la programmation par Aspect. Je pense qu'en utilisant ces deux concepts, nous pouvons emuler un comportement de refactoring
+ similaire a celui implémenté dans la classe Pharo MyRefactoring.
+
+
+
+
+4)
+1)
+Object subclass: #Animal
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MyApplication-Animals'
+	abstract: true
+	
+Animal class >> new
+	self error: 'Vous ne pouvez pas instancier la classe Animal directement. Vous devez en créer une sous-classe.'
+2)
+Elle est exécutée lorsqu'un envoi de message Animal new est effectué, ce qui signifie qu'on essaie d'instancier la classe Animal.
+Cette méthode affiche une erreur indiquant qu'il n'est pas possible d'instancier directement la classe Animal et qu'il faut en créer une sous-classe.
+
+3)
+Animal subclass: #Chien
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MonApplication'
+
+
+
+le problème est que si on appelle la fonction new elle sera appelé sur Animal
+ ce qui retournera une erreur.
+il faut donc recréer la fonction new.
+new:
+	^ self.
+
+
+4)
+
+Animal subClass: #licorne
+	instanceVariableNames: ''
+	classVariableNames: 'Instance'
+	package: 'MySingleton1'
+
+Singleton1 class>>new
+	^ Instance ifNil: [Instance := super new]
+5)
+J'ai créer une variable static qui permet de vérifier si il y a deja eu une instanciation de la class
+
+
+B.2)
+1)
+
+AbstractClass new(
+
+	#AbstractClass;
+	Object;
+	''
+	'(new() return erreur)'
+
+)
+
+
+ou 
+
+class new(
+
+	#AbstractClass;
+	''
+	''
+
+)
+
+2)
+class new(
+
+	#Animal;
+	AbstractClass;
+	''
+	''
+
+)
+3)
+class new(
+
+	#Singleton-class;
+	Object;
+	'instance'
+	'(new() if instance == null then return this else error)'
+
+)
+
+4)
+Animal new(
+
+	#Licorne;
+	Singleton-class;
+	'instance'
+	'Methode'
+
+)
+
+
+
+C)
+
+2)
+a)
+ObjObject est la racine du graphe d’héritage (de notre modèle ObjVLisp) et est une instance de ObjClass.
+ Alors que Obj est la classe Pharo qui permet d'implémenter ObjObject et ObjClass. De plus, ObjClass
+ est la première classe et la racine de l’arbre d’instanciation et l’instance d’elle-même dans ce modèle (ObjVLisp).
+
