@@ -14,18 +14,16 @@ class Rectangle {
     }
   }
 
-  function getMethodsOf(obj, namemethode){
-    if(Object.getOwnPropertyNames( Object.getPrototypeOf(obj) ).getOwnPropertyNames(namemethode)){
-
-        return true
-    }else{
-        return false;
+  function understands(nameMethode, o) {
+    if (typeof o[nameMethode] === 'function') {
+      // la méthode existe, on l'exécute
+      o[nameMethode]();
+      return true;
+    } else {
+      // la méthode n'existe pas
+      return false;
     }
   }
 
-  function understands(o, selector) {
-	return Reflect.has(o, selector);
-}
-
 const square = new Rectangle(10, 10);
-console.log(understands(square, "calcArea"))
+console.log(understands("cacac",square))

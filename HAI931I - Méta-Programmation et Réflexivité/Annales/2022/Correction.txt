@@ -121,7 +121,7 @@ J'ai créer une variable static qui permet de vérifier si il y a deja eu une in
 B.2)
 1)
 
-AbstractClass new(
+class new(
 
 	#AbstractClass;
 	Object;
